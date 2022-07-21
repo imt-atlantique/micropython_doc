@@ -1,0 +1,3 @@
+mkdocs>=1.3.0
+mkdocs[i18n]>=1.10.0
+mkdocs-custom-tags-attributes>=0.1.9
