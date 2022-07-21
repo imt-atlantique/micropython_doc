@@ -1,0 +1,44 @@
+site_name: MOOCs MicroPython
+site_description: Documentations des cours en ligne MicroPython documentation with Markdown.
+site_author: Baptiste Gaultier, Laurent Mattlé
+
+nav:
+    - Accueil: index.md
+    - 'Affichage': 'affichage/led.md'
+    - 'Entrées/Sorties': 'entrees_sorties/temps/attendre.md'
+    - 'Communication':  'communication/ecrire_dans_la_console.md'
+    - 'Réseau': index.md
+    - 'Capteurs': index.md
+    - 'Actionneurs': index.md
+    - 'Logique': index.md
+    - 'Boucles': index.md
+    - 'Math': index.md
+    - 'Texte': index.md
+    - 'Variables': index.md
+    - 'Listes': index.md
+    - 'Fonctions': index.md
+    
+theme:
+    name: readthedocs
+    locale: fr
+    custom_dir: docs/theme
+    
+
+# theme:
+#     name: material
+#     locale: fr
+#     custom_dir: theme
+#     palette:
+#         scheme: slate
+
+markdown_extensions:
+    - toc
+    - admonition
+    - abbr
+    - attr_list
+    - md_in_html
+
+extra_css:
+  - css/tooltipster.bundle.css
+extra_javascript:
+  - js/tooltipster.bundle.js  
