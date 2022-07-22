@@ -10,7 +10,9 @@ nav:
     - 'Réseau': index.md
     - 'Capteurs': index.md
     - 'Actionneurs': index.md
-    - 'Logique': index.md
+    - 'Logique': 
+      - 'index' : 'index.md'
+      - 'Instruction conditionnelle': 'logique/Instruction_Conditionnelle.md'
     - 'Boucles': index.md
     - 'Math': index.md
     - 'Texte': index.md
