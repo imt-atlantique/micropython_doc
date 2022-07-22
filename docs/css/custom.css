@@ -1,0 +1,24 @@
+.hljs-comment,
+.hljs-quote {
+    color: grey;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+    color: #FF5600;
+    font-weight: 700
+}
+
+.hljs-literal,
+.hljs-number,
+.hljs-tag .hljs-attr,
+.hljs-template-variable,
+.hljs-variable {
+    color: #e638db;
+}
+
+.hljs-doctag,
+.hljs-string {
+    color: rgb(6, 150, 14);
+}

@@ -10,9 +10,7 @@ nav:
     - 'Réseau': index.md
     - 'Capteurs': index.md
     - 'Actionneurs': index.md
-    - 'Logique': 
-      - 'index' : 'index.md'
-      - 'Instruction conditionnelle': 'logique/Instruction_Conditionnelle.md'
+    - 'Logique': index.md
     - 'Boucles': index.md
     - 'Math': index.md
     - 'Texte': index.md
@@ -23,9 +21,8 @@ nav:
 theme:
     name: readthedocs
     locale: fr
-    custom_dir: docs/theme
+    logo: img/favicon.ico
     
-
 # theme:
 #     name: material
 #     locale: fr
@@ -41,6 +38,7 @@ markdown_extensions:
     - md_in_html
 
 extra_css:
-  - css/tooltipster.bundle.css
+  - css/custom.css
+
 extra_javascript:
-  - js/tooltipster.bundle.js  
+  - js/custom.js
