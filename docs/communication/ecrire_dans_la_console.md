@@ -1,5 +1,5 @@
 # Écrire dans la console
-Permet d'écrire des données dans le port série (appelé également _console_ ou encore _REPL_). Le port série permet d'échanger des données entre la carte Galaxia et l'ordinateur grâce à la liaison USB. Lorsque vous utilisez l'interface Vittascience, vous pouvez voir les données reçues de la carte (ou du simulateur) grâce au bouton _REPL_ situé en bas de l'interface .
+Permet d'écrire des données dans le port série (appelé également _console_ ou encore _REPL_). Le port série permet d'échanger des données entre la carte Galaxia et l'ordinateur grâce à la liaison USB. Lorsque vous utilisez l'interface Vittascience, vous pouvez voir les données reçues de la carte (ou du simulateur) grâce au bouton [<i class="fa fa-terminal" aria-hidden="true"></i> REPL](#){ .btn .btn-neutral } situé en bas de l'interface .
 
 ## Exemple avec des blocs
 ![Bloc écrire dans la console](ecrire_dans_la_console.png){: style="width:480px;"}
