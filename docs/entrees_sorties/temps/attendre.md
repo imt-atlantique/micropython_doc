@@ -20,4 +20,4 @@ print("1 seconde écoulée")
 ```
 
 ## Aller plus loin
-Dans l'exemple ci-dessus, nous utilisons la fonction [print()](../../communication/ecrire_dans_la_console.md) et le module `utime` qui permet de gérer les éléments de temps. Pour en savoir plus sur cette classe, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/04.standards/utime/00.module_time/).
+Dans l'exemple ci-dessus, nous utilisons la fonction [`#!python print()`](../../communication/ecrire_dans_la_console.md) et le module `utime` qui permet de gérer les éléments de temps. Pour en savoir plus sur cette classe, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/04.standards/utime/00.module_time/).

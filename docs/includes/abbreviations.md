@@ -1,0 +1,1 @@
+*[REPL]: Acronyme des mots anglais Read, Eval, Print et Loop. La console permet effectivement de Read : lit les commandes tapées par l'utilisateur puis Eval: interprète ces commandes puis Print : affiche le résultat des commandes et enfin Loop : on recommence à l'étape Read !

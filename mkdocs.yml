@@ -19,26 +19,56 @@ nav:
     - 'Fonctions': index.md
     
 theme:
-    name: readthedocs
-    locale: fr
-    logo: img/favicon.ico
-    
-# theme:
-#     name: material
-#     locale: fr
-#     custom_dir: theme
-#     palette:
-#         scheme: slate
+    name: material
+    language: fr
+    logo: img/micropython_isometric_transparent.svg
+    favicon: img/favicon.ico
+    palette:
+        # Palette toggle for light mode
+        - scheme: default
+          primary: blue
+          accent: blue
+          toggle:
+            icon: material/weather-night
+            name: Désactiver le mode nocturne
+
+        # Palette toggle for dark mode
+        - scheme: slate
+          primary: light blue
+          accent: light blue
+          toggle:
+            icon: material/weather-sunny
+            name: Activer le mode nocturne
+      # scheme: default
+      # primary: light blue
+      # accent: light blue
+    features:
+      - navigation.instant
+      - navigation.tracking
+      - header.autohide
 
 markdown_extensions:
-    - toc
+    - toc:
+        toc_depth : "1-1"
     - admonition
     - abbr
     - attr_list
     - md_in_html
+    - pymdownx.highlight:
+        use_pygments: true
+        linenums: true
+        anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets:
+        auto_append:
+          - docs/includes/abbreviations.md
+    - pymdownx.superfences
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
 
 extra_css:
-  - css/custom.css
+  - css/extra.css
 
 extra_javascript:
-  - js/custom.js
+  - js/extra.js
