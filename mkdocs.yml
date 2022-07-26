@@ -9,12 +9,16 @@ nav:
     - 'Communication':  'communication/ecrire_dans_la_console.md'
     - 'Réseau': index.md
     - 'Capteurs': index.md
-    - 'Actionneurs': index.md
+    - 'Actionneurs': 'moteurs/servomoteur.md'
     - 'Logique': index.md
-    - 'Boucles': index.md
+    - 'Boucles':
+        - 'Boucle simple': 'boucles/boucle_simple.md'
+        - 'Boucle avec variable': 'boucles/boucle_avec_variable.md'
     - 'Math': index.md
     - 'Texte': index.md
-    - 'Variables': index.md
+    - 'Variables': 
+        - 'Stocker du texte': 'variables/variable_chaine_de_caracteres.md'
+        - 'Stocker des nombres': 'variables/variable_nombre.md'
     - 'Listes': index.md
     - 'Fonctions': index.md
     
@@ -26,22 +30,19 @@ theme:
     palette:
         # Palette toggle for light mode
         - scheme: default
-          primary: blue
-          accent: blue
+          primary: green
+          accent: green
           toggle:
             icon: material/weather-night
             name: Désactiver le mode nocturne
 
         # Palette toggle for dark mode
         - scheme: slate
-          primary: light blue
-          accent: light blue
+          primary: green
+          accent: green
           toggle:
             icon: material/weather-sunny
             name: Activer le mode nocturne
-      # scheme: default
-      # primary: light blue
-      # accent: light blue
     features:
       - navigation.instant
       - navigation.tracking
@@ -54,6 +55,7 @@ markdown_extensions:
     - abbr
     - attr_list
     - md_in_html
+    - meta
     - pymdownx.highlight:
         use_pygments: true
         linenums: true

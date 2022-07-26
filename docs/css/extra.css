@@ -15,6 +15,9 @@
 }
 
 :root>* {
+    --md-primary-fg-color: #22b573;
+    --md-primary-fg-color--light: #7ac943;
+    --md-primary-fg-color--dark: #008447;
     --md-code-hl-color: hsla(#{hex2hsl($clr-yellow-a200)}, 0.5);
     --md-code-hl-number-color: hsla(0, 67%, 50%, 1);
     --md-code-hl-special-color: hsla(340, 83%, 47%, 1);

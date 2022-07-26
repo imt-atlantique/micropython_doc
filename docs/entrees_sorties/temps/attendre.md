@@ -4,7 +4,7 @@ Effectue une pause dans l'exécution du code.
 ## Exemple avec des blocs
 ![Bloc attendre](attendre.png){: style="width:480px;"}
 
-## Exemple du code
+## Exemple avec du code
 
 ```python
 # On importe le module utime
