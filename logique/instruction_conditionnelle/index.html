@@ -12,19 +12,19 @@
         <meta name="author" content="Baptiste Gaultier, Laurent Mattlé">
       
       
-      <link rel="icon" href="../../../img/favicon.ico">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
-        <title>Demarrer le chronometre - MOOCs MicroPython</title>
+        <title>Instruction conditionnelle - MOOCs MicroPython</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
@@ -40,9 +40,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -58,7 +58,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="green">
   
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bloc" class="md-skip">
+        <a href="#instruction-conditionnelle" class="md-skip">
           Aller au contenu
         </a>
       
@@ -84,9 +84,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../../.." title="MOOCs MicroPython" class="md-header__button md-logo" aria-label="MOOCs MicroPython" data-md-component="logo">
+    <a href="../.." title="MOOCs MicroPython" class="md-header__button md-logo" aria-label="MOOCs MicroPython" data-md-component="logo">
       
-  <img src="../../../img/micropython_isometric_transparent.svg" alt="logo">
+  <img src="../../img/micropython_isometric_transparent.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Demarrer le chronometre
+              Instruction conditionnelle
             
           </span>
         </div>
@@ -113,7 +113,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Désactiver le mode nocturne"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Désactiver le mode nocturne"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Désactiver le mode nocturne" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
@@ -122,7 +122,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="light-blue"  aria-label="Activer le mode nocturne"  type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Activer le mode nocturne"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Activer le mode nocturne" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
@@ -191,9 +191,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="MOOCs MicroPython" class="md-nav__button md-logo" aria-label="MOOCs MicroPython" data-md-component="logo">
+    <a href="../.." title="MOOCs MicroPython" class="md-nav__button md-logo" aria-label="MOOCs MicroPython" data-md-component="logo">
       
-  <img src="../../../img/micropython_isometric_transparent.svg" alt="logo">
+  <img src="../../img/micropython_isometric_transparent.svg" alt="logo">
 
     </a>
     MOOCs MicroPython
@@ -209,7 +209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Accueil
       </a>
     </li>
@@ -224,7 +224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../affichage/led/" class="md-nav__link">
+      <a href="../../affichage/led/" class="md-nav__link">
         Affichage
       </a>
     </li>
@@ -239,7 +239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../attendre/" class="md-nav__link">
+      <a href="../../entrees_sorties/temps/attendre/" class="md-nav__link">
         Entrées/Sorties
       </a>
     </li>
@@ -254,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../communication/ecrire_dans_la_console/" class="md-nav__link">
+      <a href="../../communication/ecrire_dans_la_console/" class="md-nav__link">
         Communication
       </a>
     </li>
@@ -269,7 +269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Réseau
       </a>
     </li>
@@ -284,7 +284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Capteurs
       </a>
     </li>
@@ -299,7 +299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../moteurs/servomoteur/" class="md-nav__link">
         Actionneurs
       </a>
     </li>
@@ -314,7 +314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Logique
       </a>
     </li>
@@ -328,10 +328,57 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Boucles
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Boucles" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Boucles
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
-        Boucles
+      <a href="../../boucles/boucle_simple/" class="md-nav__link">
+        Boucle simple
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../boucles/boucle_avec_variable/" class="md-nav__link">
+        Boucle avec variable
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -344,7 +391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Math
       </a>
     </li>
@@ -359,7 +406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Texte
       </a>
     </li>
@@ -373,10 +420,57 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12">
+          Variables
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Variables" data-md-level="1">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
+          Variables
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
-        Variables
+      <a href="../../variables/variable_chaine_de_caracteres/" class="md-nav__link">
+        Stocker du texte
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/variable_nombre.md" class="md-nav__link">
+        Stocker des nombres
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -389,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Listes
       </a>
     </li>
@@ -404,7 +498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Fonctions
       </a>
     </li>
@@ -443,33 +537,35 @@
                 
 
 
-<p>Initialise un chronomètre à 0 (en secondes).</p>
-<h1 id="bloc">Bloc</h1>
-<p><img alt="Bloc démarrer le chronomètre" src="../demarrer_le_chronometre.png" style="height:64px;" /></p>
-<h1 id="code">Code</h1>
-<h2 id="exemple-affichage-differe">Exemple : Affichage différé</h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># On importe le module utime</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">utime</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># Affichage d&#39;un message avec la fonction print()</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Démarrage du programme&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="c1"># On attend 1 seconde</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="n">utime</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1 seconde écoulée&quot;</span><span class="p">)</span>
+<h1 id="instruction-conditionnelle">Instruction conditionnelle</h1>
+<p>Comme son nom l'indique, c'est une partie du programme qui oriente le flux du programme selon si une condition est réalisée ou non</p>
+<p>par exemple : si il pleut, je prend mon parapluie et je sors,  sinon je sors</p>
+<p>Souvent on a l'abitude de le représenter avec un organigramme de programmation </p>
+<p><img alt="organigramme" src="assets\organigramme.excalidraw.png" /></p>
+<p>si vous voulez en savoir plus sur les <a href="https://fr.wikipedia.org/wiki/Organigramme_de_programmation">organigrammes</a> </p>
+<p>en python ça prend la forme suivante :</p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">if</span> <span class="p">(</span><span class="n">il_pleut</span><span class="p">)</span> <span class="p">:</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="n">je_prend_un_parapluie</span><span class="p">()</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="n">je_sort</span><span class="p">()</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="documentation-micropython">Documentation MicroPython</h2>
-<p>Dans l'exemple ci-dessus, nous utilisons le module <code>utime</code> qui permet de gérer les éléments de temps. Pour en savoir plus sur cette classe, nous vous invitons à lire la <a href="https://www.micropython.fr/reference/04.standards/utime/00.module_time/">documentation MicroPython</a>.</p>
+si la partie entre if et les ":"" ,  (il_pleut) est évalué comme vrai,
+alors le block de code qui suit les ":"" et qui est indenté sera interprété.</p>
+<p>sinon ce bloc ne sera pas pris en compte,
+et le programme continura  par le bloc de même indentation que l'instruction conditionnelle if</p>
+<p>en block</p>
+<p><img alt="bloc_decisionnelle" src="assets\bloc_decisionnelle.png" />
+du menu logique il faut faire glisser le bloc décisionnel
+ensuite 
+<img alt="" src="chrome_Zy3NNYhDnc.gif" />
+ensuite élaborer la proposition à évaluer</p>
+<p><img alt="" src="eval.png" /></p>
+<p>vous devez 
+- placer un élement à comparer  dans l'oblon 
+- choisir le comparatif ( strictement plus petit ,strictement plus grand, plus petit ou égale , plus grand ou égale, égale, différent )
+- Choisir la valeur avec laquelle on doit comparer</p>
+<p>il ne vous reste plus qu'a positionner dans le corps du bloc ce qui ce passera si la condition est réalisée.</p>
 
               
             </article>
@@ -501,12 +597,12 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "header.autohide"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "header.autohide"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
-        <script src="../../../js/extra.js"></script>
+        <script src="../../js/extra.js"></script>
       
     
   </body>
