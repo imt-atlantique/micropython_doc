@@ -2,7 +2,7 @@
 
 Comme son nom l'indique, c'est une partie du programme qui oriente le flux du programme selon si une condition est réalisée ou non
 
-par exemple : 
+## Exemple : 
 
 Si il pleut, je prend mon parapluie et je sors,  sinon je sors.
 
@@ -13,7 +13,9 @@ Souvent on a l'abitude de le représenter avec un organigramme de programmation
 Si vous voulez en savoir plus sur les [organigrammes](https://fr.wikipedia.org/wiki/Organigramme_de_programmation) 
 
 
-En python ça prend la forme suivante :
+## En code 
+
+Ça prend la forme suivante :
 
 ```python
 
@@ -30,7 +32,7 @@ Sinon ce bloc ne sera pas pris en compte,
 et le programme continura  par le bloc de même indentation que l'instruction conditionnelle if
 
 
-En block
+## En bloc
 
 ![bloc_decisionnelle](assets\bloc_decisionnelle.png)
 Du menu logique il faut faire glisser le bloc décisionnel
