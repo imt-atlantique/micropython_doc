@@ -13,11 +13,11 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
     
     
       
-        <title>Instruction conditionnelle - MOOCs MicroPython</title>
+        <title>Logique - MOOCs MicroPython</title>
       
     
     
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Instruction conditionnelle
+              Logique
             
           </span>
         </div>
@@ -312,11 +312,21 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Logique
       </a>
+      
     </li>
   
 
@@ -539,33 +549,34 @@
 
 <h1 id="instruction-conditionnelle">Instruction conditionnelle</h1>
 <p>Comme son nom l'indique, c'est une partie du programme qui oriente le flux du programme selon si une condition est réalisée ou non</p>
-<p>par exemple : si il pleut, je prend mon parapluie et je sors,  sinon je sors</p>
+<p>par exemple : </p>
+<p>Si il pleut, je prend mon parapluie et je sors,  sinon je sors.</p>
 <p>Souvent on a l'abitude de le représenter avec un organigramme de programmation </p>
-<p><img alt="organigramme" src="assets\organigramme.excalidraw.png" /></p>
-<p>si vous voulez en savoir plus sur les <a href="https://fr.wikipedia.org/wiki/Organigramme_de_programmation">organigrammes</a> </p>
-<p>en python ça prend la forme suivante :</p>
+<p><img alt="organigramme" src="../assets/organigramme.excalidraw.png" /></p>
+<p>Si vous voulez en savoir plus sur les <a href="https://fr.wikipedia.org/wiki/Organigramme_de_programmation">organigrammes</a> </p>
+<p>En python ça prend la forme suivante :</p>
 <p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">if</span> <span class="p">(</span><span class="n">il_pleut</span><span class="p">)</span> <span class="p">:</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="n">je_prend_un_parapluie</span><span class="p">()</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="n">je_sort</span><span class="p">()</span>
 </code></pre></div></td></tr></table></div>
-si la partie entre if et les ":"" ,  (il_pleut) est évalué comme vrai,
+Si la partie entre if et les ":"" ,  (il_pleut) est évalué comme vrai,
 alors le block de code qui suit les ":"" et qui est indenté sera interprété.</p>
-<p>sinon ce bloc ne sera pas pris en compte,
+<p>Sinon ce bloc ne sera pas pris en compte,
 et le programme continura  par le bloc de même indentation que l'instruction conditionnelle if</p>
-<p>en block</p>
-<p><img alt="bloc_decisionnelle" src="assets\bloc_decisionnelle.png" />
-du menu logique il faut faire glisser le bloc décisionnel
+<p>En block</p>
+<p><img alt="bloc_decisionnelle" src="../assets/bloc_decisionnelle.png" />
+Du menu logique il faut faire glisser le bloc décisionnel
 ensuite 
 <img alt="" src="chrome_Zy3NNYhDnc.gif" />
-ensuite élaborer la proposition à évaluer</p>
+Ensuite élaborer la proposition à évaluer</p>
 <p><img alt="" src="eval.png" /></p>
-<p>vous devez 
+<p>Vous devez 
 - placer un élement à comparer  dans l'oblon 
 - choisir le comparatif ( strictement plus petit ,strictement plus grand, plus petit ou égale , plus grand ou égale, égale, différent )
 - Choisir la valeur avec laquelle on doit comparer</p>
-<p>il ne vous reste plus qu'a positionner dans le corps du bloc ce qui ce passera si la condition est réalisée.</p>
+<p>Il ne vous reste plus qu'a positionner dans le corps du bloc ce qui ce passera si la condition est réalisée.        </p>
 
               
             </article>
@@ -576,6 +587,42 @@ ensuite élaborer la proposition à évaluer</p>
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+      
+        
+        <a href="../../moteurs/servomoteur/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Actionneurs" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Actionneurs
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../boucles/boucle_simple/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Boucle simple" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Boucle simple
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
