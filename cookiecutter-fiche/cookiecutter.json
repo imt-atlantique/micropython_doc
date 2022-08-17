@@ -1,0 +1,7 @@
+{
+    "title": "Titre de la fiche",
+    "description": "Description de la fiche",
+    "filename": "Nom de l'image contenant les blocs Vittascience",
+    "code": "Code MicroPython",
+    "micropython_doc_url": "URL du site de documentation MicroPython"
+}
