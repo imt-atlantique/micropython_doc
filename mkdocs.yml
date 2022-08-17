@@ -3,13 +3,22 @@ site_description: Documentations des cours en ligne MicroPython documentation wi
 site_author: Baptiste Gaultier, Laurent Mattlé
 
 nav:
-    - Accueil: index.md
-    - 'Affichage': 'affichage/led.md'
-    - 'Entrées/Sorties': 'entrees_sorties/temps/attendre.md'
-    - 'Communication':  'communication/ecrire_dans_la_console.md'
-    - 'Réseau': index.md
+  - 'Premiers pas':
+    - "L'interface Vittascience": index.md
+    - "La carte Galaxia": index.md
+    - "Le langage MicroPython": index.md
+  - 'Guides de référence':
+    - 'Affichage': 
+      - 'Contrôler une LED': 'affichage/led/led.md'
+      - 'Contrôler une LED RVB' : 'affichage/led_rgb/led_rgb.md'
+    - 'Entrées/Sorties': 
+      - 'Attendre': 'entrees_sorties/temps/attendre.md'
+      - 'Utiliser le chronomètre': 'entrees_sorties/temps/chronometre.md'
+    - 'Communication': 
+      - 'Écrire dans la console': 'communication/ecrire_dans_la_console.md'
     - 'Capteurs': index.md
     - 'Actionneurs': 'moteurs/servomoteur.md'
+    - '': index.md
     - 'Logique': 'logique/Instruction_Conditionnelle.md'
     - 'Boucles':
         - 'Boucle simple': 'boucles/boucle_simple.md'
@@ -17,11 +26,11 @@ nav:
     - 'Math': index.md
     - 'Texte': index.md
     - 'Variables': 
-        - 'Stocker du texte': 'variables/variable_chaine_de_caracteres.md'
+        - 'Stocker du texte': 'variables/variable_texte.md'
         - 'Stocker des nombres': 'variables/variable_nombre.md'
     - 'Listes': index.md
     - 'Fonctions': index.md
-    
+
 theme:
     name: material
     language: fr
@@ -47,6 +56,7 @@ theme:
       - navigation.instant
       - navigation.tracking
       - header.autohide
+      - navigation.sections
 
 markdown_extensions:
     - toc:
@@ -65,6 +75,8 @@ markdown_extensions:
         auto_append:
           - docs/includes/abbreviations.md
     - pymdownx.superfences
+    - pymdownx.tabbed:
+        alternate_style: true 
     - pymdownx.emoji:
         emoji_index: !!python/name:materialx.emoji.twemoji
         emoji_generator: !!python/name:materialx.emoji.to_svg
