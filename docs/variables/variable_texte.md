@@ -1,9 +1,9 @@
-# Utiliser une variable pour y stocker une chaîne de caractères
+# Utiliser une variable pour y stocker du texte
 Une variable est un espace mémoire dans lequel il est possible de mettre une valeur. Par exemple, pour stocker un prénom (qui est un texte) dans une variable, je peux utiliser les instructions suivantes :
 
 
 ## Exemple avec des blocs
-![Blocs variable chaîne de caractères](variable_chaine_de_caracteres.png){: style="width:640px;"}
+![Blocs variable texte](variable_chaine_de_caracteres.png){: style="width:640px;"}
 
 !!! info
     Le bloc ![Bloc créer le texte](../texte/creer_le_texte.png){: style="height:24px;"} permet d'agréger (on dit aussi concaténer) des éléments (variables, chaînes de caractères...) pour former un nouveau texte. Ce bloc peut être trouvé dans la catégorie de blocs [:fontawesome-solid-font: Texte](#){: style="color: rgb(26, 109, 168); font-weight: bold;"}.
