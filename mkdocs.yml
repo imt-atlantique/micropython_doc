@@ -19,7 +19,7 @@ nav:
     - 'Capteurs': index.md
     - 'Actionneurs': 'moteurs/servomoteur.md'
     - '': index.md
-    - 'Logique': 'logique/Instruction_Conditionnelle.md'
+    - 'Logique': 'logique/instruction_conditionnelle.md'
     - 'Boucles':
         - 'Boucle simple': 'boucles/boucle_simple.md'
         - 'Boucle avec variable': 'boucles/boucle_avec_variable.md'
