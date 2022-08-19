@@ -29,7 +29,7 @@ nav:
         - 'Stocker du texte': 'variables/variable_texte.md'
         - 'Stocker des nombres': 'variables/variable_nombre.md'
     - 'Listes': index.md
-    - 'Fonctions': index.md
+    - 'Fonctions': '/fonctions/fonction_ss_retour.md'
 
 theme:
     name: material
@@ -74,7 +74,11 @@ markdown_extensions:
     - pymdownx.snippets:
         auto_append:
           - docs/includes/abbreviations.md
-    - pymdownx.superfences
+    - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
     - pymdownx.tabbed:
         alternate_style: true 
     - pymdownx.emoji:
