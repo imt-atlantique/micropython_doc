@@ -4,9 +4,9 @@ site_author: Baptiste Gaultier, Laurent Mattlé
 
 nav:
   - 'Premiers pas':
-    - "L'interface Vittascience": index.md
-    - "La carte Galaxia": index.md
-    - "Le langage MicroPython": index.md
+    - "L'interface Vittascience": interface.md
+    - "La carte Galaxia": galaxia.md
+    - "Le langage MicroPython": micropython.md
   - 'Guides de référence':
     - 'Affichage': 
       - 'Contrôler une LED': 'affichage/led/led.md'
@@ -66,6 +66,7 @@ markdown_extensions:
     - attr_list
     - md_in_html
     - meta
+    - tables
     - pymdownx.highlight:
         use_pygments: true
         linenums: true
