@@ -39,12 +39,19 @@
 
 .md-typeset table:not([class]) th {
     border-bottom: .05rem solid var(--md-typeset-table-color);
+}
+
+.md-typeset table:not([class]) th:not(:last-child) {
     border-right: .05rem solid var(--md-typeset-table-color);
 }
 
 .md-typeset table:not([class]) td {
     border-top: 0px solid var(--md-typeset-table-color);
     border-right: .05rem solid var(--md-typeset-table-color);
+}
+
+.md-typeset table:not([class]) td:last-child {
+    border-right: 0px solid var(--md-typeset-table-color);
 }
 
 .row {
