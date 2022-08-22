@@ -17,7 +17,7 @@
     
     
       
-        <title>Galaxia - MOOCs MicroPython</title>
+        <title>La carte Galaxia - MOOCs MicroPython</title>
       
     
     
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Galaxia
+              La carte Galaxia
             
           </span>
         </div>
@@ -202,14 +202,16 @@
 
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
       
       
       
@@ -232,7 +234,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../interface/" class="md-nav__link">
         L'interface Vittascience
       </a>
     </li>
@@ -244,11 +246,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         La carte Galaxia
       </a>
+      
     </li>
   
 
@@ -260,7 +270,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../micropython.md" class="md-nav__link">
         Le langage MicroPython
       </a>
     </li>
@@ -699,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fonctions/fonction_ss_retour.md" class="md-nav__link">
+      <a href="../fonctions/fonction/" class="md-nav__link">
         Fonctions
       </a>
     </li>
@@ -743,7 +753,7 @@
                 
 
 
-  <h1>Galaxia</h1>
+  <h1>La carte Galaxia</h1>
 
 <p>La carte Galaxia est une carte électronique développée par l'entreprise toulousaine <a href="https://thingz.co/">Thingz</a>. Cette carte est programmable avec le langage MicroPython et ça tombe bien puisque c'est ce langage de programmation que vous allez apprendre dans les cours en ligne de l'IMT !</p>
 <div class="admonition info inline end">
@@ -884,31 +894,31 @@
       <path id="path21" style="stroke-width:0.746989" class="cls-2" d="M 116.89062 0 A 10.569882 10.569882 0 0 0 106.32617 10.289062 L 105.80078 35.658203 L 105.79492 35.660156 A 0.98602433 1.0368699 0 0 0 105.33203 36.445312 L 105.33203 39.257812 A 8.9638581 9.4260909 0 0 0 105.42188 41.511719 C 105.42188 41.511719 112.46625 41.888162 116.62695 41.982422 C 120.78768 42.076682 128.48129 41.699219 128.83984 41.699219 C 129.19839 41.699219 129.58597 38.887969 129.45898 37.576172 A 10.67446 11.224902 0 0 0 129.10938 35.322266 L 128.49805 34.871094 L 127.45703 10.289062 A 10.569882 10.569882 0 0 0 116.89062 0 z " />
    </a>
 </svg></p>
-<h2 id="les-composants-de-la-galaxia">Les composants de la Galaxia</h2>
-<h3 id="le-microcontroleur-esp32-s2-wifi-et-bluetooth"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v1h3v2h-3v2h3v2h-3v2h3v2h-3v2h3v2h-3v1H6v-1H3v-2h3v-2H3v-2h3v-2H3V9h3V7H3V5h3V4m5 11v3h1v-3h-1m2 0v3h1v-3h-1m2 0v3h1v-3h-1Z"/></svg></span> Le microcontrôleur ESP32-S2 (WiFi et Bluetooth)</h3>
+<h2>Les composants de la Galaxia</h2>
+<h3><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v1h3v2h-3v2h3v2h-3v2h3v2h-3v2h3v2h-3v1H6v-1H3v-2h3v-2H3v-2h3v-2H3V9h3V7H3V5h3V4m5 11v3h1v-3h-1m2 0v3h1v-3h-1m2 0v3h1v-3h-1Z"/></svg></span> Le microcontrôleur ESP32-S2 (WiFi et Bluetooth)</h3>
 <p>C'est le cerveau de la carte. C'est lui qui va exécuter vos programmes désormais. Sa vitesse de calcul est de 240 MHz, ce qui est très élevé pour une si petite carte programmable. </p>
 <p>C'est également ce module qui permet la communication WiFi : point d'accès pour la maison ou pour la classe, échanges de messages en réseau local avec adressage IP et serveur web.</p>
 <p>Il a également une quantité de mémoire importante pour stocker plusieurs dizaines de programmes python en même temps et des fichiers audio.</p>
-<h3 id="lecran-lcd"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 2H5c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h5v2H8v2h8v-2h-2v-2h5c1.11 0 2-.89 2-2V4a2 2 0 0 0-2-2m0 14H5V4h14v12Z"/></svg></span> L'écran LCD</h3>
+<h3><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 2H5c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h5v2H8v2h8v-2h-2v-2h5c1.11 0 2-.89 2-2V4a2 2 0 0 0-2-2m0 14H5V4h14v12Z"/></svg></span> L'écran LCD</h3>
 <p>Il a une taille de 1,8 pouces en diagonale et dispose d'une résolution de 128×160 pixels et d'un rétroéclairage à LED blanche. Il peut afficher une grande variété de couleurs : 262 144 tonalités de couleurs (18 bits). Il permet d'afficher du texte, des données et des éléments graphiques. Enfin, il permet de naviguer dans le menu Système pour accéder à plusieurs fonctionnalités décrites plus bas. </p>
-<h3 id="une-led-rgb"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 0v4h2V0h-2m7.3 2.29-3.06 3 1.4 1.42 3.06-3-1.4-1.42m-12.59 0L4.29 3.71l3 3 1.42-1.42-3-3M12 6a4 4 0 0 0-4 4v6H6v2h3v5h2v-5h2v5h2v-5h3v-2h-2v-6a4 4 0 0 0-4-4M2 9v2h4V9H2m16 0v2h4V9h-4Z"/></svg></span> Une led RGB</h3>
+<h3><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 0v4h2V0h-2m7.3 2.29-3.06 3 1.4 1.42 3.06-3-1.4-1.42m-12.59 0L4.29 3.71l3 3 1.42-1.42-3-3M12 6a4 4 0 0 0-4 4v6H6v2h3v5h2v-5h2v5h2v-5h3v-2h-2v-6a4 4 0 0 0-4-4M2 9v2h4V9H2m16 0v2h4V9h-4Z"/></svg></span> Une led RGB</h3>
 <p>Elle intègre en fait 3 LEDs (rouge, vert et bleu) dans un seul boîtier pour vous permettre de composer les couleurs de votre choix. On parle dans ce cas de synthèse additive des couleurs (à la différence de la peinture où l'on combine les couleurs primaires : cyan, magenta et jaune avec une synthèse soustractive). Cette LED offre un indicateur lumineux simple à programmer pour indiquer différentes informations en fonction des couleurs choisies. Sa luminosité offre une capacité d'éclairage qui peut permettre d'éclairer un objet dans un environnement sombre.</p>
 <p>Pour chacune des 3 couleurs, on peut régler l'intensité lumineuse avec une valeur comprise entre 0 (absence de luminosité) et 255 (luminosité maximale).</p>
-<h3 id="un-capteur-de-lumiere"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 2C4.1 2 1 5.1 1 9c0 2.4 1.2 4.5 3 5.7V17c0 .6.4 1 1 1h6c.6 0 1-.4 1-1v-2.3c1.8-1.3 3-3.4 3-5.7 0-3.9-3.1-7-7-7M5 21c0 .6.4 1 1 1h4c.6 0 1-.4 1-1v-1H5v1m15.5-6.5V16H19v-1.5h1.5m-2-5H17V9c0-1.7 1.3-3 3-3s3 1.3 3 3c0 1-.5 1.9-1.3 2.4l-.3.2c-.6.4-.9 1-.9 1.7v.2H19v-.2c0-1.2.6-2.3 1.6-2.9l.3-.2c.4-.3.6-.7.6-1.2 0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5v.5Z"/></svg></span> Un capteur de lumière</h3>
+<h3><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 2C4.1 2 1 5.1 1 9c0 2.4 1.2 4.5 3 5.7V17c0 .6.4 1 1 1h6c.6 0 1-.4 1-1v-2.3c1.8-1.3 3-3.4 3-5.7 0-3.9-3.1-7-7-7M5 21c0 .6.4 1 1 1h4c.6 0 1-.4 1-1v-1H5v1m15.5-6.5V16H19v-1.5h1.5m-2-5H17V9c0-1.7 1.3-3 3-3s3 1.3 3 3c0 1-.5 1.9-1.3 2.4l-.3.2c-.6.4-.9 1-.9 1.7v.2H19v-.2c0-1.2.6-2.3 1.6-2.9l.3-.2c.4-.3.6-.7.6-1.2 0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5v.5Z"/></svg></span> Un capteur de lumière</h3>
 <p>Il est intégré à la LED et capte la luminosité qui lui parvient. La captation est très directionnelle, cela signifie qu'il faut bien pointer la LED dans la direction de la lumière que l'on veut mesurer. </p>
 <p>Les valeurs obtenues vont de 0 à 255. En combinaison avec l’écran vous pouvez afficher un graphique présentant l’évolution de la luminosité. Programmez une alarme lorsque qu’un tiroir est ouvert ou fermé, programmez une prise connectée qui allumera votre lampe lorsque la luminosité baisse, et bien d’autres expériences.</p>
-<h3 id="la-prise-jack-audio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 4V3c0-.55.45-1 1-1s1 .45 1 1v1h-2m2 5V5h-2v4H9v6c0 1.3.84 2.4 2 2.82V22h2v-4.18c1.16-.42 2-1.52 2-2.82V9h-2Z"/></svg></span> La prise jack audio</h3>
+<h3><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 4V3c0-.55.45-1 1-1s1 .45 1 1v1h-2m2 5V5h-2v4H9v6c0 1.3.84 2.4 2 2.82V22h2v-4.18c1.16-.42 2-1.52 2-2.82V9h-2Z"/></svg></span> La prise jack audio</h3>
 <p>Elle offre une entrée et une sortie audio à la Galaxia. Vous pouvez y brancher un micro pour exploiter l'entrée audio, une enceinte pour exploiter la sortie, ou un kit main libre pour profiter des deux en même temps.</p>
-<h3 id="le-magnetometre"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15 9-3-9-3 9-9 3 9 3 3 9 3-9 9-3-9-3M4 12l6-2 1 2H4m8 8-2-6 2-1v7m0-16 2 6-2 1V4m2 10-1-2h7l-6 2m-5.3 3.3L5 19l1.7-3.7 1.6.5.4 1.5m8.6-2L19 19l-3.7-1.7.5-1.6 1.5-.4M6.7 8.7 5 5l3.7 1.7-.5 1.5-1.5.5m8.6-2L19 5l-1.7 3.7-1.6-.5-.4-1.5Z"/></svg></span> Le magnétomètre</h3>
+<h3><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15 9-3-9-3 9-9 3 9 3 3 9 3-9 9-3-9-3M4 12l6-2 1 2H4m8 8-2-6 2-1v7m0-16 2 6-2 1V4m2 10-1-2h7l-6 2m-5.3 3.3L5 19l1.7-3.7 1.6.5.4 1.5m8.6-2L19 19l-3.7-1.7.5-1.6 1.5-.4M6.7 8.7 5 5l3.7 1.7-.5 1.5-1.5.5m8.6-2L19 5l-1.7 3.7-1.6-.5-.4-1.5Z"/></svg></span> Le magnétomètre</h3>
 <p>Ce capteur permet de mesurer un champ magnétique dans un espace en 3 dimensions. L'usage qui nous intéressera le plus souvent est la détection du nord magnétique. Ainsi, vous pourrez programmer votre carte comme une boussole ou trouvez votre orientation par rapport au nord.</p>
-<h3 id="deux-boutons-poussoirs"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9a1 1 0 0 1 1-1 1 1 0 0 1 1 1v4.47l1.21.13 4.94 2.19c.53.24.85.77.85 1.35v4.36c-.03.82-.68 1.47-1.5 1.5H11c-.38 0-.74-.15-1-.43l-4.9-4.2.74-.77c.19-.21.46-.32.74-.32h.22L10 19V9m-1 3.44V9a2 2 0 0 1 2-2 2 2 0 0 1 2 2v3.44c1.19-.69 2-1.97 2-3.44a4 4 0 0 0-4-4 4 4 0 0 0-4 4c0 1.47.81 2.75 2 3.44Z"/></svg></span> Deux boutons poussoirs</h3>
+<h3><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9a1 1 0 0 1 1-1 1 1 0 0 1 1 1v4.47l1.21.13 4.94 2.19c.53.24.85.77.85 1.35v4.36c-.03.82-.68 1.47-1.5 1.5H11c-.38 0-.74-.15-1-.43l-4.9-4.2.74-.77c.19-.21.46-.32.74-.32h.22L10 19V9m-1 3.44V9a2 2 0 0 1 2-2 2 2 0 0 1 2 2v3.44c1.19-.69 2-1.97 2-3.44a4 4 0 0 0-4-4 4 4 0 0 0-4 4c0 1.47.81 2.75 2 3.44Z"/></svg></span> Deux boutons poussoirs</h3>
 <p>Vous pouvez détecter s'ils ont été appuyé brièvement ou s'ils sont maintenus appuyés. Généralement, on utilise cette détection d'appui pour déclencher des actions en conséquence. </p>
-<h3 id="quatre-boutons-tactiles"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9a1 1 0 0 1 1-1 1 1 0 0 1 1 1v4.47l1.21.13 4.94 2.19c.53.24.85.77.85 1.35v4.36c-.03.82-.68 1.47-1.5 1.5H11c-.38 0-.74-.15-1-.43l-4.9-4.2.74-.77c.19-.21.46-.32.74-.32h.22L10 19V9m1-4a4 4 0 0 1 4 4c0 1.5-.8 2.77-2 3.46v-1.22c.61-.55 1-1.35 1-2.24a3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .89.39 1.69 1 2.24v1.22C7.8 11.77 7 10.5 7 9a4 4 0 0 1 4-4m0-2a6 6 0 0 1 6 6c0 1.7-.71 3.23-1.84 4.33l-1-.45A5.019 5.019 0 0 0 16 9a5 5 0 0 0-5-5 5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58v1.08C6.67 13.83 5 11.61 5 9a6 6 0 0 1 6-6Z"/></svg></span> Quatre boutons tactiles</h3>
+<h3><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9a1 1 0 0 1 1-1 1 1 0 0 1 1 1v4.47l1.21.13 4.94 2.19c.53.24.85.77.85 1.35v4.36c-.03.82-.68 1.47-1.5 1.5H11c-.38 0-.74-.15-1-.43l-4.9-4.2.74-.77c.19-.21.46-.32.74-.32h.22L10 19V9m1-4a4 4 0 0 1 4 4c0 1.5-.8 2.77-2 3.46v-1.22c.61-.55 1-1.35 1-2.24a3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .89.39 1.69 1 2.24v1.22C7.8 11.77 7 10.5 7 9a4 4 0 0 1 4-4m0-2a6 6 0 0 1 6 6c0 1.7-.71 3.23-1.84 4.33l-1-.45A5.019 5.019 0 0 0 16 9a5 5 0 0 0-5-5 5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58v1.08C6.67 13.83 5 11.61 5 9a6 6 0 0 1 6-6Z"/></svg></span> Quatre boutons tactiles</h3>
 <p>Leur utilisation n'est pas très différente de celle des boutons A et B. Ils sont disposés en cercle pour offrir un pad tactile qui peut être utilisé comme une flèche directionnelle, ils donnent ainsi à la Galaxia un petit air de console de jeu.</p>
-<h3 id="le-port-micro-usb"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 2c-1.1 0-2 .9-2 2v8H5v4l4 4v2h6v-2l4-4v-4h-1V4a2 2 0 0 0-2-2M8 4h8v8H8m1-5v2h2V7m2 0v2h2V7Z"/></svg></span> Le port micro-USB</h3>
+<h3><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 2c-1.1 0-2 .9-2 2v8H5v4l4 4v2h6v-2l4-4v-4h-1V4a2 2 0 0 0-2-2M8 4h8v8H8m1-5v2h2V7m2 0v2h2V7Z"/></svg></span> Le port micro-USB</h3>
 <p>Il vous sert à alimenter votre Galaxia, à communiquer/programmer avec l'ordinateur grâce au <a href="../communication/ecrire_dans_la_console/">port série</a>. Une fois programmée, on peut l'utiliser pour brancher une batterie USB et ainsi faire des objets mobiles.</p>
 <p>Ce câble n'est pas livré avec la carte mais il sera disponible dans la boutique pour les établissements scolaires qui n'en sont pas déjà équipés.</p>
-<h3 id="une-connectique-compatible-microbit"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"/></svg></span> Une connectique compatible micro:bit</h3>
+<h3><img alt="micro:bit icon" src="../img/microbit_light.svg#only-light" /> <img alt="micro:bit icon" src="../img/microbit_dark.svg#only-dark" /> Une connectique compatible micro:bit</h3>
 <p>Il vous permet de connecter la carte Galaxia à des robots, comme le <a href="https://fr.vittascience.com/shop/97/robot-maqueen-pour-carte-micro:bit">Maqueen</a> ou d'autres accessoires compatibles micro:bit.</p>
 
               
@@ -920,6 +930,42 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+      
+        
+        <a href="../interface/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: L&#39;interface Vittascience" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              L'interface Vittascience
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../affichage/led/led/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Contrôler une LED" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Contrôler une LED
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
