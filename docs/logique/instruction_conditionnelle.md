@@ -10,7 +10,7 @@ C'est une instruction qui oriente le cours du programme selon si une condition e
 
 	!!! info
 
-    	Le bloc if ![Bloc if](if.png){: style="height:24px;"} peut être trouvé dans la catégorie de blocs [:fontawesome-solid-gear: logique](#){: style="color: rgb(252,116,23); font-weight: bold;"}.
+    	Le bloc if ![Bloc if](if.png){: style="height:24px;"} peut être trouvé dans la catégorie de blocs [:fontawesome-solid-code-branch: Logique](#){: style="color: rgb(252,116,23); font-weight: bold;"}.
 		
 		 Notez que ce block doit être rempli au niveau de la condition pour étre fonctionel 
 
