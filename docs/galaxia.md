@@ -179,9 +179,5 @@ Il vous sert à alimenter votre Galaxia, à communiquer/programmer avec l'ordina
 
 Ce câble n'est pas livré avec la carte mais il sera disponible dans la boutique pour les établissements scolaires qui n'en sont pas déjà équipés.
 
-<<<<<<< HEAD
 ### ![micro:bit icon](img/microbit_light.svg#only-light) ![micro:bit icon](img/microbit_dark.svg#only-dark) Une connectique compatible micro:bit
-=======
-### :octicons-dot-16: Une connectique compatible micro:bit
->>>>>>> 057466eb1d83c23ce7032e462be486d91c49efcb
 Il vous permet de connecter la carte Galaxia à des robots, comme le [Maqueen](https://fr.vittascience.com/shop/97/robot-maqueen-pour-carte-micro:bit) ou d'autres accessoires compatibles micro:bit.
