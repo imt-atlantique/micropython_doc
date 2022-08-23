@@ -1,8 +1,13 @@
+---
+hide:
+  - toc
+---
+
 # Utiliser le chronomètre
 Récupérer le nombre de millisecondes écoulées depuis le lancement de la carte.
 
-## Exemples
-=== "Exemple avec des blocs"
+## Exemple
+=== ":material-puzzle: Exemple avec des blocs"
     
     ![Blocs utiliser le chronomètre](chronometre.png){: style="width:740px;"}
 
@@ -10,7 +15,7 @@ Récupérer le nombre de millisecondes écoulées depuis le lancement de la cart
         Le bloc ![Bloc créer le texte](../../texte/creer_le_texte.png){: style="height:24px;"} permet d'agréger (on dit aussi concaténer) des éléments (variables, chaînes de caractères...) pour former un nouveau texte. Ce bloc peut être trouvé dans la catégorie de blocs [:fontawesome-solid-font: Texte](#){: style="color: rgb(26, 109, 168); font-weight: bold;"}.
         Le bloc ![Bloc arrondir](../../math/arrondir.png){: style="height:24px;"} permet d'arrondir un nombre flottant. Ce bloc peut être trouvé dans la catégorie de blocs [:fontawesome-solid-calculator: Math](#){: style="color: rgb(63, 169, 245); font-weight: bold;"}.
 
-=== "Exemple avec du code"
+=== ":material-code-array: Exemple avec du code"
 
     ```python
     # On importe le module utime (pour ticks_ms et ticks_diff)

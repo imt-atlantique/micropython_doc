@@ -1,15 +1,20 @@
+---
+hide:
+  - toc
+---
+
 # TODO : refaire cette fiche lorsque le simulateur est ok
 Permet de régler l'intensité de la LED intégrée à la carte Galaxia, de 0 à 100 pour chacune des couleurs (rouge, vert, bleu).
 
 # Branchement
 ![Carte Galaxia](../../img/galaxia_board.svg){: style="height:380px;"}
 
-## Exemples
-=== "Exemple avec des blocs"
+## Exemple
+=== ":material-puzzle: Exemple avec des blocs"
 
     ![Bloc contrôler la couleur](led_rgb.png){: style="width:480px;"}
 
-=== "Exemple avec du code"
+=== ":material-code-array: Exemple avec du code"
 
     ```python
     # On importe les modules machine et utime

@@ -1,17 +1,22 @@
+---
+hide:
+  - toc
+---
+
 # Instruction conditionnelle
 
 Exécute une ou plusieurs instructions si une condition est vraie ou non.
 
-## Exemples
+## Exemple
 
-=== "Exemple avec des blocs"
+=== ":material-puzzle: Exemple avec des blocs"
     ![Bloc Si/Sinon](decisionnelle.png){: style="width:380px;"}
 
 	!!! info
     	Le bloc `#!python if` ![Bloc if](if.png){: style="height:24px;"} peut être trouvé dans la catégorie de blocs [:fontawesome-solid-gear: Logique](#){: style="color: rgb(252,116,23); font-weight: bold;"}. Notez qu'une condition doit être fournie pour que ce bloc soit fonctionnel.
 
 
-=== "Exemple avec du code"
+=== ":material-code-array: Exemple avec du code"
 
 	```python
 	# On boucle indéfiniment

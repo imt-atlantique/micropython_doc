@@ -1,11 +1,16 @@
+---
+hide:
+  - toc
+---
+
 # Attendre
 Effectue une pause dans l'exécution du code.
 
-## Exemples
-=== "Exemple avec des blocs"
+## Exemple
+=== ":material-puzzle: Exemple avec des blocs"
     ![Bloc attendre](attendre.png){: style="width:480px;"}
 
-=== "Exemple avec du code"
+=== ":material-code-array: Exemple avec du code"
 
     ```python
     # On importe le module utime

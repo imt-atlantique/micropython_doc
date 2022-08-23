@@ -1,12 +1,17 @@
+---
+hide:
+  - toc
+---
+
 # Manipuler des nombres
 Le module `#!python math` fournit des fonctions permettant de manipuler des nombres.
 
-## Exemples
-=== "Exemple avec des blocs"
+## Exemple
+=== ":material-puzzle: Exemple avec des blocs"
 
     ![Blocs manipuler des nombres](manipuler_des_nombres.png){: style="width:480px;"}
 
-=== "Exemple avec du code"
+=== ":material-code-array: Exemple avec du code"
 
     ```python
     import math

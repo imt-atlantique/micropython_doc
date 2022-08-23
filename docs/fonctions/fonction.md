@@ -1,16 +1,20 @@
-# Definir une fonction
+---
+hide:
+  - toc
+---
+
+# Définir une fonction
 
 Rendre une partie de programme accessible par son nom en lui passant tout ce qui lui est nécessaire pour fonctionner.
 
-
-les variables déclarées dans la fonction ne sont valable qu'en local dans la fonction ()(portée d'une variable).
+Les variables déclarées dans la fonction ne sont valable qu'en local dans la fonction ()(portée d'une variable).
 De plus dans une fonction, les variables globales ne sont disponible qu'en lecture.
 
 
 
-## Exemples
+## Exemple
 
-=== "Exemple avec des blocs"
+=== ":material-puzzle: Exemple avec des blocs"
     ![Blocs définir une fonction](fonc.png){: style="width:480px;"}
 
     :fontawesome-solid-plus-large:
@@ -25,7 +29,7 @@ De plus dans une fonction, les variables globales ne sont disponible qu'en lectu
         Des blocs pour les fonctions dont on récupère le résultat dans le format de son choix.
         d'autre sans sortie
 
-=== "Exemple avec du code"
+=== ":material-code-array: Exemple avec du code"
 
     ```python
     from machine import *

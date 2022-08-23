@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Contrôler une LED
 Permet de contrôler l'état de la LED connectée sur une broche de la carte électronique.
 
