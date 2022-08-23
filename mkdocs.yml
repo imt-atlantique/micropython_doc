@@ -3,6 +3,7 @@ site_description: Documentations des cours en ligne MicroPython documentation wi
 site_author: Baptiste Gaultier, Laurent Mattlé
 
 nav:
+  - 'Accueil': index.md
   - 'Premiers pas':
     - "L'interface Vittascience": interface.md
     - "La carte Galaxia": galaxia.md
@@ -16,19 +17,21 @@ nav:
       - 'Utiliser le chronomètre': 'entrees_sorties/temps/chronometre.md'
     - 'Communication': 
       - 'Écrire dans la console': 'communication/ecrire_dans_la_console.md'
-    - 'Capteurs': index.md
+    - 'Capteurs': blank.md
     - 'Actionneurs': 'moteurs/servomoteur.md'
-    - '': index.md
-    - 'Logique': 'logique/instruction_conditionnelle.md'
+    - '': blank.md
+    - 'Logique': 
+      - "Exécuter des instructions si une condition est vraie ou non": 'logique/instruction_conditionnelle.md'
     - 'Boucles':
         - 'Boucle simple': 'boucles/boucle_simple.md'
         - 'Boucle avec variable': 'boucles/boucle_avec_variable.md'
-    - 'Math': index.md
-    - 'Texte': index.md
+    - 'Math': 
+        - 'Manipuler des nombres': 'math/manipuler_des_nombres.md'
+    - 'Texte': texte.md
     - 'Variables': 
         - 'Stocker du texte': 'variables/variable_texte.md'
         - 'Stocker des nombres': 'variables/variable_nombre.md'
-    - 'Listes': index.md
+    - 'Listes': listes.md
     - 'Fonctions': 'fonctions/fonction.md'
 
 theme:
@@ -60,7 +63,7 @@ theme:
 
 markdown_extensions:
     - toc:
-        toc_depth : "1-1"
+        permalink: true
     - admonition
     - abbr
     - attr_list
