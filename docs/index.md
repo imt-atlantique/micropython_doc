@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Accueil
 
 Vous suivez les cours en ligne de l'IMT sur MicroPython et vous cherchez de l'aide ? Vous êtes au bon endroit !
