@@ -181,3 +181,20 @@ Ce câble n'est pas livré avec la carte mais il sera disponible dans la boutiqu
 
 ### ![micro:bit icon](img/microbit_light.svg#only-light) ![micro:bit icon](img/microbit_dark.svg#only-dark) Une connectique compatible micro:bit
 Il vous permet de connecter la carte Galaxia à des robots, comme le [Maqueen](https://fr.vittascience.com/shop/97/robot-maqueen-pour-carte-micro:bit) ou d'autres accessoires compatibles micro:bit.
+
+## Prise en main de la carte Galaxia (optionnelle)
+
+!!! info
+    La section qui suit est destinée aux heureux·euses propriétaires de notre [kit MOOCs MicroPython](https://fr.vittascience.com/shop/279/Carte-Galaxia). L'achat de ce kit est optionnel et toutes les activités de ce MOOC peut être simulées avec [l'interface Vittascience](interface.md).
+		
+
+L'interface Vittascience permet de simuler une carte électronique, des capteurs et des actionneurs. Et ça c'est chouette ! Mais ce qui est encore mieux, c'est de manipuler tout ça dans la vraie vie :material-cat:
+
+Pour cela, veuillez suivre les étapes ci-dessous :
+
+1. Connectez le [port micro-usb](#le-port-micro-usb) de votre Galaxia à votre ordinateur en utilisant le câble micro-USB vers USB fourni dans le kit.
+2. Depuis le navigateur Chrome (ou Edge ou Opera), ouvrez l'[interface Vittascience](interface.md) et ouvrez la console en bas de l'interface avec le petit bouton :material-chevron-up-box:.
+3. Cliquez ensuite sur le bouton [:fontawesome-solid-terminal: REPL](#){ .btn-light style='color:black;' } pour ouvrir la communication entre votre ordinateur et la carte Galaxia.
+4. Choissisez enfin le port USB sur lequel est branché votre Galaxia et cliquez sur [Connexion](#){ .btn-light style='color:black;' }
+5. Dès lors, vous pouvez voir les messages envoyées depuis votre carte Galaxia (pour en savoir plus sur les messages sur le port série, c'est par [ici](communication/ecrire_dans_la_console.md)
+6. Vous pouvez également téleverser votre code sur la carte grâce au bouton [:fontawesome-solid-bolt: Téléverser](#){ .btn-light style='color:black;' }
