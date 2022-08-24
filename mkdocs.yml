@@ -21,7 +21,7 @@ nav:
     - 'Actionneurs': 'moteurs/servomoteur.md'
     - '': blank.md
     - 'Logique': 
-      - "Exécuter des instructions si une condition est vraie ou non": 'logique/instruction_conditionnelle.md'
+      - "Exécuter des instructions si une condition est vraie ou non": 'logique/executer_des_instructions_si_une_condition_est_vraie_ou_non.md'
     - 'Boucles':
         - 'Boucle simple': 'boucles/boucle_simple.md'
         - 'Boucle avec variable': 'boucles/boucle_avec_variable.md'
