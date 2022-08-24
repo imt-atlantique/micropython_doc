@@ -53,3 +53,11 @@
 .md-typeset table:not([class]) td:last-child {
     border-right: 0px solid var(--md-typeset-table-color);
 }
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
