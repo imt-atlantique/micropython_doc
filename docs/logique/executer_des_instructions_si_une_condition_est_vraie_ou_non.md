@@ -3,11 +3,13 @@ hide:
   - toc
 ---
 
-# Instruction conditionnelle
+# Exécuter des instructions si une condition est vraie ou non
 
 Exécute une ou plusieurs instructions si une condition est vraie ou non.
 
 ## Exemple
+
+Dans l'exemple ci-dessous, nous allons allumer une LED RVB en rouge si le seuil de luminosité est supérieur à un certain seuil (125), sinon la LED RVB est allumée en vert.
 
 === ":material-puzzle: Exemple avec des blocs"
     ![Bloc Si/Sinon](decisionnelle.png){: style="width:380px;"}
