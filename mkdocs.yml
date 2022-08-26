@@ -19,16 +19,19 @@ nav:
     - 'Capteurs': index.md
     - 'Actionneurs': 'moteurs/servomoteur.md'
     - '': index.md
-    - 'Logique': 'logique/instruction_conditionnelle.md'
+    - 'Logique': 
+      - 'logique/instruction_conditionnelle.md'
     - 'Boucles':
         - 'Boucle simple': 'boucles/boucle_simple.md'
         - 'Boucle avec variable': 'boucles/boucle_avec_variable.md'
+        - 'Boucle itérative' : 'boucles/boucle_iterative.md'
     - 'Math': index.md
     - 'Texte': index.md
     - 'Variables': 
         - 'Stocker du texte': 'variables/variable_texte.md'
         - 'Stocker des nombres': 'variables/variable_nombre.md'
-    - 'Listes': index.md
+    - 'Listes': 
+        - 'liste avec éléments': 'listes/liste_avec_elts.md'
     - 'Fonctions': 'fonctions/fonction.md'
 
 theme:
