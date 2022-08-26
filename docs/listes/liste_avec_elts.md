@@ -34,7 +34,7 @@ Pour profiter de tous les outils des listes pour gérer ces éléments.
 
 
 ## Aller plus loin
-Dans l'exemple ci-dessus, nous utilisons les fonctions du langage MicroPython [`#!python print()`](../../communication/ecrire_dans_la_console.md) et `#!python str()`.
+Dans l'exemple ci-dessus, nous utilisons les fonctions du langage MicroPython [`#!python print()`](../communication/ecrire_dans_la_console.md) et `#!python str()`.
 La fonction `#!python print()` est détaillés dans la [documentation MicroPython](https://www.micropython.fr/reference/03.builtin/print/).
 
 Pour en savoir plus sur la fonction `#!python str()`, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/03.builtin/str/).
