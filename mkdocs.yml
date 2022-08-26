@@ -3,10 +3,11 @@ site_description: Documentations des cours en ligne MicroPython documentation wi
 site_author: Baptiste Gaultier, Laurent Mattlé
 
 nav:
+  - 'Accueil': index.md
   - 'Premiers pas':
-    - "L'interface Vittascience": index.md
-    - "La carte Galaxia": index.md
-    - "Le langage MicroPython": index.md
+    - "L'interface Vittascience": interface.md
+    - "La carte Galaxia": galaxia.md
+    - "Le langage MicroPython": micropython.md
   - 'Guides de référence':
     - 'Affichage': 
       - 'Contrôler une LED': 'affichage/led/led.md'
@@ -16,11 +17,8 @@ nav:
       - 'Utiliser le chronomètre': 'entrees_sorties/temps/chronometre.md'
     - 'Communication': 
       - 'Écrire dans la console': 'communication/ecrire_dans_la_console.md'
-    - 'Capteurs': index.md
+    - 'Capteurs': blank.md
     - 'Actionneurs': 'moteurs/servomoteur.md'
-    - '': index.md
-    - 'Logique': 
-      - 'logique/instruction_conditionnelle.md'
     - 'Boucles':
         - 'Boucle simple': 'boucles/boucle_simple.md'
         - 'Boucle avec variable': 'boucles/boucle_avec_variable.md'
@@ -32,6 +30,7 @@ nav:
         - 'Stocker des nombres': 'variables/variable_nombre.md'
     - 'Listes': 
         - 'liste avec éléments': 'listes/liste_avec_elts.md'
+
     - 'Fonctions': 'fonctions/fonction.md'
 
 theme:
@@ -63,12 +62,13 @@ theme:
 
 markdown_extensions:
     - toc:
-        toc_depth : "1-1"
+        permalink: true
     - admonition
     - abbr
     - attr_list
     - md_in_html
     - meta
+    - tables
     - pymdownx.highlight:
         use_pygments: true
         linenums: true

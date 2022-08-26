@@ -1,14 +1,22 @@
+---
+hide:
+  - toc
+---
+
 # Contrôler une LED
 Permet de contrôler l'état de la LED connectée sur une broche de la carte électronique.
 
 ## Branchement
 ![Carte Galaxia avec module grove LED](galaxia_board_led.svg){: style="height:380px;"}
 
-## Exemples
-=== "Exemple avec des blocs"
-    ![Blocs clignotement d'une LED externe](led.png){: style="width:480px;"}
+## Exemple
 
-=== "Exemple avec du code"
+Dans l'exemple ci-dessous, nous allons allumer une LED branchée sur la broche 2 pendant une seconde puis l'éteindre :
+
+=== ":material-puzzle: Exemple avec des blocs"
+    ![Blocs allumage d'une LED externe](led.png){: style="width:480px;"}
+
+=== ":material-code-array: Exemple avec du code"
 
     ```python
     # On importe les modules machine et utime

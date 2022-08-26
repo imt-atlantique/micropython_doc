@@ -1,13 +1,18 @@
+---
+hide:
+  - toc
+---
+
 # Boucle simple
 Éxécuter des instructions plusieurs fois.
 
-## Exemples
-=== "Exemple avec des blocs"
+## Exemple
+=== ":material-puzzle: Exemple avec des blocs"
     
     ![Blocs boucle simple](boucle_simple.png){: style="width:380px;"}
 
 
-=== "Exemple avec du code"
+=== ":material-code-array: Exemple avec du code"
     ```python
     # On utilise une boucle For pour exécuter
     # 3 fois la fonction print()

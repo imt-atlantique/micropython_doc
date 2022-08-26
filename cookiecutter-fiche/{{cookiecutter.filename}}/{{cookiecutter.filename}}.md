@@ -1,14 +1,19 @@
+---
+hide:
+  - toc
+---
+
 # {{ cookiecutter.title }}
 {{ cookiecutter.description }}
 
 ## Branchement
 ![{{ cookiecutter.title }}](galaxia_board_led.svg){: style="height:380px;"}
 
-## Exemples
-=== "Exemple avec des blocs"
+## Exemple
+=== ":material-puzzle: Exemple avec des blocs"
     ![Blocs {{ cookiecutter.title|lower }}]({{ cookiecutter.filename}}.png){: style="width:480px;"}
 
-=== "Exemple avec du code"
+=== ":material-code-array: Exemple avec du code"
 
     ```python
     {{ cookiecutter.code }}

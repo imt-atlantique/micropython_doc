@@ -1,11 +1,16 @@
+---
+hide:
+  - toc
+---
+
 # Écrire dans la console
 Permet d'écrire des données dans le port série (appelé également _console_ ou encore _REPL_). Le port série permet d'échanger des données entre la carte Galaxia et l'ordinateur grâce à la liaison USB. Lorsque vous utilisez l'interface Vittascience, vous pouvez voir les données reçues de la carte (ou du simulateur) grâce au bouton [:fontawesome-solid-terminal: REPL](#){ .btn-light style='color:black;' } situé en bas de l'interface .
 
-## Exemples
-=== "Exemple avec des blocs"
+## Exemple
+=== ":material-puzzle: Exemple avec des blocs"
     ![Bloc écrire dans la console](ecrire_dans_la_console.png){: style="width:420px;"}
 
-=== "Exemple avec du code"
+=== ":material-code-array: Exemple avec du code"
 
     ```python
     # print() fait partie du langage MicroPython
