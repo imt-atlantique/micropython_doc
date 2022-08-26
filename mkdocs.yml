@@ -17,7 +17,7 @@ nav:
       - 'Utiliser le chronomètre': 'entrees_sorties/temps/chronometre.md'
     - 'Communication': 
       - 'Écrire dans la console': 'communication/ecrire_dans_la_console.md'
-    - 'Capteurs': blank.md
+    - 'Capteurs': 'capteurs/capteur_lumiere.md'
     - 'Actionneurs': 'moteurs/servomoteur.md'
     - 'Boucles':
         - 'Boucle simple': 'boucles/boucle_simple.md'
