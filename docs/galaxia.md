@@ -177,12 +177,10 @@ Leur utilisation n'est pas très différente de celle des boutons A et B. Ils so
 ### :material-usb-port: Le port micro-USB 
 Il vous sert à alimenter votre Galaxia, à communiquer/programmer avec l'ordinateur grâce au [port série](communication/ecrire_dans_la_console.md). Une fois programmée, on peut l'utiliser pour brancher une batterie USB et ainsi faire des objets mobiles.
 
-Ce câble n'est pas livré avec la carte mais il sera disponible dans la boutique pour les établissements scolaires qui n'en sont pas déjà équipés.
-
 ### ![micro:bit icon](img/microbit_light.svg#only-light) ![micro:bit icon](img/microbit_dark.svg#only-dark) Une connectique compatible micro:bit
 Il vous permet de connecter la carte Galaxia à des robots, comme le [Maqueen](https://fr.vittascience.com/shop/97/robot-maqueen-pour-carte-micro:bit) ou d'autres accessoires compatibles micro:bit.
 
-## Prise en main de la carte Galaxia (optionnelle)
+## Brancher la carte Galaxia à un ordinateur
 
 !!! info
     La section qui suit est destinée aux heureux·euses propriétaires de notre [kit MOOCs MicroPython](https://fr.vittascience.com/shop/279/Carte-Galaxia). L'achat de ce kit est optionnel et toutes les activités de ce MOOC peut être simulées avec [l'interface Vittascience](interface.md).
