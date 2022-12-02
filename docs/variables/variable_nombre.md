@@ -13,19 +13,19 @@ Une variable est un espace mémoire dans lequel il est possible de mettre une va
      ![Blocs variable texte](variable_nombre.png){: style="width:640px;"}
 
     !!! info
-        Le bloc ![Bloc créer le texte](../texte/creer_le_texte.png){: style="height:24px;"} permet d'agréger (on dit aussi concaténer) des éléments (variables, chaînes de caractères...) pour former un nouveau texte. Ce bloc peut être trouvé dans la catégorie de blocs [:fontawesome-solid-font: Texte](#){: style="color: rgb(26, 109, 168); font-weight: bold;"}.
+        Le bloc ![Bloc créer le texte](../texte/creer_le_texte.png){: style="height:24px;"} permet d'agréger (on dit aussi concaténer) des éléments (variables, chaînes de caractères...) pour former un nouveau texte. Ce bloc peut être trouvé dans la catégorie de blocs [:fontawesome-solid-font: Texte](#){: style="color: rgb(26, 109, 168); font-weight: bold;"}. Les blocs permettant de manipuler les nombre être trouvés dans la catégorie de blocs [:fontawesome-solid-font: Opérateurs](#){: style="color: rgb(89, 192, 89); font-weight: bold;"}
 
 
 === ":material-code-array: Exemple avec du code"
     ```python
-    # on affecte un nombre a une variable de la façon suivante :
+    # On affecte un nombre a une variable de la façon suivante :
     personnes_presentes = 1
     
-    # on affiche la valeur de la variable précédé par du texte 
+    # On affiche la valeur de la variable précédé par du texte 
     print("Nombre de personnes présentes : " +  personnes_presentes)
     print('Une personne entre !')
     
-    # on incrémente la variable de 1
+    # On incrémente la variable de 1
     personnes_presentes = personnes_presentes + 1
     
     print("Nombre de personnes présentes : " +  personnes_presentes)
