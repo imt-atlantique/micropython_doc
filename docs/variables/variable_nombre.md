@@ -4,7 +4,7 @@ hide:
 ---
 
 # Utiliser une variable pour y stocker des nombres
-Une variable est un espace mémoire dans lequel il est possible de mettre une valeur. Par exemple, pour stocker un nombre dans une variable, je peux utiliser les instructions suivantes :
+Une variable est un espace mémoire dans lequel il est possible de mettre une valeur. Par exemple, pour stocker un nombre dans une variable et modifier sa valeur, je peux utiliser les instructions suivantes :
 
 
 ## Exemple
@@ -18,12 +18,27 @@ Une variable est un espace mémoire dans lequel il est possible de mettre une va
 
 === ":material-code-array: Exemple avec du code"
     ```python
-    #on affecte un nombre a une variable de la façon suivante
-    nb_de_led = 7
-    #pour que la valeur de la variable soit pris en compte dans la fonction print
-    #remarquer l'absence de guillemet
-    print("j'ai ",nb_de_led," led(s)");
-
+    # on affecte un nombre a une variable de la façon suivante :
+    personnes_presentes = 1
+    
+    # on affiche la valeur de la variable précédé par du texte 
+    print("Nombre de personnes présentes : " +  personnes_presentes)
+    print('Une personne entre !')
+    
+    # on incrémente la variable de 1
+    personnes_presentes = personnes_presentes + 1
+    
+    print("Nombre de personnes présentes : " +  personnes_presentes)
+    print('Trois personnes entrent !');
+    
+    # on incrémente la variable de 3
+    personnes_presentes = personnes_presentes + 3
+    
+    print("Nombre de personnes présentes : " +  personnes_presentes)
+    print('Une personne sort !')
+    
+    personnes_presentes = personnes_presentes - 1
+    print("Nombre de personnes présentes : " +  personnes_presentes)
     ```
 
 ## Aller plus loin
