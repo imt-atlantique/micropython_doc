@@ -29,4 +29,4 @@ dir()
 
 ['__class__', '__name__', 'accelerometer', 'button_a', 'button_b', 'compass', 'internal_temperature', 'led', 'radio', 'screen', 'set_temperature_offset', 'sound', 'touch_e', 'touch_n', 'touch_s', 'touch_w']
 
-[thingz.accelerometer](thingz/thingz_accelerometer.md)
+[thingz.accelerometer](/thingz_accelerometer.md)

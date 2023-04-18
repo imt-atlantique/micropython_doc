@@ -31,6 +31,18 @@ nav:
     - 'Listes': 
         - 'liste avec éléments': 'listes/liste_avec_elts.md'
     - 'Fonctions': 'fonctions/fonction.md'
+    - 'La bibliothèque THINGZ': 
+        - 'thingz': 'thingz/thingz.md'
+        - 'thingz.accelerometer': 'thingz/thingz_accelerometer.md'
+        - 'thingz.compas': 'thingz/thingz_compass.md'
+        - 'thingz.button': 'thingz/thingz_button.md'
+        - 'thingz.led': 'thingz/thingz_led.md'
+        - 'thingz.temperature': 'thingz/thingz_temperature.md'
+        - 'thingz.sound': 'thingz/thingz_sound.md'
+        - 'thingz.radio': 'thingz/thingz_radio.md'
+
+
+
 
 theme:
     name: material
