@@ -19,11 +19,12 @@ nav:
       - 'Écrire dans la console': 'communication/ecrire_dans_la_console.md'
     - 'Capteurs': 'capteurs/capteur_lumiere.md'
     - 'Actionneurs': 'moteurs/servomoteur.md'
+    - 'Logique': 'logique/executer_des_instructions_si_une_condition_est_vraie_ou_non.md'
     - 'Boucles':
         - 'Boucle simple': 'boucles/boucle_simple.md'
         - 'Boucle avec variable': 'boucles/boucle_avec_variable.md'
         - 'Boucle itérative' : 'boucles/boucle_iterative.md'
-    - 'Math': index.md
+    - 'Math': math/manipuler_des_nombres.md
     - 'Texte': index.md
     - 'Variables': 
         - 'Stocker du texte': 'variables/variable_texte.md'
