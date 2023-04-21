@@ -1,24 +1,36 @@
 # Thingz
 
-La Carte galaxia a été concu par Thingz, une entreprise constitué de plein de gens sympatiques
+La Carte galaxia a été conçu par Thingz, une entreprise constituée de plein de gens sympathiques
 
-Pour réaliser cette carte Ils ont assemblé plusieurs composants éléctroniques qui permettent d'ajouter à la carte des capacités, comme capter la luminosité, le magnétisme, l'acceleration, de jouer du son....etc.
+Pour réaliser cette carte, Ils ont assemblé plusieurs composants électroniques qui permettent d'ajouter à la carte des capacités, comme capter la luminosité, le magnétisme, l'accélération, de jouer du son., etc.
 
-Pour qu'on puisse utiliser ces fonctionnalités, il a fallut que thingz créer un code qui traduit une utilisation simple en un code compréhensible pour le composant,et ce pour tous les composants.
+Pour qu'on puisse utiliser ces fonctionnalités, il a fallu que thingz créer un code qui traduit une utilisation simple en un code compréhensible pour le composant, et ce, pour tous les composants.
 
-ils ont regroupé tout ce code dans une bibliothèque et l'on appelé Thingz (pour qu'on s'en rappelle).
+Ils ont regroupé tout ce code dans une bibliothèque et l'ont appelé Thingz (pour qu'on se le rappelle).
 
-Maintenant en python  si la bibliothèque thingz est bien appelée au début du programme, on peut appeler une fonction simple d'un composant.
+Maintenant en python,  si la bibliothèque thingz est bien appelée au début du programme, on peut appeler une fonction simple d'un composant.
+
+```
+
+import thingz
+
+```
+Ici, j'importe toute la bibliothèque.
+
+Où 
 
 ```
 
-import thingz.*
+from thingz import *
 
 ```
+là, de la bibliothèque, j'importe seulement les modules.....tous (* est un joker qui remplace tout ce qu'on aurait pu écrire)
+
+
 
 l'information nous arrivera facilement sans ouvrir la documentation technique de tel ou tel composant.
 
-Mais qu'elles sont ces fonctions simple auquelles on a accès ?
+Mais qu'elles sont ces fonctions simples auxquelles on a accès ?
 
 Si je demande à python de me dire ce à quoi j'ai accès dans cette bibliothèque
 
