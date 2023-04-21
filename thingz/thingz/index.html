@@ -975,17 +975,22 @@
 
 
 <h1 id="thingz">Thingz<a class="headerlink" href="#thingz" title="Permanent link">&para;</a></h1>
-<p>La Carte galaxia a été concu par Thingz, une entreprise constitué de plein de gens sympatiques</p>
-<p>Pour réaliser cette carte Ils ont assemblé plusieurs composants éléctroniques qui permettent d'ajouter à la carte des capacités, comme capter la luminosité, le magnétisme, l'acceleration, de jouer du son....etc.</p>
-<p>Pour qu'on puisse utiliser ces fonctionnalités, il a fallut que thingz créer un code qui traduit une utilisation simple en un code compréhensible pour le composant,et ce pour tous les composants.</p>
-<p>ils ont regroupé tout ce code dans une bibliothèque et l'on appelé Thingz (pour qu'on s'en rappelle).</p>
-<p>Maintenant en python  si la bibliothèque thingz est bien appelée au début du programme, on peut appeler une fonction simple d'un composant.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>import thingz.*
+<p>La Carte galaxia a été conçu par Thingz, une entreprise constituée de plein de gens sympathiques</p>
+<p>Pour réaliser cette carte, Ils ont assemblé plusieurs composants électroniques qui permettent d'ajouter à la carte des capacités, comme capter la luminosité, le magnétisme, l'accélération, de jouer du son., etc.</p>
+<p>Pour qu'on puisse utiliser ces fonctionnalités, il a fallu que thingz créer un code qui traduit une utilisation simple en un code compréhensible pour le composant, et ce, pour tous les composants.</p>
+<p>Ils ont regroupé tout ce code dans une bibliothèque et l'ont appelé Thingz (pour qu'on se le rappelle).</p>
+<p>Maintenant en python,  si la bibliothèque thingz est bien appelée au début du programme, on peut appeler une fonction simple d'un composant.</p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>import thingz
 </code></pre></div></td></tr></table></div>
+Ici, j'importe toute la bibliothèque.</p>
+<p>Où </p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>from thingz import *
+</code></pre></div></td></tr></table></div>
+là, de la bibliothèque, j'importe seulement les modules.....tous (* est un joker qui remplace tout ce qu'on aurait pu écrire)</p>
 <p>l'information nous arrivera facilement sans ouvrir la documentation technique de tel ou tel composant.</p>
-<p>Mais qu'elles sont ces fonctions simple auquelles on a accès ?</p>
+<p>Mais qu'elles sont ces fonctions simples auxquelles on a accès ?</p>
 <p>Si je demande à python de me dire ce à quoi j'ai accès dans cette bibliothèque</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>dir()
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>dir()
 </code></pre></div></td></tr></table></div>
 <p>['<strong>class</strong>', '<strong>name</strong>', 'accelerometer', 'button_a', 'button_b', 'compass', 'internal_temperature', 'led', 'radio', 'screen', 'set_temperature_offset', 'sound', 'touch_e', 'touch_n', 'touch_s', 'touch_w']</p>
 <p><a href="/thingz_accelerometer.md">thingz.accelerometer</a></p>
