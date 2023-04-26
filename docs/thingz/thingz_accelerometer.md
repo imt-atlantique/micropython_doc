@@ -5,12 +5,12 @@
 Cette fonction retourne une chaîne de caractères qui indique le type de geste ou de mouvement détecté
 
 
--   "tap" : Détection d'un tap ou d'un double tap sur la carte Galaxia.
--   "shake" : Détection d'un mouvement de secousse de la carte Galaxia.
--   "up" : Détection d'un mouvement ascendant de la carte Galaxia.
--   "down" : Détection d'un mouvement descendant de la carte Galaxia.
--   "left" : Détection d'un mouvement vers la gauche de la carte Galaxia.
--   "right" : Détection d'un mouvement vers la droite de la carte Galaxia.
+-  "tap" : Détection d'un tap ou d'un double tap sur la carte Galaxia.
+-  "shake" : Détection d'un mouvement de secousse de la carte Galaxia.
+-  "up" : Détection d'un mouvement ascendant de la carte Galaxia.
+-  "down" : Détection d'un mouvement descendant de la carte Galaxia.
+-  "left" : Détection d'un mouvement vers la gauche de la carte Galaxia.
+-  "right" : Détection d'un mouvement vers la droite de la carte Galaxia.
 -  "face up" : Détection si l'écran est vers le haut 
 -  "face down" : Détection si l'écran est vers le bas 
 - "free fall" : Détection d'un mouvement de chute libre
@@ -75,7 +75,7 @@ Renvoie un réel **float** représentant la valeur de l’accélération sur l�
 
 ### get_values()
 
-Renvoie une **list** pour les valeurs d’accélération sur les 3 axes
+Renvoie une **list** pour les valeurs d’accélération sur les 3 axes.
 L’index 0 correspond à l’axe X,1 pour Y et 2 pour Z
 
 ### is_gesture(_gesture: str )
@@ -90,4 +90,4 @@ et renvoie un booleen (True si le geste a été actif depuis le dernier appel à
 
 ### get_gestures()
 
-Renvoie un liste de l’historique des gestes. Le plus récent est à la fin de la liste
+Renvoie une liste de l’historique des gestes. Le plus récent est à la fin de la liste.

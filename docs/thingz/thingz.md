@@ -39,6 +39,20 @@ dir()
 
 ```
 
-['__class__', '__name__', 'accelerometer', 'button_a', 'button_b', 'compass', 'internal_temperature', 'led', 'radio', 'screen', 'set_temperature_offset', 'sound', 'touch_e', 'touch_n', 'touch_s', 'touch_w']
+['SoftI2C', 'time_pulse_us', 'TIMER_WAKE', 'touch_e', 'ULP_WAKE', 'SoftSPI', 'DEEPSLEEP', 'PWRON_RESET', 'button_a', 'button_b', 'led', 'WDT_RESET', 'PIN_WAKE', 'UART', 'SPI', 'I2S', 'RTC', 'lightsleep', 'gc', 'ADCBlock', 'soft_reset', 'mem32', 'I2C', 'DAC', 'sound', 'radio', 'internal_temperature', 'DEEPSLEEP_RESET', 'Pin', 'SOFT_RESET', 'TOUCHPAD_WAKE', 'EXT0_WAKE', 'uos', 'disable_irq', 'HARD_RESET', 'mem16', 'unique_id', '__name__', 'freq', 'ADC', 'deepsleep', 'enable_irq', 'reset_cause', 'PWM', 'Signal', 'mem8', 'idle', 'utime', 'accelerometer', 'wake_reason', 'set_temperature_offset', 'touch_w', 'compass', 'touch_s', 'bdev', 'WDT', 'reset', 'SLEEP', 'bitstream', 'EXT1_WAKE', 'Timer', 'touch_n', 'sleep', 'screen']
 
-[thingz.accelerometer](/thingz_accelerometer.md)
+[thingz.accelerometer](thingz_accelerometer.md)
+
+[thingz.button](thingz_button.md)
+
+[thingz.compass](thingz_compass.md)
+
+[thingz.led](thingz_led.md)
+
+[thingz.radio](thingz_radio.md)
+
+[thingz.sound](thingz_sound.md)
+
+[thingz.temperature](thingz_temperature.md)
+
+

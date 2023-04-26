@@ -3,16 +3,16 @@
 
 ### get_x()
 
-Renvoie un **float** Le champ magnétique sur l’axe x en uT
+Renvoie un **float** pour la valeur du champ magnétique sur l’axe x en uT
 
 ### get_y()
 
-Renvoie un **float** Le champ magnétique sur l’axe y en uT
+Renvoie un **float** pour la valeur du champ magnétique sur l’axe y en uT
 
 
 ### get_z()
 
-Renvoie un **float** Le champ magnétique sur l’axe z en uT
+Renvoie un **float** pour la valeur du champ magnétique sur l’axe z en uT
 
 
 ###  get_values()
@@ -39,7 +39,7 @@ Calibrer le magnétomètre.
 
 Pendant la calibration il est nécessaire de faire pivoter la carte dans toutes les directions.
 
-La calibration peut durer plusieurs minutes
+La calibration peut durer une minutes
 et ne communique pas
 
 les paramètres:

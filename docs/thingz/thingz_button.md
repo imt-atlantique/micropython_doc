@@ -4,27 +4,32 @@
 # thingz.ButtonTouch
 
 
-Contrôler les boutons physiques de la Galaxia
+## Contrôler les boutons physiques de la Galaxia
 
-les boutons A et B utilise la class button
+### les boutons A et B 
 
-ils sont accessibles par leurs noms
+- Utilisent la class button
+  
+- Sont accessibles par leurs noms
 
-thingz.button_a
+    thingz.button_a
+    
+    thingz.button_b
 
-thingz.button_b
+### les boutons n, s, e, w 
 
-et les boutons n, s, e, w utilise la class buttonTouch
+- Utilisent la class buttonTouch
 
-il sont accessibles par leurs noms
+- Sont accessibles par leurs noms
 
-thingz.touch_n:ButtonTouch
+    thingz.touch_n:ButtonTouch
 
-thingz.touch_s:ButtonTouch
+    thingz.touch_s:ButtonTouch
 
-thingz.touch_e:ButtonTouch
+    thingz.touch_e:ButtonTouch
 
-thingz.touch_w:ButtonTouch
+    thingz.touch_w:ButtonTouch
+
 
 Cependant les fonctions ont les mêmes noms
 
