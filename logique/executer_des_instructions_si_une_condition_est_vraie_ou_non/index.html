@@ -577,8 +577,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exemple" class="md-nav__link">
-    Exemple
+  <a href="#exemple-1" class="md-nav__link">
+    Exemple 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple-2" class="md-nav__link">
+    Exemple 2
   </a>
   
 </li>
@@ -1008,8 +1015,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exemple" class="md-nav__link">
-    Exemple
+  <a href="#exemple-1" class="md-nav__link">
+    Exemple 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple-2" class="md-nav__link">
+    Exemple 2
   </a>
   
 </li>
@@ -1037,8 +1051,13 @@
 
 
 <h1 id="executer-des-instructions-si-une-condition-est-vraie-ou-non">Exécuter des instructions si une condition est vraie ou non<a class="headerlink" href="#executer-des-instructions-si-une-condition-est-vraie-ou-non" title="Permanent link">&para;</a></h1>
-<p>Exécute une ou plusieurs instructions si une condition est vraie ou non.</p>
-<h2 id="exemple">Exemple<a class="headerlink" href="#exemple" title="Permanent link">&para;</a></h2>
+<p>Dans votre vie vous prenez des décisions et la plupart du temps votre décision dépend de conditions.</p>
+<p>Ça peut être des conditions climatiques, s'il neige vous ne sortez pas en chemise hawaienne /short.</p>
+<p>si l'eau est trop chaude vous fermer un peu le robinet d'eau chaude.</p>
+<p>si il fait 17° chez vous, vous mettez un pull.</p>
+<p>etc....</p>
+<p>Micropython nous offre la possibilité d'avoir ce type de raisonnement dans notre programme</p>
+<h2 id="exemple-1">Exemple 1<a class="headerlink" href="#exemple-1" title="Permanent link">&para;</a></h2>
 <p>Dans l'exemple ci-dessous, nous allons allumer une LED RVB en rouge si le seuil de luminosité est supérieur à un certain seuil (125), sinon la LED RVB est allumée en vert.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5Z"/></svg></span> Exemple avec des blocs</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5m3 1v12h4v-2H8V8h2V6H6m10 10h-2v2h4V6h-4v2h2v8Z"/></svg></span> Exemple avec du code</label></div>
 <div class="tabbed-content">
@@ -1059,7 +1078,7 @@
 <span class="normal"><a href="#__codelineno-0-7">7</a></span>
 <span class="normal"><a href="#__codelineno-0-8">8</a></span>
 <span class="normal"><a href="#__codelineno-0-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># On boucle indéfiniment</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>  
 <a id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="c1"># Si le niveau de luminosité relevé par le capteur est supérieur à 125</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4"></a>    <span class="k">if</span> <span class="n">led</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">125</span><span class="p">:</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5"></a>        <span class="c1"># Alors on allume la LED RVB en rouge</span>
@@ -1067,6 +1086,50 @@
 <a id="__codelineno-0-7" name="__codelineno-0-7"></a>    <span class="k">else</span><span class="p">:</span>
 <a id="__codelineno-0-8" name="__codelineno-0-8"></a>        <span class="c1"># Sinon on allume la LED RVB en vert</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9"></a>        <span class="n">led</span><span class="o">.</span><span class="n">set_colors</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>Si la partie entre <code class="highlight"><span class="k">if</span></code> et les <code class="highlight"><span class="p">:</span></code> est évaluée comme vrai
+alors les instructions sur les lignes indentées qui suivent dessous seront exécutées.
+Sinon ce sont les instructions situées après le <code class="highlight"><span class="k">else</span><span class="p">:</span></code> qui le seront.</p>
+<p>j'insiste sur le fait que le bloc de code executé si le <code class="highlight"><span class="k">if</span></code> est vrai comporte une tabulation par rapport au <code class="highlight"><span class="k">if</span></code> et que le <code class="highlight"><span class="k">else</span></code> ce retrouve tabulé au même niveau que le <code class="highlight"><span class="k">if</span></code>    </p>
+</div>
+</div>
+</div>
+<h2 id="exemple-2">Exemple 2<a class="headerlink" href="#exemple-2" title="Permanent link">&para;</a></h2>
+<p>Dans l'exemple ci-dessous, nous allons allumer une LED RVB,</p>
+<ul>
+<li>En Vert si le bouton A est appuyé.</li>
+<li>En orange si les bouton B est appuyé.</li>
+<li>En rouge si les boutons A et B sont appuyés.</li>
+<li>Eteinte si aucun des boutons est appuyé.</li>
+</ul>
+<p>si on regarde organigramme </p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5Z"/></svg></span> Exemple avec des blocs</label><label for="__tabbed_2_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5m3 1v12h4v-2H8V8h2V6H6m10 10h-2v2h4V6h-4v2h2v8Z"/></svg></span> Exemple avec du code</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Bloc Si/Sinon" src="../decisionnelle.png" style="width:380px;" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Le bloc <code class="highlight"><span class="k">if</span></code> <img alt="Bloc if" src="../if.png" style="height:24px;" /> peut être trouvé dans la catégorie de blocs <a href="#" style="color: rgb(252,116,23); font-weight: bold;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M495.9 166.6c3.2 8.7.5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4l-55.6 17.8c-8.8 2.8-18.6.3-24.5-6.8-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4c-1.1-8.4-1.7-16.9-1.7-25.5s.6-17.1 1.7-25.4l-43.3-39.4c-6.9-6.2-9.6-15.9-6.4-24.6 4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2 5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8 8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"/></svg></span> Logique</a>. Notez qu'une condition doit être fournie pour que ce bloc soit fonctionnel.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span>
+<span class="normal"><a href="#__codelineno-1-8">8</a></span>
+<span class="normal"><a href="#__codelineno-1-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># On boucle indéfiniment</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>    <span class="c1"># Si le niveau de luminosité relevé par le capteur est supérieur à 125</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>    <span class="k">if</span> <span class="n">led</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">125</span><span class="p">:</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a>        <span class="c1"># Alors on allume la LED RVB en rouge</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>        <span class="n">led</span><span class="o">.</span><span class="n">set_colors</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a>        <span class="c1"># Sinon on allume la LED RVB en vert</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a>        <span class="n">led</span><span class="o">.</span><span class="n">set_colors</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <p>Si la partie entre <code class="highlight"><span class="k">if</span></code> et les <code class="highlight"><span class="p">:</span></code> est évaluée comme vrai alors les instructions indentées qui suivent les <code class="highlight"><span class="p">:</span></code> seront exécutées. Sinon ce sont les instructions situées après le <code class="highlight"><span class="k">else</span><span class="p">:</span></code> qui le seront.</p>
 </div>
