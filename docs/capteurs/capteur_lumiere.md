@@ -17,9 +17,6 @@ le capteur de luminosité est intégré à la led rgb du galaxia. Il permet de t
       ```python
       print(str(led.read()));
       ```
-=== ":hand_splayed_tone5: vittascience embed"
-
-    <iframe width='100%' height='500' allowfullscreen frameborder='0' style='border:1px #d6d6d6 solid;' src="https://fr.vittascience.com/galaxia/?link=630dd0cfa346a&mode=blocks&embed=1"></iframe>
 
     
 ## Aller plus loin

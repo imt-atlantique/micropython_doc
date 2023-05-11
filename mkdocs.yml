@@ -9,28 +9,29 @@ nav:
     - "La carte Galaxia": galaxia.md
     - "Le langage MicroPython": micropython.md
   - 'Guides de référence':
-    - 'Affichage': 
-      - 'Contrôler une LED': 'affichage/led/led.md'
-      - 'Contrôler une LED RVB' : 'affichage/led_rgb/led_rgb.md'
-    - 'Entrées/Sorties': 
-      - 'Attendre': 'entrees_sorties/temps/attendre.md'
-      - 'Utiliser le chronomètre': 'entrees_sorties/temps/chronometre.md'
+    - 'Contrôle':
+        - 'Attendre': 'controle/temps/attendre.md'
+        - 'Utiliser le chronomètre': 'controle/temps/chronometre.md'
+        - 'Selon une condition': controle/executer_des_instructions_selon_une_condition.md
+        - 'Selon des conditions': controle/executer_des_instructions_selon_des_conditions.md
+        - 'Boucle itérative' : 'boucles/boucle_iterative.md'
     - 'Communication': 
       - 'Écrire dans la console': 'communication/ecrire_dans_la_console.md'
-    - 'Capteurs': 'capteurs/capteur_lumiere.md'
-    - 'Actionneurs': 'moteurs/servomoteur.md'
-    - 'Logique': 'logique/executer_des_instructions_si_une_condition_est_vraie_ou_non.md'
-    - 'Boucles':
-        - 'Boucle simple': 'boucles/boucle_simple.md'
-        - 'Boucle avec variable': 'boucles/boucle_avec_variable.md'
-        - 'Boucle itérative' : 'boucles/boucle_iterative.md'
-    - 'Math': math/manipuler_des_nombres.md
+    - 'Apparence': 
+      - 'Contrôler une LED': 'affichage/led/led.md'
+      - 'Contrôler une LED RVB' : 'affichage/led_rgb/led_rgb.md'
+    - 'Capteurs':
+      - 'Capter la luminosité' : 'capteurs/capteur_lumiere.md'
+    - 'Actionneurs': 
+      - 'Actionner un servomoteur' : 'moteurs/servomoteur.md'
+    - 'Opérateur':
+      - 'manipuler des nombres' : 'math/manipuler_des_nombres.md'
     - 'Texte': index.md
-    - 'Variables': 
+    - 'Variables':
         - 'Stocker du texte': 'variables/variable_texte.md'
         - 'Stocker des nombres': 'variables/variable_nombre.md'
     - 'Listes': 
-        - 'liste avec éléments': 'listes/liste_avec_elts.md'
+        - "créer une liste d'éléments": 'listes/liste_avec_elts.md'
     - 'Fonctions': 'fonctions/fonction.md'
     - 'La bibliothèque THINGZ': 
         - 'thingz': 'thingz/thingz.md'
@@ -41,9 +42,6 @@ nav:
         - 'thingz.temperature': 'thingz/thingz_temperature.md'
         - 'thingz.sound': 'thingz/thingz_sound.md'
         - 'thingz.radio': 'thingz/thingz_radio.md'
-
-
-
 
 theme:
     name: material
