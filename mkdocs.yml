@@ -18,10 +18,11 @@ nav:
     - 'Communication': 
       - 'Écrire dans la console': 'communication/ecrire_dans_la_console.md'
     - 'Apparence': 
-      - 'Contrôler une LED': 'affichage/led/led.md'
-      - 'Contrôler une LED RVB' : 'affichage/led_rgb/led_rgb.md'
+      - 'Contrôler une LED': 'apparence/led/led.md'
+      - 'Contrôler une LED RVB' : 'apparence/led_rgb/led_rgb.md'
     - 'Capteurs':
       - 'Capter la luminosité' : 'capteurs/capteur_lumiere.md'
+      - "Capter l'accélération" : 'capteurs/capteur_acceleration.md'
     - 'Actionneurs': 
       - 'Actionner un servomoteur' : 'moteurs/servomoteur.md'
     - 'Opérateur':
