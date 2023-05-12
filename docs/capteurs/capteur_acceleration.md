@@ -4,7 +4,8 @@ hide:
 ---
 # Accélérometre
 
-Un accélérometre est intégré à la  galaxia. Il permet de capter l'accélération de la carte suivant les différents axes ou l'accélération globla
+Un accélérometre est intégré à la  galaxia. Il permet de capter l'accélération de la carte suivant les différents axes ou l'accélération globale.
+Mesurer l'accélération permet de calculer la vitesse, le déplacement, les chocs et les vibrations de la carte
 
 ## Exemple
 
@@ -31,4 +32,10 @@ Dans l'exemple ci-dessus, nous utilisons la classe `#!python Pin` qui permet de 
 Nous utilisons aussi `#!python str()`, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/03.builtin/str/).
 
 et enfin la librairie thingz avec [sa bibliothèque adaptée à l'accéléromètre](../thingz/thingz_accelerometer.md)
+
+Pour en savoir plus sur les accéléromètres.
+
+[la page wikipédia](https://fr.wikipedia.org/wiki/Acc%C3%A9l%C3%A9rom%C3%A8tre)
+
+[Université de Bordeaux](https://www.youtube.com/watch?v=QUEH9ZUrxEU)
 
