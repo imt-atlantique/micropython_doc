@@ -1,5 +1,3 @@
-
-
 ---
 hide:
   - toc
@@ -9,7 +7,7 @@ hide:
 Le capteur à ultrason fonctionne comme son nom l'indique à l'aide d'ultrason.
 il est réalisé avec un module émetteur d'ultrason et un module capteur d'ultrason
 
-Le temps mis pour l'onde ultrasonore pour faire l'aller retour capteur obstacle donne la distance à laquelle se trouve celui-ci.
+Le temps mis pour l'onde ultrasonore pour faire l'aller retour, capteur obstacle, donne la distance à laquelle se trouve celui-ci.
 
 
 ## Exemple

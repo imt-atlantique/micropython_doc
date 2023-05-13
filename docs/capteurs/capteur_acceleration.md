@@ -2,9 +2,9 @@
 hide:
   - toc
 ---
-# Accélérometre
+# Accéléromètre
 
-Un accélérometre est intégré à la  galaxia. Il permet de capter l'accélération de la carte suivant les différents axes ou l'accélération globale.
+Un accéléromètre est intégré à la  galaxia. Il permet de capter l'accélération de la carte suivant les différents axes ou la force d'un choc.
 Mesurer l'accélération permet de calculer la vitesse, le déplacement, les chocs et les vibrations de la carte
 
 ## Exemple
