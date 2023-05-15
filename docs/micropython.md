@@ -14,15 +14,17 @@ Toute la documentation spécifique se trouve [ici](thingz/thingz.md)
 
 
 
-## links
+## Liens
 
 Site original
 
-http://micropython.org
+[http://micropython.org](http://micropython.org)
 
 C'est ici que généralement on trouve les firmwares pour une carte donnée
 
 (en anglais ;-)
 
 Site en français sur micropython
-http://micropython.fr/
+
+
+[http://micropython.fr/](http://micropython.fr/)
