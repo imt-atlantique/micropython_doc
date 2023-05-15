@@ -4,14 +4,14 @@ hide:
 ---
 
 # Contrôler une LED
-Permet de contrôler l'état de la LED connectée sur une broche de la carte électronique.
+Permet de contrôler l'état de la LED connectée sur une broche de la Galaxia.
 
 ## Branchement
-![Carte Galaxia avec module grove LED](galaxia_board_led.svg){: style="height:380px;"}
+![Carte Galaxia avec LED branchée sur la broche P0](galaxia_board_led.svg){: style="height:380px;"}
 
 ## Exemple
 
-Dans l'exemple ci-dessous, nous allons allumer une LED branchée sur la broche 2 pendant une seconde puis l'éteindre :
+Dans l'exemple ci-dessous, nous allons allumer une LED branchée sur la broche `P0` pendant une seconde puis l'éteindre :
 
 === ":material-puzzle: Exemple avec des blocs"
     ![Blocs allumage d'une LED externe](led.png){: style="width:480px;"}
@@ -23,9 +23,9 @@ Dans l'exemple ci-dessous, nous allons allumer une LED branchée sur la broche 2
     from machine import * 
     import utime
 
-    # Déclaration d'une broche en sortie sur la broche 2
+    # Déclaration d'une broche en sortie sur la broche P0
     # à l'aide du constructeur Pin()
-    led = Pin(2, Pin.OUT)
+    led = Pin(3, Pin.OUT)
 
     # On allume la LED
     led.on()
