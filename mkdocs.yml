@@ -14,9 +14,9 @@ nav:
         - 'Utiliser le chronomètre': 'controle/temps/chronometre.md'
         - 'Selon une condition': controle/executer_des_instructions_selon_une_condition.md
         - 'Selon des conditions': controle/executer_des_instructions_selon_des_conditions.md
-        - 'répéter' : 'boucles/boucle_simple.md'
-        - 'répéter en comptant' : 'boucles/boucle_avec_variable.md'
-        - 'répéter selon des éléments' : 'boucles/boucle_iterative.md'
+        - 'Répéter' : 'boucles/boucle_simple.md'
+        - 'Répéter en comptant' : 'boucles/boucle_avec_variable.md'
+        - 'Répéter selon des éléments' : 'boucles/boucle_iterative.md'
 
     - 'Communication': 
       - 'Écrire dans la console': 'communication/ecrire_dans_la_console.md'
