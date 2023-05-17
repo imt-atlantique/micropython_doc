@@ -1,22 +1,22 @@
+---
+hide:
+  - toc
+---
 
-## Exécuter des instructions selon des conditions
-
-On peut controler le déroulement du programme selon des conditions.
+Permet d'exécuter des instructions si une condition parmi plusieurs est vraie.
 
 Dans l'exemple ci-dessous, nous allons modifier l'état d'une LED RVB,
 
-- En Vert si le bouton A seul est appuyé.
+- En vert si le bouton A seul est appuyé.
 - En orange si le bouton B seul est appuyé.
 - En rouge si les boutons A et B sont tous les deux appuyés.
-- Eteinte si aucun des boutons est appuyé.
+- Éteinte si aucun des boutons est appuyé.
 
 === ":material-puzzle: Exemple avec des blocs"
     ![Bloc Si/Sinon](M_D_controle_B.png){: style="width:380px;"}
 
 	!!! info
-    	Le bloc "si" `#!python if` ![Bloc if](if.png){: style="height:24px;"} peut être trouvé dans la catégorie de blocs [:fontawesome-solid-gear: Contrôle](#){: style="color: rgb(252,116,23); font-weight: bold;"}.
-		
-		 Notez qu'une condition doit être fournie pour que ce bloc soit fonctionnel.
+    	Le bloc `#!python if` ![Bloc if](if.png){: style="height:24px;"} peut être trouvé dans la catégorie de blocs [:fontawesome-solid-code-branch: Contrôle](#){: style="color: rgb(255, 171, 25); font-weight: bold;"}. Notez qu'une condition issue de la catégorie de bloc [:fontawesome-solid-calculator: Opérateurs](#){: style="color: rgb(89, 192, 89); font-weight: bold;"} doit être fournie pour que ce bloc soit fonctionnel.
 
 
 === ":material-code-array: Exemple avec du code"

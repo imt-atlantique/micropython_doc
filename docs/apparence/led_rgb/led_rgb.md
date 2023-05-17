@@ -3,7 +3,7 @@ hide:
   - toc
 ---
 
-# TODO : refaire cette fiche lorsque le simulateur est ok
+# Contrôler la LED RVB de la Galaxia
 Permet de régler l'intensité de la LED intégrée à la carte Galaxia, de 0 à 100 pour chacune des couleurs (rouge, vert, bleu).
 
 # Branchement
@@ -17,23 +17,12 @@ Permet de régler l'intensité de la LED intégrée à la carte Galaxia, de 0 à
 === ":material-code-array: Exemple avec du code"
 
     ```python
-    # On importe les modules machine et utime
-    from machine import * 
-    import utime
-
-    # Déclaration d'une broche en sortie sur la broche 2
-    # à l'aide du constructeur Pin()
-    led = Pin(2, Pin.OUT)
-
-    # On allume la LED
-    led.on()
-
-    # On attend 1 seconde
-    utime.sleep(1)
-
-    # On éteint la LED
-    led.off()
+    # On importe le sous-module appelé led depuis le module thingz
+    from thingz import led
+    
+    # On utilise la fonction set_colors pour allumer la LED RGB en rouge
+    led.set_colors(100, 0, 0)
     ```
 
 ## Aller plus loin
-Dans l'exemple ci-dessus, nous utilisons la classe `#!python Pin` qui permet de manipuler les broches E/S (Entrée/Sortie) de la carte électronique. Pour en savoir plus sur cette classe, nous vous invitons à lire la [documentation MicroPython](https://www.micropyt
+Dans l'exemple ci-dessus, nous utilisons le module `#!python thingz` qui est décrit en détails [ici](../../thingz/thingz_led.md).
