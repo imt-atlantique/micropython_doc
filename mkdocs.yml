@@ -12,12 +12,11 @@ nav:
     - 'Contrôle':
         - 'Attendre': 'controle/temps/attendre.md'
         - 'Utiliser le chronomètre': 'controle/temps/chronometre.md'
-        - 'Selon une condition': controle/executer_des_instructions_selon_une_condition.md
-        - 'Selon des conditions': controle/executer_des_instructions_selon_des_conditions.md
+        - 'Exécuter selon une condition': controle/executer_des_instructions_selon_une_condition.md
+        - 'Exécuter selon des conditions': controle/executer_des_instructions_selon_des_conditions.md
         - 'Répéter' : 'boucles/boucle_simple.md'
         - 'Répéter en comptant' : 'boucles/boucle_avec_variable.md'
         - 'Répéter selon des éléments' : 'boucles/boucle_iterative.md'
-
     - 'Communication': 
       - 'Écrire dans la console': 'communication/ecrire_dans_la_console.md'
     - 'Apparence': 
@@ -29,8 +28,8 @@ nav:
       - 'Capter la distance' : 'capteurs/capteur_ultrason.md'
     - 'Actionneurs': 
       - 'Actionner un servomoteur' : 'actionneurs/servomoteur.md'
-    - 'Opérateur':
-      - 'manipuler des nombres' : 'math/manipuler_des_nombres.md'
+    - 'Opérateurs':
+      - 'Manipuler des nombres' : 'math/manipuler_des_nombres.md'
     - 'Texte': index.md
     - 'Variables':
         - 'Stocker du texte': 'variables/variable_texte.md'
@@ -38,8 +37,7 @@ nav:
     - 'Listes': 
         - "créer une liste d'éléments": 'listes/liste_avec_elts.md'
     - 'Fonctions': 'fonctions/fonction.md'
-    - 'Abbreviations': 'includes\abbreviations.md'
-    - 'La bibliothèque THINGZ': 
+    - 'La bibliothèque thingz': 
         - 'thingz': 'thingz/thingz.md'
         - 'thingz.accelerometer': 'thingz/thingz_accelerometer.md'
         - 'thingz.compas': 'thingz/thingz_compass.md'

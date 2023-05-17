@@ -1,13 +1,18 @@
-# le language micropython
+---
+hide:
+  - toc
+---
 
-C'est le language Python dans sa version 3 mais réduit et adapté pour tenir dans un microcontroleur.
+# Le language MicroPython
+MicroPython est un langage de programmation open source et léger, dérivé de Python 3, conçu spécifiquement pour les microcontrôleurs et les systèmes embarqués (comme [la Galaxia](galaxia.md)). Il permet de contrôler et d'interagir avec des composants électroniques tels que des capteurs et des actionneurs, ce qui en fait un choix populaire pour les projets d'Internet des objets (IoT) et l'électronique embarquée.
 
 
-Micropython  tient dans 256Kb de Flash et 16Kb de ram  :-°
+Toute la documentation spécifique à [la Galaxia](galaxia.md) se trouve [ici](thingz/thingz.md)
 
 
-La bibliothèque qu'on utilise avec la carte galaxia s'appelle THINGZ du nom de notre partenaire qui a construit la carte.
+## Liens
 
+<<<<<<< HEAD
 
 Toute la documentation spécifique se trouve [ici](thingz/thingz.md)
 
@@ -28,3 +33,7 @@ Site en français sur micropython
 
 
 [http://micropython.fr/](http://micropython.fr/)
+=======
+* Site officiel :  http://micropython.org (en anglais)
+* Traduction du site officiel :http://micropython.fr/ (en français)
+>>>>>>> scratch
