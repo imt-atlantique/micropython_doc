@@ -276,20 +276,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../micropython/" class="md-nav__link">
-        Le langage MicroPython
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -1116,15 +1102,15 @@
 
 
 <h1 id="executer-des-instructions-si-une-condition-est-vraie-ou-non">Exécuter des instructions si une condition est vraie ou non<a class="headerlink" href="#executer-des-instructions-si-une-condition-est-vraie-ou-non" title="Permanent link">&para;</a></h1>
-<p>On peut controler le déroulement du programme selon des conditions.</p>
-<p>Dans l'exemple ci-dessous, nous allons allumer une LED RVB en rouge si le seuil de luminosité est supérieur à un certain seuil (125), sinon la LED RVB est allumée en vert.</p>
+<p>Permet d'exécuter des instructions si une condition est vraie.</p>
+<p>Dans l'exemple ci-dessous, nous allons allumer la LED RVB de la Galaxia en rouge si le seuil de luminosité est supérieur à un certain seuil (125), sinon la LED est allumée en vert.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5Z"/></svg></span> Exemple avec des blocs</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5m3 1v12h4v-2H8V8h2V6H6m10 10h-2v2h4V6h-4v2h2v8Z"/></svg></span> Exemple avec du code</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><img alt="Bloc Si/Sinon" src="../decisionnelle.png" style="width:380px;" /></p>
+<p><img alt="Bloc Si/Sinon" src="../executer_des_instructions_selon_une_condition.png" style="width:380px;" /></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Le bloc <code class="highlight"><span class="k">if</span></code> <img alt="Bloc if" src="../if.png" style="height:24px;" /> peut être trouvé dans la catégorie de blocs <a href="#" style="color: rgb(252,116,23); font-weight: bold;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M495.9 166.6c3.3 8.6.5 18.3-6.3 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4 0 8.6-.6 17.1-1.7 25.4l43.3 39.4c6.8 6.3 9.6 16 6.3 24.6-4.4 11.9-9.7 23.4-15.7 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.3-6 7.1-15.7 9.6-24.5 6.8l-55.7-17.8c-13.4 10.3-29.1 18.9-44 25.5l-12.5 57.1c-2 9-9 15.4-18.2 17.8-13.8 2.3-28 3.5-43.4 3.5-13.6 0-27.8-1.2-41.6-3.5-9.2-2.4-16.2-8.8-18.2-17.8l-12.5-57.1c-15.8-6.6-30.6-15.2-44-25.5l-55.66 17.8c-8.84 2.8-18.59.3-24.51-6.8-8.11-9.9-15.51-20.3-22.11-31.3l-4.68-8.1c-6.07-10.9-11.35-22.4-15.78-34.3-3.24-8.6-.51-18.3 6.35-24.6l43.26-39.4C64.57 273.1 64 264.6 64 256c0-8.6.57-17.1 1.67-25.4l-43.26-39.4c-6.86-6.3-9.59-15.9-6.35-24.6 4.43-11.9 9.72-23.4 15.78-34.3l4.67-8.1c6.61-11 14.01-21.4 22.12-31.25 5.92-7.15 15.67-9.63 24.51-6.81l55.66 17.76c13.4-10.34 28.2-18.94 44-25.47l12.5-57.1c2-9.08 9-16.29 18.2-17.82C227.3 1.201 241.5 0 256 0s28.7 1.201 42.5 3.51c9.2 1.53 16.2 8.74 18.2 17.82l12.5 57.1c14.9 6.53 30.6 15.13 44 25.47l55.7-17.76c8.8-2.82 18.5-.34 24.5 6.81 8.1 9.85 15.5 20.25 22.1 31.25l4.7 8.1c6 10.9 11.3 22.4 15.7 34.3zM256 336c44.2 0 80-35.8 80-80.9 0-43.3-35.8-80-80-80s-80 36.7-80 80c0 45.1 35.8 80.9 80 80.9z"/></svg></span> Logique</a>. Notez qu'une condition doit être fournie pour que ce bloc soit fonctionnel.</p>
+<p>Le bloc <code class="highlight"><span class="k">if</span></code> <img alt="Bloc if" src="../if.png" style="height:24px;" /> peut être trouvé dans la catégorie de blocs <a href="#" style="color: rgb(255, 171, 25); font-weight: bold;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M160 80c0 32.8-19.7 60.1-48 73.3v87.8c18.8-10.9 40.7-17.1 64-17.1h96c35.3 0 64-28.7 64-64v-6.7c-28.3-13.2-48-40.5-48-73.3 0-44.18 35.8-80 80-80s80 35.82 80 80c0 32.8-19.7 60.1-48 73.3v6.7c0 70.7-57.3 128-128 128h-96c-35.3 0-64 28.7-64 64v6.7c28.3 12.3 48 40.5 48 73.3 0 44.2-35.8 80-80 80-44.18 0-80-35.8-80-80 0-32.8 19.75-61 48-73.3V153.3C19.75 140.1 0 112.8 0 80 0 35.82 35.82 0 80 0c44.2 0 80 35.82 80 80zm-80 24c13.25 0 24-10.75 24-24S93.25 56 80 56 56 66.75 56 80s10.75 24 24 24zm288-48c-13.3 0-24 10.75-24 24s10.7 24 24 24 24-10.75 24-24-10.7-24-24-24zM80 456c13.25 0 24-10.7 24-24s-10.75-24-24-24-24 10.7-24 24 10.75 24 24 24z"/></svg></span> Contrôle</a>. Notez qu'une condition issue de la catégorie de bloc <a href="#" style="color: rgb(89, 192, 89); font-weight: bold;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M336 0H48C22.38 0 0 22.38 0 48v416c0 25.6 22.38 48 48 48h288c25.62 0 48-22.38 48-48V48c0-25.62-22.4-48-48-48zM64 208c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-32zm0 96c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-32zm160 128c0 8.801-7.199 16-16 16H80c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h128c8.801 0 16 7.199 16 16v32zm0-96c0 8.801-7.199 16-16 16h-32c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zm0-96c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zm96 192c0 8.801-7.199 16-16 16h-32c-8.799 0-16-7.199-16-16v-32c0-8.801 7.201-16 16-16h32c8.801 0 16 7.199 16 16v32zm0-96c0 8.801-7.199 16-16 16h-32c-8.799 0-16-7.199-16-16v-32c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zm0-96c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zm0-96c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V80c0-8.8 7.2-16 16-16h224c8.8 0 16 7.2 16 16v64z"/></svg></span> Opérateurs</a> doit être fournie pour que ce bloc soit fonctionnel.</p>
 </div>
 </div>
 <div class="tabbed-block">
@@ -1146,17 +1132,18 @@
 <a id="__codelineno-0-8" name="__codelineno-0-8"></a>        <span class="c1"># Sinon on allume la LED RVB en vert</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9"></a>        <span class="n">led</span><span class="o">.</span><span class="n">set_colors</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<p><strong>Si</strong> la partie entre <code class="highlight"><span class="k">if</span></code> et les <code class="highlight"><span class="p">:</span></code> est évaluée comme vrai</p>
-<p><strong>alors</strong> les instructions sur les lignes indentées qui suivent dessous seront exécutées.</p>
-<p><strong>Sinon</strong> ce sont les instructions situées après le <code class="highlight"><span class="k">else</span><span class="p">:</span></code> qui le seront.</p>
-<p>Je rappelle que la tabulation fait partie de la structure dans python, que le bloc de code executé si le <code class="highlight"><span class="k">if</span></code> est vrai, comporte une tabulation par rapport au <code class="highlight"><span class="k">if</span></code> et que le <code class="highlight"><span class="k">else</span></code> ce retrouve tabulé au même niveau que le <code class="highlight"><span class="k">if</span></code>  </p>
-</div>
-</div>
-</div>
 <p>Si la partie entre <code class="highlight"><span class="k">if</span></code> et les <code class="highlight"><span class="p">:</span></code> est évaluée comme vrai alors les instructions indentées qui suivent les <code class="highlight"><span class="p">:</span></code> seront exécutées. Sinon ce sont les instructions situées après le <code class="highlight"><span class="k">else</span><span class="p">:</span></code> qui le seront.</p>
+</div>
+</div>
+</div>
 <h2 id="aller-plus-loin">Aller plus loin<a class="headerlink" href="#aller-plus-loin" title="Permanent link">&para;</a></h2>
-<p>On peut s'aider d'un organigramme : </p>
-<p><img alt="mooc_ifelse" src="../mooc.svg" /></p>
+<p>Pour se représenter le programme précédent, on peut s'aider d'un organigramme : </p>
+<pre class="mermaid"><code>graph TD
+  A[Au démarrage] --&gt; B{Luminosité &gt; 125 ?};
+  B --&gt;|Vrai| C[Allumer la LED en rouge];
+  C --&gt; B;
+  B --&gt;|Faux| D[Allumer la LED en vert];
+  D --&gt; B;</code></pre>
 <p>Si vous voulez en savoir plus sur les organigrammes, voici une chouette page <a href="https://fr.wikipedia.org/wiki/Organigramme_de_programmation">Wikipédia</a>.
 Dans l'exemple ci-dessus, nous utilisons les fonctions du langage MicroPython <code class="highlight"><span class="k">if</span></code> et <code class="highlight"><span class="k">else</span></code>. Pour en savoir plus, nous vous invitons à lire la <a href="https://www.micropython.fr/reference/02.mots_cles/if_elif_else/">documentation MicroPython</a>.</p>
 
