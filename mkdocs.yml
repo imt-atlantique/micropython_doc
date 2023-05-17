@@ -7,7 +7,6 @@ nav:
   - 'Premiers pas':
     - "L'interface Vittascience": interface.md
     - "La carte Galaxia": galaxia.md
-    - "Le langage MicroPython": micropython.md
   - 'Guides de référence':
     - 'Contrôle':
         - 'Attendre': 'controle/temps/attendre.md'
