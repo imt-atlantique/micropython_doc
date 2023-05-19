@@ -36,6 +36,7 @@ nav:
     - 'Listes': 
         - "créer une liste d'éléments": 'listes/liste_avec_elts.md'
     - 'Fonctions': 'fonctions/fonction.md'
+  - 'Annexes':
     - 'La bibliothèque thingz': 
         - 'thingz': 'thingz/thingz.md'
         - 'thingz.accelerometer': 'thingz/thingz_accelerometer.md'
