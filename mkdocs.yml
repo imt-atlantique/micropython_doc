@@ -20,7 +20,7 @@ nav:
       - 'Écrire dans la console': 'communication/ecrire_dans_la_console.md'
     - 'Apparence': 
       - 'Contrôler une LED': 'apparence/led/led.md'
-      - 'Contrôler une LED RVB' : 'apparence/led_rgb/led_rgb.md'
+      - 'Contrôler une LED RGB' : 'apparence/led_rgb/led_rgb.md'
     - 'Capteurs':
       - 'Capter la luminosité' : 'capteurs/capteur_lumiere.md'
       - "Capter l'accélération" : 'capteurs/capteur_acceleration.md'
@@ -29,12 +29,12 @@ nav:
       - 'Actionner un servomoteur' : 'actionneurs/servomoteur.md'
     - 'Opérateurs':
       - 'Manipuler des nombres' : 'math/manipuler_des_nombres.md'
-    - 'Texte': index.md
+    - 'Texte': 'variables/variable_texte.md'
     - 'Variables':
         - 'Stocker du texte': 'variables/variable_texte.md'
         - 'Stocker des nombres': 'variables/variable_nombre.md'
     - 'Listes': 
-        - "créer une liste d'éléments": 'listes/liste_avec_elts.md'
+        - "Créer une liste d'éléments": 'listes/liste_avec_elts.md'
     - 'Fonctions': 'fonctions/fonction.md'
   - 'Annexes':
     - 'La bibliothèque thingz': 

@@ -3,7 +3,7 @@ hide:
   - toc
 ---
 
-# Contrôler la LED RVB de la Galaxia
+# Contrôler la LED RGB de la Galaxia
 Permet de régler l'intensité de la LED intégrée à la carte Galaxia, de 0 à 100 pour chacune des couleurs (rouge, vert, bleu).
 
 # Branchement

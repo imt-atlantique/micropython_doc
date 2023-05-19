@@ -5,11 +5,9 @@ hide:
 
 # Interface Vittascience
 
-L'interface de programmation Vittascience permet de programmer [la carte électronique Galaxia](galaxia.md) depuis votre navigateur web en assemblant visuellement des blocs comme un puzzle. Ces blocs vont ensuite générer automatiquement un code MicroPython compréhensible par la carte.
+L'interface de programmation Vittascience permet de programmer [la carte électronique Galaxia](galaxia.md) depuis votre navigateur web en assemblant visuellement des blocs comme un puzzle. Ces blocs vont ensuite générer automatiquement un code MicroPython compréhensible par la carte. Pour accéder à cette interface, rendez-vous sur l'onglet **Interface Vittascience** dans le MOOC ou directement à [lien](https://fr.vittascience.com/galaxia/?mode=mixed&console=bottom&toolbox=scratch&embed=1).
 
-!!! info
-    Veuillez notez qu'il est également possible de se passer des blocs et utiliser l'interface en [mode code](#mode-code) uniquement en cliquant sur le bouton [:fontawesome-solid-code:](#){ .btn-light style='color:black;' } dans la barre du haut.
+![Interface Vittascience](img/interface_vittascience.png)
 
-![Interface ESP32](img/interface_esp32.png)
-
-# TODO Remplacer l'image ci-dessus par une vidéo lorsque l'interface sera mature
+## Accessibilité
+L'équipe Vittascience travaille continuellement à améliorer le niveau d'accessibilité du site Vittascience et sa conformité avec les normes en la matière. Pour plus d'informations, veuillez consulter [cette page](https://fr.vittascience.com/accessibility).
