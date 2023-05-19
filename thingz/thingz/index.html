@@ -286,16 +286,14 @@
 
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -856,6 +854,44 @@
 
             
           
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Annexes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Annexes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Annexes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
             
               
   
@@ -867,18 +903,18 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_11" type="checkbox" id="__nav_3_11" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_3_11">
+        <label class="md-nav__link" for="__nav_4_1">
           La bibliothèque thingz
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="La bibliothèque thingz" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_11">
+        <label class="md-nav__title" for="__nav_4_1">
           <span class="md-nav__icon md-icon"></span>
           La bibliothèque thingz
         </label>
@@ -1052,31 +1088,37 @@
 
 
 <h1 id="thingz">Thingz<a class="headerlink" href="#thingz" title="Permanent link">&para;</a></h1>
-<p>La Carte galaxia a été conçu par Thingz, une entreprise constituée de plein de gens sympathiques</p>
-<p>Pour réaliser cette carte, Ils ont assemblé plusieurs composants électroniques qui permettent d'ajouter à la carte des capacités, comme capter la luminosité, le magnétisme, l'accélération, de jouer du son., etc.</p>
-<p>Pour qu'on puisse utiliser ces fonctionnalités, il a fallu que thingz créer un code qui traduit une utilisation simple en un code compréhensible pour le composant, et ce, pour tous les composants.</p>
-<p>Ils ont regroupé tout ce code dans une bibliothèque et l'ont appelé Thingz (pour qu'on se le rappelle).</p>
-<p>Maintenant en python,  si la bibliothèque thingz est bien appelée au début du programme, on peut appeler une fonction simple d'un composant.</p>
-<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>import thingz
+<p>La Carte galaxia a été conçu par <a href="https://thingz.co/">Thingz</a>, une entreprise constituée de plein de gens sympathiques !</p>
+<p>Pour réaliser cette carte, ils ont assemblé plusieurs composants électroniques qui permettent d'ajouter à la carte des capacités, comme capter la luminosité, le magnétisme, l'accélération, de jouer du son, etc.</p>
+<p>Pour qu'on puisse utiliser ces fonctionnalités, il a fallu que Thingz créé un code qui traduit une utilisation simple en un code compréhensible par chacun des composants. Ils ont regroupé tout ce code dans une bibliothèque (également appelé librairie ou module) et l'ont appelé <code class="highlight"><span class="n">thingz</span></code> (pour qu'on se le rappelle).</p>
+<p>Dès lors, si vous importez la bibliothèque <code class="highlight"><span class="n">thingz</span></code> au début de votre programme alors vous pourrez appeler une fonction simple d'un composant.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># Ici, j&#39;importe toute la bibliothèque.</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">thingz</span>
 </code></pre></div></td></tr></table></div>
-Ici, j'importe toute la bibliothèque.</p>
-<p>Où </p>
-<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>from thingz import *
+<p>Ou</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># J&#39;importe tous les modules depuis le module thingz</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1"># * est un joker qui signifie &quot;tout&quot;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
 </code></pre></div></td></tr></table></div>
-là, de la bibliothèque, j'importe seulement les modules.....tous (* est un joker qui remplace tout ce qu'on aurait pu écrire)</p>
-<p>l'information nous arrivera facilement sans ouvrir la documentation technique de tel ou tel composant.</p>
-<p>Mais qu'elles sont ces fonctions simples auxquelles on a accès ?</p>
-<p>Si je demande à python de me dire ce à quoi j'ai accès dans cette bibliothèque</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>dir()
+<p>On peut maintenant se demander quelles sont les fonctions simples issues de la librairie <code class="highlight"><span class="n">thingz</span></code> ? Si je demande à python de me dire ce à quoi j'ai accès dans cette bibliothèque</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nb">dir</span><span class="p">()</span>
 </code></pre></div></td></tr></table></div>
-<p>['SoftI2C', 'time_pulse_us', 'TIMER_WAKE', 'touch_e', 'ULP_WAKE', 'SoftSPI', 'DEEPSLEEP', 'PWRON_RESET', 'button_a', 'button_b', 'led', 'WDT_RESET', 'PIN_WAKE', 'UART', 'SPI', 'I2S', 'RTC', 'lightsleep', 'gc', 'ADCBlock', 'soft_reset', 'mem32', 'I2C', 'DAC', 'sound', 'radio', 'internal_temperature', 'DEEPSLEEP_RESET', 'Pin', 'SOFT_RESET', 'TOUCHPAD_WAKE', 'EXT0_WAKE', 'uos', 'disable_irq', 'HARD_RESET', 'mem16', 'unique_id', '<strong>name</strong>', 'freq', 'ADC', 'deepsleep', 'enable_irq', 'reset_cause', 'PWM', 'Signal', 'mem8', 'idle', 'utime', 'accelerometer', 'wake_reason', 'set_temperature_offset', 'touch_w', 'compass', 'touch_s', 'bdev', 'WDT', 'reset', 'SLEEP', 'bitstream', 'EXT1_WAKE', 'Timer', 'touch_n', 'sleep', 'screen']</p>
-<p><a href="../thingz_accelerometer/">thingz.accelerometer</a></p>
-<p><a href="../thingz_button/">thingz.button</a></p>
-<p><a href="../thingz_compass/">thingz.compass</a></p>
-<p><a href="../thingz_led/">thingz.led</a></p>
-<p><a href="../thingz_radio/">thingz.radio</a></p>
-<p><a href="../thingz_sound/">thingz.sound</a></p>
-<p><a href="../thingz_temperature/">thingz.temperature</a></p>
+<p>Voici ce que je peux voir dans la console :
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>[&#39;SoftI2C&#39;, &#39;time_pulse_us&#39;, &#39;TIMER_WAKE&#39;, &#39;touch_e&#39;, &#39;ULP_WAKE&#39;, &#39;SoftSPI&#39;, &#39;DEEPSLEEP&#39;, &#39;PWRON_RESET&#39;, &#39;button_a&#39;, &#39;button_b&#39;, &#39;led&#39;, &#39;WDT_RESET&#39;, &#39;PIN_WAKE&#39;, &#39;UART&#39;, &#39;SPI&#39;, &#39;I2S&#39;, &#39;RTC&#39;, &#39;lightsleep&#39;, &#39;gc&#39;, &#39;ADCBlock&#39;, &#39;soft_reset&#39;, &#39;mem32&#39;, &#39;I2C&#39;, &#39;DAC&#39;, &#39;sound&#39;, &#39;radio&#39;, &#39;internal_temperature&#39;, &#39;DEEPSLEEP_RESET&#39;, &#39;Pin&#39;, &#39;SOFT_RESET&#39;, &#39;TOUCHPAD_WAKE&#39;, &#39;EXT0_WAKE&#39;, &#39;uos&#39;, &#39;disable_irq&#39;, &#39;HARD_RESET&#39;, &#39;mem16&#39;, &#39;unique_id&#39;, &#39;__name__&#39;, &#39;freq&#39;, &#39;ADC&#39;, &#39;deepsleep&#39;, &#39;enable_irq&#39;, &#39;reset_cause&#39;, &#39;PWM&#39;, &#39;Signal&#39;, &#39;mem8&#39;, &#39;idle&#39;, &#39;utime&#39;, &#39;accelerometer&#39;, &#39;wake_reason&#39;, &#39;set_temperature_offset&#39;, &#39;touch_w&#39;, &#39;compass&#39;, &#39;touch_s&#39;, &#39;bdev&#39;, &#39;WDT&#39;, &#39;reset&#39;, &#39;SLEEP&#39;, &#39;bitstream&#39;, &#39;EXT1_WAKE&#39;, &#39;Timer&#39;, &#39;touch_n&#39;, &#39;sleep&#39;, &#39;screen&#39;]
+</code></pre></div></td></tr></table></div></p>
+<p>Pour en savoir plus sur chacune les sous-modules de la bibliothèque <code class="highlight"><span class="n">thingz</span></code>, jetez donc un coup  œil ci-dessous :</p>
+<ul>
+<li><a href="../thingz_accelerometer/">thingz.accelerometer</a></li>
+<li><a href="../thingz_button/">thingz.button</a></li>
+<li><a href="../thingz_compass/">thingz.compass</a></li>
+<li><a href="../thingz_led/">thingz.led</a></li>
+<li><a href="../thingz_radio/">thingz.radio</a></li>
+<li><a href="../thingz_sound/">thingz.sound</a></li>
+<li><a href="../thingz_temperature/">thingz.temperature</a></li>
+</ul>
 
               
             </article>
