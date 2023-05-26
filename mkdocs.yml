@@ -26,7 +26,7 @@ nav:
       - "Capter l'accélération" : 'capteurs/capteur_acceleration.md'
       - 'Capter la distance' : 'capteurs/capteur_ultrason.md'
     - 'Actionneurs': 
-      - 'Actionner un servomoteur' : 'actionneurs/servomoteur.md'
+      - 'Contrôler  un servomoteur' : 'actionneurs/servomoteur.md'
     - 'Opérateurs':
       - 'Manipuler des nombres' : 'math/manipuler_des_nombres.md'
     - 'Texte': 'variables/variable_texte.md'

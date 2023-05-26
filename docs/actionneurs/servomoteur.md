@@ -1,20 +1,47 @@
+---
+hide:
+  - toc
+---
+
 # Contrôler un servomoteur
 
-Permet de contrôler l'angle d'un servomoteur (de 0 à 180) 0 à 180) sur les broches digitales.
+Permet de contrôler l'angle d'un servomoteur de 0° à 180°.
 
 
-## Exemple avec des blocs
-![Blocs servomoteur](servomoteur.png){: style="width:480px;"}
 
-## Exemple avec du code
+## Branchement
+![Carte Galaxia avec LED branchée sur la broche P0](galaxia_board_led.svg){: style="height:380px;"}
 
-```python
-# print() fait partie du langage MicroPython
-# pas besoin d'importer un module
+## Exemple
 
-# Affichage d'un message avec la fonction print()
-print("Bonjour !")
-```
+Dans l'exemple ci-dessous, nous allons placer le servomoteur (branché sur le port `Grove 1` de la Galaxia) à 0° pendant une seconde puis le placer à 90° :
+
+
+=== ":material-puzzle: Exemple avec des blocs"
+    ![Blocs servomoteur](servomoteur.png){: style="width:480px;"}
+
+
+=== ":material-code-array: Exemple avec du code"
+    ```python
+    from machine import *
+    import utime
+
+    # Initialisation du servomoteur sur la broche P19
+    p19 = PWM(Pin(13), freq=50, duty=205)
+
+    # Déclaration d'une fonction qui va s'occuper de positionner
+    # le servomoteur à un angle passé en paramètre
+    # (si cet angle est bien compris entre 0 et 180)
+    def setServoAngle(pin, angle):
+    if (angle >= 0 and angle <= 180):
+        pin.duty(int(0.025*1023 + (angle*0.1*1023)/180))
+    else:
+        raise ValueError("Attention, l'angle du servomoteur doit etre compris entre 0 et 180")
+
+    setServoAngle(p19, 0)
+    utime.sleep(1)
+    setServoAngle(p19, 90)
+    ```
 
 ## Aller plus loin
-Dans l'exemple ci-dessus, nous utilisons la fonction `#!python print()` qui fait partie du langage MicroPython (donc pas besoin d'importer un module pour l'utiliser). Cette fonction peut prendre un ou plusieurs paramètres détaillés dans la [documentation MicroPython](https://www.micropython.fr/reference/03.builtin/print/).
+Dans l'exemple ci-dessus, nous utilisons la class `#!python PWM()` qui permet, entre autres, de contrôler un servomoteur. Cette classe est détaillée dans la [documentation MicroPython](https://www.micropython.fr/reference/06.ports/pi_pico/machine/PWM/classe_PWM/).
