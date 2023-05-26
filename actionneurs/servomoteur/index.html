@@ -17,7 +17,7 @@
     
     
       
-        <title>Actionner un servomoteur - MOOCs MicroPython</title>
+        <title>Contrôler un servomoteur - MOOCs MicroPython</title>
       
     
     
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Actionner un servomoteur
+              Contrôler  un servomoteur
             
           </span>
         </div>
@@ -182,6 +182,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -670,12 +672,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Actionner un servomoteur
+          Contrôler  un servomoteur
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Actionner un servomoteur
+        Contrôler  un servomoteur
       </a>
       
         
@@ -694,15 +696,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exemple-avec-des-blocs" class="md-nav__link">
-    Exemple avec des blocs
+  <a href="#branchement" class="md-nav__link">
+    Branchement
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exemple-avec-du-code" class="md-nav__link">
-    Exemple avec du code
+  <a href="#exemple" class="md-nav__link">
+    Exemple
   </a>
   
 </li>
@@ -1108,7 +1110,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1127,15 +1131,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exemple-avec-des-blocs" class="md-nav__link">
-    Exemple avec des blocs
+  <a href="#branchement" class="md-nav__link">
+    Branchement
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exemple-avec-du-code" class="md-nav__link">
-    Exemple avec du code
+  <a href="#exemple" class="md-nav__link">
+    Exemple
   </a>
   
 </li>
@@ -1162,22 +1166,58 @@
 
 
 <h1 id="controler-un-servomoteur">Contrôler un servomoteur<a class="headerlink" href="#controler-un-servomoteur" title="Permanent link">&para;</a></h1>
-<p>Permet de contrôler l'angle d'un servomoteur (de 0 à 180) 0 à 180) sur les broches digitales.</p>
-<h2 id="exemple-avec-des-blocs">Exemple avec des blocs<a class="headerlink" href="#exemple-avec-des-blocs" title="Permanent link">&para;</a></h2>
+<p>Permet de contrôler l'angle d'un servomoteur de 0° à 180°.</p>
+<h2 id="branchement">Branchement<a class="headerlink" href="#branchement" title="Permanent link">&para;</a></h2>
+<p><img alt="Carte Galaxia avec servomoteur branchée sur la broche P19" src="../galaxia_board_servo.svg" style="height:380px;" /></p>
+<h2 id="exemple">Exemple<a class="headerlink" href="#exemple" title="Permanent link">&para;</a></h2>
+<p>Dans l'exemple ci-dessous, nous allons placer le servomoteur (branché sur le port <code>Grove 1</code>, broche <code>P19</code> de la Galaxia) à 0° pendant une seconde puis le placer à 90° :</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5Z"/></svg></span> Exemple avec des blocs</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5m3 1v12h4v-2H8V8h2V6H6m10 10h-2v2h4V6h-4v2h2v8Z"/></svg></span> Exemple avec du code</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p><img alt="Blocs servomoteur" src="../servomoteur.png" style="width:480px;" /></p>
-<h2 id="exemple-avec-du-code">Exemple avec du code<a class="headerlink" href="#exemple-avec-du-code" title="Permanent link">&para;</a></h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># print() fait partie du langage MicroPython</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="c1"># pas besoin d&#39;importer un module</span>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">utime</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># Affichage d&#39;un message avec la fonction print()</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bonjour !&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># Initialisation du servomoteur sur la broche P19</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="n">p19</span> <span class="o">=</span> <span class="n">PWM</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">13</span><span class="p">),</span> <span class="n">freq</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">duty</span><span class="o">=</span><span class="mi">205</span><span class="p">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="c1"># Déclaration d&#39;une fonction qui va s&#39;occuper de positionner</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="c1"># le servomoteur à un angle passé en paramètre</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="c1"># (si cet angle est bien compris entre 0 et 180)</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="k">def</span> <span class="nf">setServoAngle</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="n">angle</span><span class="p">):</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="k">if</span> <span class="p">(</span><span class="n">angle</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">angle</span> <span class="o">&lt;=</span> <span class="mi">180</span><span class="p">):</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a>    <span class="n">pin</span><span class="o">.</span><span class="n">duty</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="mf">0.025</span><span class="o">*</span><span class="mi">1023</span> <span class="o">+</span> <span class="p">(</span><span class="n">angle</span><span class="o">*</span><span class="mf">0.1</span><span class="o">*</span><span class="mi">1023</span><span class="p">)</span><span class="o">/</span><span class="mi">180</span><span class="p">))</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a>    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Attention, l&#39;angle du servomoteur doit etre compris entre 0 et 180&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="n">setServoAngle</span><span class="p">(</span><span class="n">p19</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="n">utime</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="n">setServoAngle</span><span class="p">(</span><span class="n">p19</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
 <h2 id="aller-plus-loin">Aller plus loin<a class="headerlink" href="#aller-plus-loin" title="Permanent link">&para;</a></h2>
-<p>Dans l'exemple ci-dessus, nous utilisons la fonction <code class="highlight"><span class="nb">print</span><span class="p">()</span></code> qui fait partie du langage MicroPython (donc pas besoin d'importer un module pour l'utiliser). Cette fonction peut prendre un ou plusieurs paramètres détaillés dans la <a href="https://www.micropython.fr/reference/03.builtin/print/">documentation MicroPython</a>.</p>
+<p>Dans l'exemple ci-dessus, nous utilisons la class <code class="highlight"><span class="n">PWM</span><span class="p">()</span></code> qui permet, entre autres, de contrôler un servomoteur. Cette classe est détaillée dans la <a href="https://www.micropython.fr/reference/06.ports/pi_pico/machine/PWM/classe_PWM/">documentation MicroPython</a>.</p>
 
               
             </article>
@@ -1189,6 +1229,8 @@
       
         <footer class="md-footer">
   
+    
+      
     
     <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
       
