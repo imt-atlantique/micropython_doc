@@ -8,13 +8,12 @@ hide:
 Permet de contrôler l'angle d'un servomoteur de 0° à 180°.
 
 
-
 ## Branchement
-![Carte Galaxia avec LED branchée sur la broche P0](galaxia_board_led.svg){: style="height:380px;"}
+![Carte Galaxia avec servomoteur branchée sur la broche P19](galaxia_board_servo.svg){: style="height:380px;"}
 
 ## Exemple
 
-Dans l'exemple ci-dessous, nous allons placer le servomoteur (branché sur le port `Grove 1` de la Galaxia) à 0° pendant une seconde puis le placer à 90° :
+Dans l'exemple ci-dessous, nous allons placer le servomoteur (branché sur le port `Grove 1`, broche `P19` de la Galaxia) à 0° pendant une seconde puis le placer à 90° :
 
 
 === ":material-puzzle: Exemple avec des blocs"
