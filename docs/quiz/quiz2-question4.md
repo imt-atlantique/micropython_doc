@@ -7,7 +7,7 @@ hide:
 # 
 
 === ":material-puzzle: Exemple avec des blocs"
-    ![Exemple avec des blocs](quiz2_question4.png){: style="width:480px;"}
+    ![Exemple avec des blocs](quiz2-question4.png){: style="width:480px;"}
 
 === ":material-code-array: Exemple avec du code"
 
