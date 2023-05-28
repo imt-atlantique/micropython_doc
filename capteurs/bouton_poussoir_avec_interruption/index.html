@@ -17,7 +17,7 @@
     
     
       
-        <title>Quiz2 question4 - MOOCs MicroPython</title>
+        <title>Bouton poussoir avec interruption - MOOCs MicroPython</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#bouton-poussoir-avec-interruption" class="md-skip">
           Aller au contenu
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Quiz2 question4
+              Bouton poussoir avec interruption
             
           </span>
         </div>
@@ -185,7 +185,7 @@
               
                 
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -583,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../capteurs/capteur_lumiere/" class="md-nav__link">
+      <a href="../capteur_lumiere/" class="md-nav__link">
         Capter la luminosité
       </a>
     </li>
@@ -597,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../capteurs/capteur_acceleration/" class="md-nav__link">
+      <a href="../capteur_acceleration/" class="md-nav__link">
         Capter l'accélération
       </a>
     </li>
@@ -611,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../capteurs/capteur_ultrason/" class="md-nav__link">
+      <a href="../capteur_ultrason/" class="md-nav__link">
         Capter la distance
       </a>
     </li>
@@ -1065,6 +1065,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#branchement" class="md-nav__link">
+    Branchement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    Exemple
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aller-plus-loin" class="md-nav__link">
+    Aller plus loin
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1077,11 +1106,16 @@
                 
 
 
-<h1 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="bouton-poussoir-avec-interruption">Bouton poussoir avec interruption<a class="headerlink" href="#bouton-poussoir-avec-interruption" title="Permanent link">&para;</a></h1>
+<p>Faire quelque chose quand un bouton (A ou B) est appuyé et relâché. </p>
+<h2 id="branchement">Branchement<a class="headerlink" href="#branchement" title="Permanent link">&para;</a></h2>
+<p><img alt="Carte Galaxia" src="../../img/galaxia_board.svg" style="height:380px;" /></p>
+<h2 id="exemple">Exemple<a class="headerlink" href="#exemple" title="Permanent link">&para;</a></h2>
+<p>Dans l'exemple ci-dessous, nous allons faire clignoter la LED RGB de la Galaxia en rouge pendant 1 seconde puis en bleue pedant une seconde. Si le bouton A est appuyé puis relâché (cet événement est appelé une interruption) alors la LED RGB passera en verte pendant une seconde :</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5Z"/></svg></span> Exemple avec des blocs</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5m3 1v12h4v-2H8V8h2V6H6m10 10h-2v2h4V6h-4v2h2v8Z"/></svg></span> Exemple avec du code</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><img alt="Exemple avec des blocs" src="../quiz2-question4.png" style="width:480px;" /></p>
+<p><img alt="Blocs allumage d'une LED PWM" src="led_pwm.png" style="width:480px;" /></p>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
@@ -1103,36 +1137,32 @@
 <span class="normal"><a href="#__codelineno-0-17">17</a></span>
 <span class="normal"><a href="#__codelineno-0-18">18</a></span>
 <span class="normal"><a href="#__codelineno-0-19">19</a></span>
-<span class="normal"><a href="#__codelineno-0-20">20</a></span>
-<span class="normal"><a href="#__codelineno-0-21">21</a></span>
-<span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kn">import</span> <span class="nn">utime</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="c1"># Initialisation d&#39;un servomoteur sur la broche P19</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="n">p19</span> <span class="o">=</span> <span class="n">PWM</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">13</span><span class="p">),</span> <span class="n">freq</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">duty</span><span class="o">=</span><span class="mi">205</span><span class="p">)</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="k">def</span> <span class="nf">setServoAngle</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="n">angle</span><span class="p">):</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a>  <span class="k">if</span> <span class="p">(</span><span class="n">angle</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">angle</span> <span class="o">&lt;=</span> <span class="mi">180</span><span class="p">):</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a>    <span class="n">pin</span><span class="o">.</span><span class="n">duty</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="mf">0.025</span><span class="o">*</span><span class="mi">1023</span> <span class="o">+</span> <span class="p">(</span><span class="n">angle</span><span class="o">*</span><span class="mf">0.1</span><span class="o">*</span><span class="mi">1023</span><span class="p">)</span><span class="o">/</span><span class="mi">180</span><span class="p">))</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11"></a>  <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a>    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Servomotor angle have to be set between 0 and 180&quot;</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># On importe les modules dont on a besoin</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">utime</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="k">def</span> <span class="nf">bouton_A_relache</span><span class="p">(</span><span class="n">button</span><span class="p">):</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>  <span class="c1"># On passe la LED RGB à verte</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>  <span class="n">led</span><span class="o">.</span><span class="n">set_colors</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a>  <span class="n">utime</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="c1"># On accroche l&#39;interruption à la fonction bouton_A_relache</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="n">button_a</span><span class="o">.</span><span class="n">on_button_pressed</span><span class="p">(</span><span class="n">bouton_A_relache</span><span class="p">)</span>
 <a id="__codelineno-0-13" name="__codelineno-0-13"></a>
-<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="n">angle_servo</span> <span class="o">=</span> <span class="mi">0</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="n">duree</span> <span class="o">=</span> <span class="mi">0</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a>
-<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18"></a>  <span class="n">angle_servo</span> <span class="o">=</span> <span class="n">angle_servo</span> <span class="o">+</span> <span class="mi">1</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19"></a>  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">181</span><span class="p">):</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20"></a>    <span class="n">setServoAngle</span><span class="p">(</span><span class="n">p19</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21"></a>    <span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22"></a>    <span class="n">duree</span> <span class="o">=</span> <span class="n">duree</span> <span class="o">+</span> <span class="mi">10</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a>  <span class="c1"># On passe la LED RGB à rouge</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a>  <span class="n">led</span><span class="o">.</span><span class="n">set_colors</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a>  <span class="n">utime</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a>  <span class="c1"># On passe la LED RGB à bleue</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a>  <span class="n">led</span><span class="o">.</span><span class="n">set_colors</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a>  <span class="n">utime</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 </div>
 </div>
 </div>
+<h2 id="aller-plus-loin">Aller plus loin<a class="headerlink" href="#aller-plus-loin" title="Permanent link">&para;</a></h2>
+<p>Dans l'exemple ci-dessus, nous utilisons la classe <code class="highlight"><span class="n">PWM</span></code> qui permet de régler finement les broches E/S (Entrée/Sortie) de la carte électronique. Pour en savoir plus sur cette classe, nous vous invitons à lire la <a href="https://www.micropython.fr/reference/05.micropython/machine/classe_PWM/">documentation MicroPython</a>.</p>
 
               
             </article>
