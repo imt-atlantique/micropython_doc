@@ -5,7 +5,7 @@ hide:
 
 Permet d'exécuter des instructions si une condition parmi plusieurs est vraie.
 
-Dans l'exemple ci-dessous, nous allons modifier l'état d'une LED RVB,
+Dans l'exemple ci-dessous, nous allons modifier l'état d'une LED RGB,
 
 - En vert si le bouton A seul est appuyé.
 - En orange si le bouton B seul est appuyé.
