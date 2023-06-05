@@ -3,7 +3,7 @@ hide:
   - toc
 ---
 
-# Régler la luminosité d'une LED
+# Régler l'intensité lumineuse d'une LED
 Permet de régler la luminosité d'une LED de 0 à 100% sur les broches PWM.
 
 ## Branchement
@@ -25,17 +25,17 @@ Dans l'exemple ci-dessous, nous allons allumer une LED branchée sur la broche `
 
     # Déclaration d'une broche en sortie sur la broche P0
     # à l'aide du constructeur PWM()
-    p3 = PWM(Pin(3), freq=50, duty=0)
+    p0 = PWM(Pin(3), freq=50, duty=0)
 
     # On vient faire un produit en croix pour obtenir
     # 50% de la luminosité maximale
-    p3.duty(int(50*1023/100))
+    p0.duty(int(50*1023/100))
 
     # On attend 1 seconde
     utime.sleep(1)
 
      # On éteint la LED
-    p3.duty(0)
+    p0.duty(0)
     ```
 
 ## Aller plus loin

@@ -20,11 +20,14 @@ nav:
       - 'Écrire dans la console': 'communication/ecrire_dans_la_console.md'
     - 'Apparence': 
       - 'Contrôler une LED': 'apparence/led/led.md'
+      - "Régler l'intensité lumineuse d'une LED": 'apparence/led/led_pwm.md'
       - 'Contrôler une LED RGB' : 'apparence/led_rgb/led_rgb.md'
     - 'Capteurs':
+      - "Détecter l'appui sur un bouton" : 'capteurs/bouton.md'
       - 'Capter la luminosité' : 'capteurs/capteur_lumiere.md'
       - "Capter l'accélération" : 'capteurs/capteur_acceleration.md'
       - 'Capter la distance' : 'capteurs/capteur_ultrason.md'
+      - "Détecter instantanément l'appui sur un bouton" : 'capteurs/bouton_avec_interruption.md'
     - 'Actionneurs': 
       - 'Contrôler  un servomoteur' : 'actionneurs/servomoteur.md'
     - 'Opérateurs':
