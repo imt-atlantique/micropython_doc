@@ -7,21 +7,18 @@ hide:
 
 Rendre une partie de programme accessible par son nom en lui passant tout ce qui lui est nécessaire pour fonctionner.
 
-Les variables déclarées dans la fonction ne sont valable qu'en local dans la fonction ()(portée d'une variable).
-De plus dans une fonction, les variables globales ne sont disponible qu'en lecture.
-
-
+Les variables déclarées dans la fonction ne sont valable qu'en local dans la fonction (portée d'une variable). De plus, dans une fonction, les variables globales ne sont disponible qu'en lecture.
 
 ## Exemple
 
 === ":material-puzzle: Exemple avec des blocs"
-    ![Blocs définir une fonction](fonc.png){: style="width:480px;"}
+    ![Blocs définir une fonction](fonction.png){: style="width:480px;"}
 
 
 
     !!! info
 
-        Les blocs pour définir une fonction ![Bloc variable](blocfonc.png){: style="height:24px;"} peuvent être trouvé dans la catégorie de blocs [:material-function-variant:Fonctions](#){: style="color: rgb(15,185,177); font-weight: bold;"}. 
+        Les blocs pour définir une fonction ![Bloc variable](bloc_fonction.png){: style="height:24px;"} peuvent être trouvé dans la catégorie de blocs [:material-function-variant: Fonctions](#){: style="color: rgb(255, 77, 106); font-weight: bold;"}. 
 
         on ajoute le nombre de variables nécessaires avec le :octicons-plus-circle-16:. et on créé les variables dans l'espace blanc sur le coté prévu à cet effet 
 

@@ -56,4 +56,4 @@ Renvoie un entier **int** La valeur de l'intensité du bleue courante, comprise 
 
 
 ### read_light_level()
-Renvoie un int entre 0 (nuit) et 100 (plein jour) qui représente la luminosité ambiante courante
+Renvoie un entier **int** entre 0 (nuit) et 255 (lumière vive) qui représente la luminosité ambiante courante

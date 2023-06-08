@@ -7,40 +7,41 @@ nav:
   - 'Premiers pas':
     - "L'interface Vittascience": interface.md
     - "La carte Galaxia": galaxia.md
-    - "Le langage MicroPython": micropython.md
   - 'Guides de référence':
     - 'Contrôle':
         - 'Attendre': 'controle/temps/attendre.md'
         - 'Utiliser le chronomètre': 'controle/temps/chronometre.md'
-        - 'Selon une condition': controle/executer_des_instructions_selon_une_condition.md
-        - 'Selon des conditions': controle/executer_des_instructions_selon_des_conditions.md
+        - 'Exécuter selon une condition': controle/executer_des_instructions_selon_une_condition.md
+        - 'Exécuter selon des conditions': controle/executer_des_instructions_selon_des_conditions.md
         - 'Répéter' : 'boucles/boucle_simple.md'
         - 'Répéter en comptant' : 'boucles/boucle_avec_variable.md'
         - 'Répéter selon des éléments' : 'boucles/boucle_iterative.md'
-
     - 'Communication': 
       - 'Écrire dans la console': 'communication/ecrire_dans_la_console.md'
     - 'Apparence': 
       - 'Contrôler une LED': 'apparence/led/led.md'
-      - 'Contrôler une LED RVB' : 'apparence/led_rgb/led_rgb.md'
+      - "Régler l'intensité lumineuse d'une LED": 'apparence/led/led_pwm.md'
+      - 'Contrôler une LED RGB' : 'apparence/led_rgb/led_rgb.md'
     - 'Capteurs':
+      - "Détecter l'appui sur un bouton" : 'capteurs/bouton.md'
       - 'Capter la luminosité' : 'capteurs/capteur_lumiere.md'
       - "Capter l'accélération" : 'capteurs/capteur_acceleration.md'
       - 'Capter la distance' : 'capteurs/capteur_ultrason.md'
+      - "Détecter instantanément l'appui sur un bouton" : 'capteurs/bouton_avec_interruption.md'
     - 'Actionneurs': 
-      - 'Actionner un servomoteur' : 'actionneurs/servomoteur.md'
+      - 'Contrôler un servomoteur' : 'actionneurs/servomoteur.md'
     - 'Opérateur':
-      - 'Manipuler des nombres' : 'math/manipuler_des_nombres.md'
+      - 'manipuler des nombres' : 'math/manipuler_des_nombres.md'
       - 'Convertir une valeur dans une autre échelle' : 'math/convertir_une_valeur_dans_une _autre_echelle.md'
-    - 'Texte': index.md
+    - 'Texte': 'variables/variable_texte.md'
     - 'Variables':
         - 'Stocker du texte': 'variables/variable_texte.md'
         - 'Stocker des nombres': 'variables/variable_nombre.md'
     - 'Listes': 
         - "Créer une liste d'éléments": 'listes/liste_avec_elts.md'
     - 'Fonctions': 'fonctions/fonction.md'
-    - 'Abbreviations': 'includes\abbreviations.md'
-    - 'La bibliothèque THINGZ': 
+  - 'Annexes':
+    - 'La bibliothèque thingz': 
         - 'thingz': 'thingz/thingz.md'
         - 'thingz.accelerometer': 'thingz/thingz_accelerometer.md'
         - 'thingz.compas': 'thingz/thingz_compass.md'
