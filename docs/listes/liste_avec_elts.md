@@ -37,7 +37,7 @@ Pour profiter de tous les outils des listes pour gérer ces éléments.
 
 ## Aller plus loin
 
-Les opérations sur les listes sont aussi nombreuses que pratique je vous propose d'aller faire un tour sur [python.doctor](https://python.doctor/page-apprendre-listes-list-tableaux-tableaux-liste-array-python-cours-debutant) juste pour avoir une idée rapide de ce qu'il est possible de faire.
+Les opérations sur les listes sont aussi nombreuses que pratiques. Vous pourrez vous faire une idée rapide de ce qu'il est possible de faire sur le site : [python.doctor](https://python.doctor/page-apprendre-listes-list-tableaux-tableaux-liste-array-python-cours-debutant)
 
 Dans l'exemple ci-dessus, nous utilisons les fonctions du langage MicroPython [`#!python print()`](../communication/ecrire_dans_la_console.md) et `#!python str()`.
 La fonction `#!python print()` est détaillés dans la [documentation MicroPython](https://www.micropython.fr/reference/#/03.builtin/print).
