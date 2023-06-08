@@ -50,6 +50,8 @@ nav:
         - 'thingz.temperature': 'thingz/thingz_temperature.md'
         - 'thingz.sound': 'thingz/thingz_sound.md'
         - 'thingz.radio': 'thingz/thingz_radio.md'
+    - 'Gérer les erreurs': 'try/Gerer_les_erreurs.md'
+
 
 theme:
     name: material
