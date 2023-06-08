@@ -25,7 +25,9 @@ Pour profiter de tous les outils des listes pour gérer ces éléments.
     mesBilles = [5, 32, 14]
 
     while True:
+      # pour chaque élément de la liste mesBilles  
       for i in mesBilles:
+        # je prend l'élément et lui applique la fonction str() pour en faire une chaine de charactère puis je l'imprime
         print(str(i));
 
     ```
