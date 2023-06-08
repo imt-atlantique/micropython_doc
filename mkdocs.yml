@@ -30,13 +30,14 @@ nav:
     - 'Actionneurs': 
       - 'Actionner un servomoteur' : 'actionneurs/servomoteur.md'
     - 'Opérateur':
-      - 'manipuler des nombres' : 'math/manipuler_des_nombres.md'
+      - 'Manipuler des nombres' : 'math/manipuler_des_nombres.md'
+      - 'Convertir une valeur dans une autre échelle' : 'math/convertir_une_valeur_dans_une _autre_echelle.md'
     - 'Texte': index.md
     - 'Variables':
         - 'Stocker du texte': 'variables/variable_texte.md'
         - 'Stocker des nombres': 'variables/variable_nombre.md'
     - 'Listes': 
-        - "créer une liste d'éléments": 'listes/liste_avec_elts.md'
+        - "Créer une liste d'éléments": 'listes/liste_avec_elts.md'
     - 'Fonctions': 'fonctions/fonction.md'
     - 'Abbreviations': 'includes\abbreviations.md'
     - 'La bibliothèque THINGZ': 

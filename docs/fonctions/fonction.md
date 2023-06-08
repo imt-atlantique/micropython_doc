@@ -51,6 +51,6 @@ De plus dans une fonction, les variables globales ne sont disponible qu'en lectu
 
 ## Aller plus loin
 
-Dans l'exemple ci-dessus, nous utilisons la classe `#!python def` qui permet de définir une fonction. Pour en savoir plus sur cette classe, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/02.mots_cles/def/).
+Dans l'exemple ci-dessus, nous utilisons la classe `#!python def` qui permet de définir une fonction. Pour en savoir plus sur cette classe, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/#/02.mots_cles/def/).
 
-Plus haut on fait référence à la portée d'une variable pour en savoir plus sur cette notion la [documentation Micropython](https://www.micropython.fr/reference/02.mots_cles/global/#portee-de-la-variable-definition)
+Plus haut on fait référence à la portée d'une variable pour en savoir plus sur cette notion la [documentation Micropython](https://www.micropython.fr/reference/#/02.mots_cles/global/#portee-de-la-variable-definition)
