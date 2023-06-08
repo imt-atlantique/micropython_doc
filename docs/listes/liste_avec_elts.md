@@ -34,9 +34,12 @@ Pour profiter de tous les outils des listes pour gérer ces éléments.
 
 
 ## Aller plus loin
+
+Les opérations sur les listes sont aussi nombreuses que pratique je vous propose d'aller faire un tour sur [python.doctor](https://python.doctor/page-apprendre-listes-list-tableaux-tableaux-liste-array-python-cours-debutant) juste pour avoir une idée rapide de ce qu'il est possible de faire.
+
 Dans l'exemple ci-dessus, nous utilisons les fonctions du langage MicroPython [`#!python print()`](../communication/ecrire_dans_la_console.md) et `#!python str()`.
-La fonction `#!python print()` est détaillés dans la [documentation MicroPython](https://www.micropython.fr/reference/03.builtin/print/).
+La fonction `#!python print()` est détaillés dans la [documentation MicroPython](https://www.micropython.fr/reference/#/03.builtin/print).
 
-Pour en savoir plus sur la fonction `#!python str()`, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/03.builtin/str/).
+Pour en savoir plus sur la fonction `#!python str()`, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/#/03.classes_builtins/README?id=class-str).
 
-Nous utilisons une [boucle itérative](../boucles/boucle_iterative.md) et pour en savoir plus la aussi : la [documentation MicroPython](https://www.micropython.fr/reference/02.mots_cles/for_in/)
+Nous utilisons une [boucle itérative](../boucles/boucle_iterative.md) et pour en savoir plus la aussi : la [documentation MicroPython](https://www.micropython.fr/reference/#/02.mots_cles/for_in/)
