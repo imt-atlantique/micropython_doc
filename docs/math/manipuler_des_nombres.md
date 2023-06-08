@@ -35,4 +35,4 @@ Le module `#!python math` fournit des fonctions permettant de manipuler des nomb
     ```
 
 ## Aller plus loin
-Dans l'exemple ci-dessus, nous utilisons le module `#!python math`.Pour en savoir plus sur ce module, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/04.standards/math/00.math/).
+Dans l'exemple ci-dessus, nous utilisons le module `#!python math`.Pour en savoir plus sur ce module, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/#/04.modules_standards/math/00.math).

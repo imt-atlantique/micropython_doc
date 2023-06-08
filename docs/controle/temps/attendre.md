@@ -26,4 +26,4 @@ Effectue une pause dans l'exécution du code.
     ```
 
 ## Aller plus loin
-Dans l'exemple ci-dessus, nous utilisons la fonction [`#!python print()`](../../communication/ecrire_dans_la_console.md) et le module `utime` qui permet de gérer les éléments de temps. Pour en savoir plus sur ce module, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/04.standards/utime/00.module_time/).
+Dans l'exemple ci-dessus, nous utilisons la fonction [`#!python print()`](../../communication/ecrire_dans_la_console.md) et le module `utime` qui permet de gérer les éléments de temps. Pour en savoir plus sur ce module, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/#/04.modules_standards/utime/00.module_time?id=module-utime).

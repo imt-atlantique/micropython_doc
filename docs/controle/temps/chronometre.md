@@ -36,4 +36,4 @@ Récupérer le nombre de millisecondes écoulées depuis le lancement de la cart
     ```
 
 ## Aller plus loin
-Dans l'exemple ci-dessus, nous utilisons le module `#!python utime` qui permet de gérer les éléments de temps. Pour en savoir plus sur cette classe, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/04.standards/utime/00.module_time/).
+Dans l'exemple ci-dessus, nous utilisons le module `#!python utime` qui permet de gérer les éléments de temps. Pour en savoir plus sur cette classe, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/#/04.modules_standards/utime/00.module_time?id=module-utime).
