@@ -41,8 +41,8 @@ La boucle `#!python for` se charge de la structure du processus. La(les) liste(s
 ## Aller plus loin
 Dans l'exemple ci-dessus, nous utilisons les fonctions du langage MicroPython [`#!python def`](../fonctions/fonction.md), `#!python for` et `#!python if else`.
 
-Pour en savoir plus sur  `#!python def`, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/02.mots_cles/def/).
+Pour en savoir plus sur  `#!python def`, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/#/02.mots_cles/def?id=def).
 
-Pour en savoir plus sur  `#!python for in`, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/02.mots_cles/for_in/).
+Pour en savoir plus sur  `#!python for in`, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/#/02.mots_cles/for_in?id=for-in-).
 
-Pour en savoir plus sur  `#!python if else`, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/02.mots_cles/if_elif_else/).
+Pour en savoir plus sur  `#!python if else`, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/#/02.mots_cles/if_elif_else?id=if-elif-else-).
