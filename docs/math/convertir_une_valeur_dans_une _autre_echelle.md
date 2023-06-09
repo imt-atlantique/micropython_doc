@@ -17,8 +17,10 @@ Passer une valeur d'un référenciel à l'autre
     ```python
     from machine import *
     from thingz import *
-
+    # definition d'une fonction, son nom "map", ses paramêtres séparé par une virgule, entre parenthèse
     def map (value, from_min, from_max, to_min, to_max):
+    # Dans ce cas ci, cette fonction retourne une valeur, mais ce n'est pas toujours le cas
+    # les variables dans cette fonction ne sont valable que dans la fonction
     return (value-from_min) * (to_max-to_min) / (from_max-from_min) + to_min
 
     while True:
