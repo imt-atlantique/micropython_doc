@@ -39,6 +39,7 @@ nav:
         - 'Stocker des nombres': 'variables/variable_nombre.md'
     - 'Listes': 
         - "Créer une liste d'éléments": 'listes/liste_avec_elts.md'
+        - "Parcourir une liste": 'listes/parcourir_liste.md'
     - 'Fonctions': 'fonctions/fonction.md'
   - 'Annexes':
     - 'La bibliothèque thingz': 
