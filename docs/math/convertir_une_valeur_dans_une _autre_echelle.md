@@ -10,6 +10,8 @@ Transforme une valeur comprise dans un intervalle [min→max] dans un autre inte
 
 Dans l'exemple suivant, nous allons faire passer la luminosité mesurée par la Galaxia de l'intervalle [0, 255] vers l'intervalle [0→100] :
 
+![Transformer une valeur](map.svg)
+
 === ":material-puzzle: Exemple avec des blocs"
     ![Bloc transformer la valeur](transformer.png){: style="width:640px;"}
 
