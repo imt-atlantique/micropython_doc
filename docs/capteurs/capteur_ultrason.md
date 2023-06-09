@@ -18,43 +18,45 @@ Le temps mis pour l'onde ultrasonore pour faire l'aller retour, capteur obstacle
 
 === ":material-code-array: Exemple avec du code"
 
-  ```python
-  
-  from machine import *
-  from thingz import *
-  import utime
+    ```python
+    from machine import *
+    from thingz import *
+    import utime
 
-  # Ultrasonic on p7
-  # définition de la fonction pour extraire la distance du capteur
-  def grove_getUltrasonicData(pinNumber, data='distance', timeout_us=30000):
-    trig = Pin(pinNumber, Pin.OUT)
-    trig.off()
-    utime.sleep_us(2)
-    trig.on()
-    utime.sleep_us(10)
-    trig.off()
-    echo = Pin(pinNumber, Pin.IN)
-    duration = time_pulse_us(echo, 1, timeout_us)/1e6 # t_echo in seconds
-    if duration > 0:
-      if data == 'distance':
-        #sound speed, round-trip/2, get in cm
-        return 343 * duration/2 * 100
-      elif data == 'duration':
-        return duration
+    # Ultrasonic on p7
+    # définition de la fonction pour extraire la distance du capteur
+    def grove_getUltrasonicData(pinNumber, data='distance', timeout_us=30000):
+      trig = Pin(pinNumber, Pin.OUT)
+      trig.off()
+      utime.sleep_us(2)
+      trig.on()
+      utime.sleep_us(10)
+      trig.off()
+      echo = Pin(pinNumber, Pin.IN)
+      duration = time_pulse_us(echo, 1, timeout_us)/1e6 # t_echo in seconds
+      if duration > 0:
+        if data == 'distance':
+          #sound speed, round-trip/2, get in cm
+          return 343 * duration/2 * 100
+        elif data == 'duration':
+          return duration
+        else:
+          raise ValueError("Data option '" + data + "' is not valid")
       else:
-        raise ValueError("Data option '" + data + "' is not valid")
-    else:
-      return -1
+        return -1
 
-  while True:
-  # impression de la distance calculée par le capteur branché broche 7
-    print(str(grove_getUltrasonicData(7, data='distance')));
+    while True:
+    # impression de la distance calculée par le capteur branché broche 7
+      print(str(grove_getUltrasonicData(7, data='distance')));
 
-  ```
+
+    ```
 
     
 ## Aller plus loin
 
 Dans l'exemple ci-dessus, nous utilisons la classe `#!python Pin` qui permet de manipuler les broches E/S (Entrée/Sortie) de la carte électronique. Pour en savoir plus sur cette classe, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/#/05.micropython/machine/classe_pin).
+
+Vous pouvez trouver toute les spécificités du capteur du kit sur sa ["datasheet"](https://files.seeedstudio.com/wiki/Grove_Ultrasonic_Ranger/res/Grove-Ultrasonic_Ranger_WiKi.pdf)
 
 Nous utilisons aussi `#!python str()`, nous vous invitons à lire la [documentation MicroPython](https://docs.python.org/fr/3/library/string.html).
