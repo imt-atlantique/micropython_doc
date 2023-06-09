@@ -750,7 +750,7 @@
   
     <li class="md-nav__item">
       <a href="../../math/manipuler_des_nombres/" class="md-nav__link">
-        manipuler des nombres
+        Manipuler des nombres
       </a>
     </li>
   
@@ -1221,7 +1221,7 @@
 
 <h1 id="definir-une-fonction">Définir une fonction<a class="headerlink" href="#definir-une-fonction" title="Permanent link">&para;</a></h1>
 <p>Rendre une partie de programme accessible par son nom en lui passant tout ce qui lui est nécessaire pour fonctionner.</p>
-<p>Les variables déclarées dans la fonction ne sont valable qu'en local dans la fonction (portée d'une variable). De plus, dans une fonction, les variables globales ne sont disponible qu'en lecture.</p>
+<p>Les variables déclarées dans la fonction ne sont valable qu'en local dans la fonction (on parle de la portée d'une variable). De plus, dans une fonction, les variables globales ne sont disponibles qu'en lecture.</p>
 <h2 id="exemple">Exemple<a class="headerlink" href="#exemple" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5Z"/></svg></span> Exemple avec des blocs</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5m3 1v12h4v-2H8V8h2V6H6m10 10h-2v2h4V6h-4v2h2v8Z"/></svg></span> Exemple avec du code</label></div>
 <div class="tabbed-content">
@@ -1229,11 +1229,9 @@
 <p><img alt="Blocs définir une fonction" src="../fonction.png" style="width:480px;" /></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Les blocs pour définir une fonction <img alt="Bloc variable" src="../bloc_fonction.png" style="height:24px;" /> peuvent être trouvé dans la catégorie de blocs <a href="#" style="color: rgb(255, 77, 106); font-weight: bold;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.42 5.29c-1.1-.1-2.07.71-2.17 1.82L10 10h2.82v2h-3l-.44 5.07A4.001 4.001 0 0 1 2 18.83l1.5-1.5c.33 1.05 1.46 1.64 2.5 1.3.78-.24 1.33-.93 1.4-1.74L7.82 12h-3v-2H8l.27-3.07a4.01 4.01 0 0 1 4.33-3.65c1.26.11 2.4.81 3.06 1.89l-1.5 1.5c-.25-.77-.93-1.31-1.74-1.38M22 13.65l-1.41-1.41-2.83 2.83-2.83-2.83-1.43 1.41 2.85 2.85-2.85 2.81 1.43 1.41 2.83-2.83 2.83 2.83L22 19.31l-2.83-2.81L22 13.65Z"/></svg></span> Fonctions</a>. </p>
-<p>on ajoute le nombre de variables nécessaires avec le <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0zM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm.75 4.75a.75.75 0 0 0-1.5 0v2.5h-2.5a.75.75 0 0 0 0 1.5h2.5v2.5a.75.75 0 0 0 1.5 0v-2.5h2.5a.75.75 0 0 0 0-1.5h-2.5v-2.5z"/></svg></span>. et on créé les variables dans l'espace blanc sur le coté prévu à cet effet </p>
-<p>Notez que dans cette catégorie il existe deux types de bloc.
-Des blocs pour les fonctions dont on récupère le résultat dans le format de son choix.
-d'autre sans sortie</p>
+<p>Les blocs pour définir une fonction <img alt="Bloc variable" src="../bloc_fonction.png" style="height:24px;" /> peuvent être trouvés dans la catégorie de blocs <a href="#" style="color: rgb(255, 77, 106); font-weight: bold;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.42 5.29c-1.1-.1-2.07.71-2.17 1.82L10 10h2.82v2h-3l-.44 5.07A4.001 4.001 0 0 1 2 18.83l1.5-1.5c.33 1.05 1.46 1.64 2.5 1.3.78-.24 1.33-.93 1.4-1.74L7.82 12h-3v-2H8l.27-3.07a4.01 4.01 0 0 1 4.33-3.65c1.26.11 2.4.81 3.06 1.89l-1.5 1.5c-.25-.77-.93-1.31-1.74-1.38M22 13.65l-1.41-1.41-2.83 2.83-2.83-2.83-1.43 1.41 2.85 2.85-2.85 2.81 1.43 1.41 2.83-2.83 2.83 2.83L22 19.31l-2.83-2.81L22 13.65Z"/></svg></span> Fonctions</a>. </p>
+<p>On ajoute le nombre de paramètres nécessaires avec le <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0zM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm.75 4.75a.75.75 0 0 0-1.5 0v2.5h-2.5a.75.75 0 0 0 0 1.5h2.5v2.5a.75.75 0 0 0 1.5 0v-2.5h2.5a.75.75 0 0 0 0-1.5h-2.5v-2.5z"/></svg></span>. et on nomme ces paramètres avec les champs prévus à cet effet.</p>
+<p>Notez que dans cette catégorie il existe deux types de blocs. Des blocs pour les fonctions qui peuvent renvoyer un résultat (ces fonctions sont appelées "fonctions avec sortie"). D'autres qui ne renvoient rien, appelées "fonctions sans sortie".</p>
 </div>
 </div>
 <div class="tabbed-block">
@@ -1250,27 +1248,38 @@ d'autre sans sortie</p>
 <span class="normal"><a href="#__codelineno-0-11">11</a></span>
 <span class="normal"><a href="#__codelineno-0-12">12</a></span>
 <span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">time</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1"># LED Module on p26</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="n">d2</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">26</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="c1"># on défini la fonction par un nom explicite,</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="c1">#  les variables déclarées dans la parenthèse pourront interagir avec le corps de la fonction</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="k">def</span> <span class="nf">blink_par__seconde</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a>    <span class="n">d2</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a>    <span class="n">d2</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="c1"># le corp de mon programme </span>
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="c1"># Appel de la fonction avec 2 comme paramètre    </span>
-<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="n">blink_par__seconde</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">utime</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># Initialisation d&#39;une LED branchée entre P0 et GND</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="n">p0</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="c1"># Déclaration d&#39;une fonction appelée &quot;clignoter_p0&quot;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="k">def</span> <span class="nf">clignoter_p0</span><span class="p">(</span><span class="n">periode_ms</span><span class="p">):</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a>    <span class="c1"># On allume la LED</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a>    <span class="n">p0</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a>    <span class="c1"># On attend le nombre de ms passé en paramètre </span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a>    <span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="n">periode_ms</span><span class="p">)</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a>    <span class="c1"># On éteint la LED</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a>    <span class="n">p0</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a>    <span class="c1"># On attend le nombre de ms passé en paramètre </span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a>    <span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="n">periode_ms</span><span class="p">)</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a>    <span class="c1"># On appelle la fonction que l&#39;on vient de déclarer</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a>    <span class="n">clignoter_p0</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 </div>
 </div>
 </div>
 <h2 id="aller-plus-loin">Aller plus loin<a class="headerlink" href="#aller-plus-loin" title="Permanent link">&para;</a></h2>
-<p>Dans l'exemple ci-dessus, nous utilisons la classe <code class="highlight"><span class="k">def</span></code> qui permet de définir une fonction. Pour en savoir plus sur cette classe, nous vous invitons à lire la <a href="https://www.micropython.fr/reference/#/02.mots_cles/def/">documentation MicroPython</a>.</p>
-<p>Plus haut on fait référence à la portée d'une variable pour en savoir plus sur cette notion la <a href="https://www.micropython.fr/reference/#/02.mots_cles/global/#portee-de-la-variable-definition">documentation Micropython</a></p>
+<p>Dans l'exemple ci-dessus, nous utilisons la classe <code class="highlight"><span class="k">def</span></code> qui permet de définir une fonction. Pour en savoir plus sur cette classe, nous vous invitons à lire la <a href="https://www.micropython.fr/reference/#/02.mots_cles/def/">documentation MicroPython</a>. Nous faisons également référence à la portée d'une variable, pour en savoir plus sur cette notion, tout est sur la <a href="https://www.micropython.fr/reference/#/02.mots_cles/global/#portee-de-la-variable-definition">documentation Micropython</a>.</p>
 
               
             </article>
