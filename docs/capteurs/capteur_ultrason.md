@@ -11,6 +11,7 @@ Le temps mis pour l'onde ultrasonore pour faire l'aller retour, capteur obstacle
 
 
 ## Exemple
+
 === ":material-puzzle: Exemple avec des blocs"
     ![Blocs capteur](ultrason.png){: style="width:480px;"}
     [ouvrir dans vittascience](https://fr.vittascience.com/galaxia/?link=645e439bbe4f0&mode=blocks&embed=1)
@@ -56,4 +57,4 @@ Le temps mis pour l'onde ultrasonore pour faire l'aller retour, capteur obstacle
 
 Dans l'exemple ci-dessus, nous utilisons la classe `#!python Pin` qui permet de manipuler les broches E/S (Entrée/Sortie) de la carte électronique. Pour en savoir plus sur cette classe, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/#/05.micropython/machine/classe_pin).
 
-Nous utilisons aussi `#!python str()`, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/#/03.modules_standards/str/).
+Nous utilisons aussi `#!python str()`, nous vous invitons à lire la [documentation MicroPython](https://docs.python.org/fr/3/library/string.html).
