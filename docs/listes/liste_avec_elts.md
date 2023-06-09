@@ -21,13 +21,13 @@ Pour profiter de tous les outils des listes pour gérer ces éléments.
 === "Exemple avec du code"
 
     ```python
-    # on créer une liste nommée bille    
-    mesBilles = [5, 32, 14]
-
-    while True:
-      # pour chaque élément de la liste mesBilles  
-      for i in mesBilles:
-        # je prend l'élément et lui applique la fonction str() pour en faire une chaine de charactère puis je l'imprime
+    from machine import *
+    from thingz import *
+    # on créer une liste nommée maliste
+    maliste = [2, 7, 9]
+    # pour chaque élément de la liste maliste
+    for i in maliste:
+    # je prend l'élément et lui applique la fonction str() pour en faire une chaine de charactère puis je l'imprime
         print(str(i));
 
     ```
