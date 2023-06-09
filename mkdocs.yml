@@ -31,7 +31,7 @@ nav:
     - 'Actionneurs': 
       - 'Contrôler un servomoteur' : 'actionneurs/servomoteur.md'
     - 'Opérateur':
-      - 'manipuler des nombres' : 'math/manipuler_des_nombres.md'
+      - 'Manipuler des nombres' : 'math/manipuler_des_nombres.md'
       - 'Convertir une valeur dans une autre échelle' : 'math/convertir_une_valeur_dans_une _autre_echelle.md'
     - 'Texte': 'variables/variable_texte.md'
     - 'Variables':
