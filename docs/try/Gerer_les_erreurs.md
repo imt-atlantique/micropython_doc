@@ -25,7 +25,7 @@ Le bloc `#!python finally :` vous permet d'exécuter du code, quel que soit le r
 ## Exemple
 
 
-    ```python
+```python
     try:
         print(x)
     except NameError:
@@ -34,7 +34,7 @@ Le bloc `#!python finally :` vous permet d'exécuter du code, quel que soit le r
         print("quelque chose s'est mal passée")
     finally:
         print(" 'try except' traversé")
-    ```
+```
 
 ## Aller plus loin
 Ces fonctionnalitées nous viennent directement du language python. Vous pouvez facilement trouver de la documentation par exemple [ici](https://zestedesavoir.com/tutoriels/2514/un-zeste-de-python/6-entrees-sorties/6-exceptions/)).
