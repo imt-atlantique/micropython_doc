@@ -4,7 +4,10 @@ hide:
 ---
 
 # Convertir une valeur dans une autre échelle
-Passer un valeur d'un référenciel à l'autre
+Passer une valeur d'un référenciel à l'autre
+
+![map](map.svg)
+
 ## Exemple
 === ":material-puzzle: Exemple avec des blocs"
     ![Bloc transformer la valeur](transformer.png){: style="width:480px;"}
