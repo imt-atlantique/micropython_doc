@@ -1251,21 +1251,25 @@
 <p><img alt="Bloc transformer la valeur" src="../transformer.png" style="width:480px;" /></p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span>
-<span class="normal"><a href="#__codelineno-0-6">6</a></span>
-<span class="normal"><a href="#__codelineno-0-7">7</a></span>
-<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1"># definition d&#39;une fonction, son nom &quot;map&quot;, ses paramêtres séparé par une virgule, entre parenthèse</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="k">def</span> <span class="nf">map</span> <span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">from_min</span><span class="p">,</span> <span class="n">from_max</span><span class="p">,</span> <span class="n">to_min</span><span class="p">,</span> <span class="n">to_max</span><span class="p">):</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="k">return</span> <span class="p">(</span><span class="n">value</span><span class="o">-</span><span class="n">from_min</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">to_max</span><span class="o">-</span><span class="n">to_min</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">from_max</span><span class="o">-</span><span class="n">from_min</span><span class="p">)</span> <span class="o">+</span> <span class="n">to_min</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">led</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">(),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="mi">3</span><span class="p">)));</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="c1"># Dans ce cas ci, cette fonction retourne une valeur, mais ce n&#39;est pas toujours le cas</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="c1"># les variables dans cette fonction ne sont valable que dans la fonction</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="k">return</span> <span class="p">(</span><span class="n">value</span><span class="o">-</span><span class="n">from_min</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">to_max</span><span class="o">-</span><span class="n">to_min</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">from_max</span><span class="o">-</span><span class="n">from_min</span><span class="p">)</span> <span class="o">+</span> <span class="n">to_min</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">led</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">(),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="mi">3</span><span class="p">)));</span>
 </code></pre></div></td></tr></table></div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
