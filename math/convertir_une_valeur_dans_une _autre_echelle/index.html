@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#convertir-une-valeur-dans-une-autre-echelle" class="md-skip">
+        <a href="#convertir-une-valeur-dans-un-autre-intervalle" class="md-skip">
           Aller au contenu
         </a>
       
@@ -1221,14 +1221,15 @@
                 
 
 
-<h1 id="convertir-une-valeur-dans-une-autre-echelle">Convertir une valeur dans une autre échelle<a class="headerlink" href="#convertir-une-valeur-dans-une-autre-echelle" title="Permanent link">&para;</a></h1>
-<p>Passer une valeur d'un référenciel à l'autre</p>
-<p><img alt="map" src="../map.svg" /></p>
+<h1 id="convertir-une-valeur-dans-un-autre-intervalle">Convertir une valeur dans un autre intervalle<a class="headerlink" href="#convertir-une-valeur-dans-un-autre-intervalle" title="Permanent link">&para;</a></h1>
+<p>Transforme une valeur comprise dans un intervalle [min→max] dans un autre intervalle [min→max]</p>
 <h2 id="exemple">Exemple<a class="headerlink" href="#exemple" title="Permanent link">&para;</a></h2>
+<p>Dans l'exemple suivant, nous allons faire passer la luminosité mesurée par la Galaxia de l'intervalle [0, 255] vers l'intervalle [0→100] :</p>
+<p><img alt="Transformer une valeur" src="../map.svg" /></p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5Z"/></svg></span> Exemple avec des blocs</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5m3 1v12h4v-2H8V8h2V6H6m10 10h-2v2h4V6h-4v2h2v8Z"/></svg></span> Exemple avec du code</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><img alt="Bloc transformer la valeur" src="../transformer.png" style="width:480px;" /></p>
+<p><img alt="Bloc transformer la valeur" src="../transformer.png" style="width:640px;" /></p>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
@@ -1240,20 +1241,24 @@
 <span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
 <span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
 <span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1"># definition d&#39;une fonction, son nom &quot;map&quot;, ses paramêtres séparé par une virgule, entre parenthèse</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="k">def</span> <span class="nf">map</span> <span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">from_min</span><span class="p">,</span> <span class="n">from_max</span><span class="p">,</span> <span class="n">to_min</span><span class="p">,</span> <span class="n">to_max</span><span class="p">):</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="c1"># Dans ce cas ci, cette fonction retourne une valeur, mais ce n&#39;est pas toujours le cas</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="c1"># les variables dans cette fonction ne sont valable que dans la fonction</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="k">return</span> <span class="p">(</span><span class="n">value</span><span class="o">-</span><span class="n">from_min</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">to_max</span><span class="o">-</span><span class="n">to_min</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">from_max</span><span class="o">-</span><span class="n">from_min</span><span class="p">)</span> <span class="o">+</span> <span class="n">to_min</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">led</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">(),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="mi">3</span><span class="p">)));</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># Définition d&#39;une fonction appelée &quot;map&quot;, ses paramètres séparés par une </span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="c1"># virgule, entre parenthèses</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="k">def</span> <span class="nf">map</span> <span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">from_min</span><span class="p">,</span> <span class="n">from_max</span><span class="p">,</span> <span class="n">to_min</span><span class="p">,</span> <span class="n">to_max</span><span class="p">):</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>  <span class="c1"># Cette fonction retourne une valeur (c&#39;est une fonction avec sortie)</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>  <span class="c1"># Les variables de cette fonction ne sont valables que dans la fonction</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a>  <span class="k">return</span> <span class="p">(</span><span class="n">value</span><span class="o">-</span><span class="n">from_min</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">to_max</span><span class="o">-</span><span class="n">to_min</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">from_max</span><span class="o">-</span><span class="n">from_min</span><span class="p">)</span> <span class="o">+</span> <span class="n">to_min</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a>  <span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">led</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">(),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="mi">3</span><span class="p">))</span>
 </code></pre></div></td></tr></table></div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>On remarque que cette transformation est une formule mathématique. Chaque opérande prenne la place de paramètres au sein d'une fonction. Celle-ci est définie plus haut et nommée map</p>
+<p>On remarque que cette transformation est une formule mathématique. Chaque opérande prend la place des paramètres au sein d'une fonction. Celle-ci est définie plus haut et nommée map</p>
 </div>
 </div>
 </div>

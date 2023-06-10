@@ -1232,9 +1232,7 @@ il est réalisé avec un module émetteur d'ultrason et un module capteur d'ultr
 <p><img alt="Blocs capteur" src="../ultrason.png" style="width:480px;" />
 <a href="https://fr.vittascience.com/galaxia/?link=645e439bbe4f0&amp;mode=blocks&amp;embed=1">ouvrir dans vittascience</a></p>
 </div>
-<div class="tabbed-block"></div>
-</div>
-</div>
+<div class="tabbed-block">
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -1293,8 +1291,12 @@ il est réalisé avec un module émetteur d'ultrason et un module capteur d'ultr
 <a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="c1"># impression de la distance calculée par le capteur branché broche 7</span>
 <a id="__codelineno-0-29" name="__codelineno-0-29"></a>  <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">grove_getUltrasonicData</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="s1">&#39;distance&#39;</span><span class="p">)));</span>
 </code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
 <h2 id="aller-plus-loin">Aller plus loin<a class="headerlink" href="#aller-plus-loin" title="Permanent link">&para;</a></h2>
 <p>Dans l'exemple ci-dessus, nous utilisons la classe <code class="highlight"><span class="n">Pin</span></code> qui permet de manipuler les broches E/S (Entrée/Sortie) de la carte électronique. Pour en savoir plus sur cette classe, nous vous invitons à lire la <a href="https://www.micropython.fr/reference/#/05.micropython/machine/classe_pin">documentation MicroPython</a>.</p>
+<p>Vous pouvez trouver toute les spécificités du capteur du kit sur sa <a href="https://files.seeedstudio.com/wiki/Grove_Ultrasonic_Ranger/res/Grove-Ultrasonic_Ranger_WiKi.pdf">"datasheet"</a></p>
 <p>Nous utilisons aussi <code class="highlight"><span class="nb">str</span><span class="p">()</span></code>, nous vous invitons à lire la <a href="https://docs.python.org/fr/3/library/string.html">documentation MicroPython</a>.</p>
 
               
