@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Liste avec éléments
 
 Une liste est une structure de données qui permet de stocker et d'organiser plusieurs éléments de manière séquentielle. Elle peut contenir des valeurs de différents types, telles que des nombres, des textes, des nombres flottants, des booléens, voire même d'autres listes.
@@ -5,7 +10,7 @@ Une liste est une structure de données qui permet de stocker et d'organiser plu
 
 
 ## Exemples
-=== "Exemple avec des blocs"
+=== ":material-puzzle: Exemple avec des blocs"
     ![Blocs liste avec éléments](parser_liste.png){: style="width:640px;"}
 
     !!! info
@@ -17,7 +22,7 @@ Une liste est une structure de données qui permet de stocker et d'organiser plu
         Le bloc pour affecter des éléments à une liste ![éléments à une liste](liste_avec_les_elts.png){: style="height:24px;"} se trouve dans la catégorie de blocs [:fontawesome-solid-list: Listes](#){: style="color: rgb(255, 102, 26); font-weight: bold;"}.
 
 
-=== "Exemple avec du code"
+=== ":material-code-array: Exemple avec du code"
 
     ```python
     from machine import *

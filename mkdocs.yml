@@ -37,9 +37,7 @@ nav:
     - 'Variables':
         - 'Stocker du texte': 'variables/variable_texte.md'
         - 'Stocker des nombres': 'variables/variable_nombre.md'
-    - 'Listes': 
-        - "Créer une liste d'éléments": 'listes/liste_avec_elements.md'
-        - "Parcourir une liste": 'listes/parcourir_liste.md'
+    - 'Listes':  'listes/liste.md'
     - 'Fonctions': 'fonctions/fonction.md'
   - 'Annexes':
     - 'La bibliothèque thingz': 
