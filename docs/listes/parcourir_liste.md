@@ -1,7 +1,6 @@
-# Liste avec éléments
+# Parcourir une liste
 
-Utiliser une liste pour stocker une suite d'éléments.
-Pour profiter de tous les outils des listes pour gérer ces éléments.
+Acceder au éléments d'un liste
 
 ## Exemples
 === "Exemple avec des blocs"
@@ -27,12 +26,36 @@ Pour profiter de tous les outils des listes pour gérer ces éléments.
     maliste = [2, 7, 9]
     # pour chaque élément de la liste maliste
     for i in maliste:
-    # je prend l'élément et lui applique la fonction str() pour en faire une chaine de charactère puis je l'imprime
+        # je prend l'élément et lui applique la fonction str() pour en faire une chaine de charactère puis je l'imprime
         print(str(i));
 
     ```
 
+## Un autre exemple
 
+=== "Exemple avec des blocs"
+    ![Blocs for i in range](parcourir_liste.png){: style="width:640px;"}
+
+    
+
+
+
+=== "Exemple avec du code"
+
+    ```python
+    from machine import *
+    from thingz import *
+
+    while True:
+        # on créer une liste nommée maliste 
+        maliste = [2, 7, 9]
+        # on choisi précisement la portion des éléments de la liste
+        print(str(maliste[int(i)]));
+
+    ```
+    !!! info
+        Ici on parcours la liste en ne prenant pas le premier élément [0]
+        L'indice [3] ne sera pas pris parce que la borne supérieur est exclusive. (et heureusement il n'y en a pas d'indice [3].)
 
 
 ## Aller plus loin
