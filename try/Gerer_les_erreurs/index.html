@@ -639,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../capteurs/capteur_ultrason/" class="md-nav__link">
+      <a href="../../capteurs/capteur_ultrasons/" class="md-nav__link">
         Capter la distance
       </a>
     </li>
@@ -885,6 +885,20 @@
     <li class="md-nav__item">
       <a href="../../listes/liste_avec_elts/" class="md-nav__link">
         Créer une liste d'éléments
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../listes/parcourir_liste/" class="md-nav__link">
+        Parcourir une liste
       </a>
     </li>
   
@@ -1229,25 +1243,21 @@ Pour qu'il puisse continuer on offre une autre alternative</p>
 <p>Le bloc <code class="highlight"><span class="k">else</span> <span class="p">:</span></code>  permet d'exécuter du code lorsqu'il n'y a pas d'erreur.</p>
 <p>Le bloc <code class="highlight"><span class="k">finally</span> <span class="p">:</span></code> vous permet d'exécuter du code, quel que soit le résultat des blocs try- et except</p>
 <h2 id="exemple">Exemple<a class="headerlink" href="#exemple" title="Permanent link">&para;</a></h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>```python
-try:
-    print(x)
-except NameError:
-    print(&quot;la variable n&#39;est pas définie&quot;)
-except:
-    print(&quot;quelque chose s&#39;est mal passée&quot;)
-finally:
-    print(&quot; &#39;try except&#39; traversé&quot;)
-```
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span>
+<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>    <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;la variable n&#39;est pas définie&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>    <span class="k">except</span><span class="p">:</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;quelque chose s&#39;est mal passée&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>    <span class="k">finally</span><span class="p">:</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &#39;try except&#39; traversé&quot;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="aller-plus-loin">Aller plus loin<a class="headerlink" href="#aller-plus-loin" title="Permanent link">&para;</a></h2>
 <p>Ces fonctionnalitées nous viennent directement du language python. Vous pouvez facilement trouver de la documentation par exemple <a href="https://zestedesavoir.com/tutoriels/2514/un-zeste-de-python/6-entrees-sorties/6-exceptions/">ici</a>).</p>

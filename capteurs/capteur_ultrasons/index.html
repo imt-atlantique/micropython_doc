@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#capteur-a-ultrason" class="md-skip">
+        <a href="#capteur-a-ultrasons" class="md-skip">
           Aller au contenu
         </a>
       
@@ -943,6 +943,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../listes/parcourir_liste/" class="md-nav__link">
+        Parcourir une liste
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1221,16 +1235,14 @@
                 
 
 
-<h1 id="capteur-a-ultrason">Capteur à Ultrason<a class="headerlink" href="#capteur-a-ultrason" title="Permanent link">&para;</a></h1>
-<p>Le capteur à ultrason fonctionne comme son nom l'indique à l'aide d'ultrason.
-il est réalisé avec un module émetteur d'ultrason et un module capteur d'ultrason</p>
-<p>Le temps mis pour l'onde ultrasonore pour faire l'aller retour, capteur obstacle, donne la distance à laquelle se trouve celui-ci.</p>
+<h1 id="capteur-a-ultrasons">Capteur à ultrasons<a class="headerlink" href="#capteur-a-ultrasons" title="Permanent link">&para;</a></h1>
+<p>Le capteur à ultrasons fonctionne comme son nom l'indique à l'aide d'ultrasons (des ondes sonores à haute fréquence).
+Le capteur à ultrasons émet des ultrasons qui vont être réfléchis par les obstacles situés devant le capteur, les ondes réfléchies par ces obstacles vont revenir vers le capteur et la distance est ainsi calculer en fonction du temps de vol des ondes (le temps pour faire l'aller-retour entre le capteur et l'obstacle).</p>
 <h2 id="exemple">Exemple<a class="headerlink" href="#exemple" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5Z"/></svg></span> Exemple avec des blocs</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5m3 1v12h4v-2H8V8h2V6H6m10 10h-2v2h4V6h-4v2h2v8Z"/></svg></span> Exemple avec du code</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><img alt="Blocs capteur" src="../ultrason.png" style="width:480px;" />
-<a href="https://fr.vittascience.com/galaxia/?link=645e439bbe4f0&amp;mode=blocks&amp;embed=1">ouvrir dans vittascience</a></p>
+<p><img alt="Blocs capteur" src="../ultrason.png" style="width:480px;" /></p>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
@@ -1265,8 +1277,8 @@ il est réalisé avec un module émetteur d'ultrason et un module capteur d'ultr
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kn">import</span> <span class="nn">utime</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="c1"># Ultrasonic on p7</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="c1"># définition de la fonction pour extraire la distance du capteur</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="c1"># On définit une fonction qui va calculer la distance mesurée par le </span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="c1"># capteur à ultrasons</span>
 <a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="k">def</span> <span class="nf">grove_getUltrasonicData</span><span class="p">(</span><span class="n">pinNumber</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="s1">&#39;distance&#39;</span><span class="p">,</span> <span class="n">timeout_us</span><span class="o">=</span><span class="mi">30000</span><span class="p">):</span>
 <a id="__codelineno-0-8" name="__codelineno-0-8"></a>  <span class="n">trig</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="n">pinNumber</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9"></a>  <span class="n">trig</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
@@ -1288,16 +1300,14 @@ il est réalisé avec un module émetteur d'ultrason et un module capteur d'ultr
 <a id="__codelineno-0-25" name="__codelineno-0-25"></a>    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
 <a id="__codelineno-0-26" name="__codelineno-0-26"></a>
 <a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="c1"># impression de la distance calculée par le capteur branché broche 7</span>
-<a id="__codelineno-0-29" name="__codelineno-0-29"></a>  <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">grove_getUltrasonicData</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="s1">&#39;distance&#39;</span><span class="p">)));</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28"></a>  <span class="c1"># On affiche la distance calculée par le capteur branché sur la broche 7</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29"></a>  <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">grove_getUltrasonicData</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="s1">&#39;distance&#39;</span><span class="p">)))</span>
 </code></pre></div></td></tr></table></div>
 </div>
 </div>
 </div>
 <h2 id="aller-plus-loin">Aller plus loin<a class="headerlink" href="#aller-plus-loin" title="Permanent link">&para;</a></h2>
-<p>Dans l'exemple ci-dessus, nous utilisons la classe <code class="highlight"><span class="n">Pin</span></code> qui permet de manipuler les broches E/S (Entrée/Sortie) de la carte électronique. Pour en savoir plus sur cette classe, nous vous invitons à lire la <a href="https://www.micropython.fr/reference/#/05.micropython/machine/classe_pin">documentation MicroPython</a>.</p>
-<p>Vous pouvez trouver toute les spécificités du capteur du kit sur sa <a href="https://files.seeedstudio.com/wiki/Grove_Ultrasonic_Ranger/res/Grove-Ultrasonic_Ranger_WiKi.pdf">"datasheet"</a></p>
-<p>Nous utilisons aussi <code class="highlight"><span class="nb">str</span><span class="p">()</span></code>, nous vous invitons à lire la <a href="https://docs.python.org/fr/3/library/string.html">documentation MicroPython</a>.</p>
+<p>Dans l'exemple ci-dessus, nous utilisons la classe <code class="highlight"><span class="n">Pin</span></code> qui permet de manipuler les broches E/S (Entrée/Sortie) de la carte électronique. Pour en savoir plus sur cette classe, nous vous invitons à lire la <a href="https://www.micropython.fr/reference/#/05.micropython/machine/classe_pin">documentation MicroPython</a>. Vous pouvez trouver toute les spécificités du capteur du kit sur sa <a href="https://files.seeedstudio.com/wiki/Grove_Ultrasonic_Ranger/res/Grove-Ultrasonic_Ranger_WiKi.pdf">fiche technique</a>. Nous utilisons aussi <code class="highlight"><span class="nb">str</span><span class="p">()</span></code>, nous vous invitons à lire la <a href="https://docs.python.org/fr/3/library/string.html">documentation Python</a>.</p>
 
               
             </article>
