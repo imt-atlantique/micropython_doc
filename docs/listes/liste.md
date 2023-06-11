@@ -65,6 +65,6 @@ Une liste est une structure de données qui permet de stocker et d'organiser plu
 
 ## Aller plus loin
 
-Les opérations sur les listes sont aussi nombreuses que pratiques. Vous pourrez vous faire une idée rapide de ce qu'il est possible de faire sur le site [python.doctor](https://python.doctor/page-apprendre-listes-list-tableaux-tableaux-liste-array-python-cours-debutant). Ou si vous préférez un petit film choisissez [les Pythonnerie sur les listes](https://www.youtube.com/watch?v=J3RJE8516MU).
+Les opérations sur les listes sont aussi nombreuses que pratiques. Vous pourrez vous faire une idée rapide de ce qu'il est possible de faire sur le site [python.doctor](https://python.doctor/page-apprendre-listes-list-tableaux-tableaux-liste-array-python-cours-debutant). Ou si vous préférez un petit film, choisissez [les Pythonnerie sur les listes](https://www.youtube.com/watch?v=J3RJE8516MU).
 
 Dans l'exemple ci-dessus, nous utilisons les fonctions du langage MicroPython [`#!python print()`](../communication/ecrire_dans_la_console.md) et `#!python str()` toutes deux détaillés dans la [documentation MicroPython](https://www.micropython.fr/reference/#/03.builtin/print). Nous utilisons une [boucle itérative](../boucles/boucle_iterative.md) et pour en savoir plus la aussi : la [documentation MicroPython](https://www.micropython.fr/reference/#/02.mots_cles/for_in/)
