@@ -3,7 +3,7 @@ hide:
   - toc
 ---
 
-# Créer un liste
+# Créer une liste
 
 Une liste est une structure de données qui permet de stocker et d'organiser plusieurs éléments de manière séquentielle. Elle peut contenir des valeurs de différents types, telles que des nombres, des textes, des nombres flottants, des booléens, voire même d'autres listes.
 
