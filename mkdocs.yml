@@ -40,6 +40,7 @@ nav:
     - 'Listes':
         - "Créer une liste" : 'listes/liste.md'
         - "Obtenir l'élément d'une liste" : 'listes/obtenir_element_liste.md'
+        - "Supprimer l'élément d'une liste" : 'listes/supprimer_element_liste.md'
     - 'Fonctions': 'fonctions/fonction.md'
   - 'Annexes':
     - 'La bibliothèque thingz': 
