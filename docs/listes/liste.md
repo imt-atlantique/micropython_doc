@@ -11,7 +11,7 @@ Une liste est une structure de données qui permet de stocker et d'organiser plu
 
 ## Exemples 1
 === ":material-puzzle: Exemple avec des blocs"
-    ![Blocs liste avec éléments](parser_liste.png){: style="width:640px;"}
+    ![Blocs suprimer element d'une liste](parser_liste.png){: style="width:640px;"}
 
     !!! info
 
