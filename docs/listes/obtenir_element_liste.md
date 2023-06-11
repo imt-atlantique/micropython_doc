@@ -1,9 +1,9 @@
 # Obtenir l'élément d'une liste
 
-## Un autre exemple
+## Exemple
 
 === "Exemple avec des blocs"
-    ![Blocs for i in range](obtenir_index_list.png){: style="width:640px;"}
+    ![Blocs dans la liste obtenir](obtenir_index_list.png){: style="width:640px;"}
 
 
 
@@ -14,13 +14,13 @@
     from thingz import *
     while True:
         # on créer une liste nommée maliste 
-        maliste = [2, 7, 9]
-        # on choisi précisement la portion des éléments de la liste
-        print(str(maliste[int(i)]));
+        maliste = ['beau', 'couvert', 'pluie']
+        # on choisi l'index correspondant avec l'élément qu'on veut obtenir
+        print(str(maliste[int(1)]));
     ```
     !!! info
-        Ici on parcours la liste en ne prenant pas le premier élément [0]
-        L'indice [3] ne sera pas pris parce que la borne supérieur est exclusive. (et heureusement il n'y en a pas d'indice [3].)
+
+        
 
 
 ## Aller plus loin

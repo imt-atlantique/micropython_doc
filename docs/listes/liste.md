@@ -9,7 +9,7 @@ Une liste est une structure de données qui permet de stocker et d'organiser plu
 
 
 
-## Exemples
+## Exemples 1
 === ":material-puzzle: Exemple avec des blocs"
     ![Blocs liste avec éléments](parser_liste.png){: style="width:640px;"}
 
@@ -34,6 +34,30 @@ Une liste est une structure de données qui permet de stocker et d'organiser plu
         # je prend l'élément et lui applique la fonction str() pour en faire une
         # chaîne de caractères afin de l'afficher
         print(str(i))
+    ```
+
+
+
+## Exemple 2
+
+=== ":material-puzzle: Exemple avec des blocs"
+    ![Blocs ajouter l element ](append.png){: style="width:640px;"}
+
+   
+
+
+=== ":material-code-array: Exemple avec du code"
+
+    ```python
+    from machine import *
+    from thingz import *
+    import utime
+
+    maliste = []
+
+    while True:
+        maliste.append(led.read_light_level())
+        utime.sleep(180)
     ```
 
 
