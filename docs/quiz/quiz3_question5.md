@@ -12,14 +12,10 @@ hide:
 === ":material-code-array: Exemple avec du code"
 
     ```python
-    from machine import *
-    from thingz import *
-
     def fois2(x):
-    x = x * 2
+      x = x * 2
 
     plus = 12
     fois2(plus)
-    print(str(plus));
-
+    print(str(plus))
     ```

@@ -12,11 +12,7 @@ hide:
 === ":material-code-array: Exemple avec du code"
 
     ```python
-    from machine import *
-    from thingz import *
-
     liste = []
     maliste = [12, 23, 35]
-    print(str(maliste[1]));
-
+    print(str(maliste[1]))
     ```
