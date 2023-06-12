@@ -5,15 +5,7 @@
 === "Exemple avec des blocs"
     ![Blocs dans la liste supprimer](supprimer_element_liste.png){: style="width:640px;"}
 
-!!! Attention
-    Vous remarquerez que le bloc de suppression
-    ![bloc dans la liste suppression](danslalisteSupp.png){: style="width:640px;"}
 
-     est une option du bloc de d'obtention.
-     
-    ![bloc dans la liste obtention](danslalisteObtenir.png){: style="width:640px;"}
-
-    Et celui-ci change de forme !
 
 === "Exemple avec du code"
 
