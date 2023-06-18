@@ -18,6 +18,7 @@ nav:
         - 'Répéter selon des éléments' : 'boucles/boucle_iterative.md'
     - 'Communication': 
       - 'Écrire dans la console': 'communication/ecrire_dans_la_console.md'
+      - 'Tracer le graphe': 'communication/tracer_le_graphe.md'
     - 'Apparence': 
       - 'Contrôler une LED': 'apparence/led/led.md'
       - "Régler l'intensité lumineuse d'une LED": 'apparence/led/led_pwm.md'
