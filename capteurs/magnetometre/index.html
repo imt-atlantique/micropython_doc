@@ -13,24 +13,24 @@
       
       
       
-        <link rel="prev" href="../../../galaxia/">
+        <link rel="prev" href="../capteur_acceleration/">
       
       
-        <link rel="next" href="../chronometre/">
+        <link rel="next" href="../capteur_ultrasons/">
       
-      <link rel="icon" href="../../../img/favicon.ico">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
       
-        <title>Attendre - MOOCs MicroPython</title>
+        <title>Capter un champ magnétique - MOOCs MicroPython</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.ded33207.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ded33207.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -46,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#attendre" class="md-skip">
+        <a href="#magnetometre" class="md-skip">
           Aller au contenu
         </a>
       
@@ -93,9 +93,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../../.." title="MOOCs MicroPython" class="md-header__button md-logo" aria-label="MOOCs MicroPython" data-md-component="logo">
+    <a href="../.." title="MOOCs MicroPython" class="md-header__button md-logo" aria-label="MOOCs MicroPython" data-md-component="logo">
       
-  <img src="../../../img/micropython_isometric_transparent.svg" alt="logo">
+  <img src="../../img/micropython_isometric_transparent.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Attendre
+              Capter un champ magnétique
             
           </span>
         </div>
@@ -200,9 +200,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="MOOCs MicroPython" class="md-nav__button md-logo" aria-label="MOOCs MicroPython" data-md-component="logo">
+    <a href="../.." title="MOOCs MicroPython" class="md-nav__button md-logo" aria-label="MOOCs MicroPython" data-md-component="logo">
       
-  <img src="../../../img/micropython_isometric_transparent.svg" alt="logo">
+  <img src="../../img/micropython_isometric_transparent.svg" alt="logo">
 
     </a>
     MOOCs MicroPython
@@ -218,7 +218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Accueil
       </a>
     </li>
@@ -262,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interface/" class="md-nav__link">
+      <a href="../../interface/" class="md-nav__link">
         L'interface Vittascience
       </a>
     </li>
@@ -276,7 +276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../galaxia/" class="md-nav__link">
+      <a href="../../galaxia/" class="md-nav__link">
         La carte Galaxia
       </a>
     </li>
@@ -327,16 +327,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
       
       
       
@@ -345,7 +343,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_1">
           <span class="md-nav__icon md-icon"></span>
           Contrôle
@@ -356,59 +354,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Attendre
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../controle/temps/attendre/" class="md-nav__link">
         Attendre
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#exemple" class="md-nav__link">
-    Exemple
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#aller-plus-loin" class="md-nav__link">
-    Aller plus loin
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -420,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../chronometre/" class="md-nav__link">
+      <a href="../../controle/temps/chronometre/" class="md-nav__link">
         Utiliser le chronomètre
       </a>
     </li>
@@ -434,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../executer_des_instructions_selon_une_condition/" class="md-nav__link">
+      <a href="../../controle/executer_des_instructions_selon_une_condition/" class="md-nav__link">
         Exécuter selon une condition
       </a>
     </li>
@@ -448,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../executer_des_instructions_selon_des_conditions/" class="md-nav__link">
+      <a href="../../controle/executer_des_instructions_selon_des_conditions/" class="md-nav__link">
         Exécuter selon des conditions
       </a>
     </li>
@@ -462,7 +412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../boucles/boucle_simple/" class="md-nav__link">
+      <a href="../../boucles/boucle_simple/" class="md-nav__link">
         Répéter
       </a>
     </li>
@@ -476,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../boucles/boucle_avec_variable/" class="md-nav__link">
+      <a href="../../boucles/boucle_avec_variable/" class="md-nav__link">
         Répéter en comptant
       </a>
     </li>
@@ -490,7 +440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../boucles/boucle_iterative/" class="md-nav__link">
+      <a href="../../boucles/boucle_iterative/" class="md-nav__link">
         Répéter selon des éléments
       </a>
     </li>
@@ -538,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../communication/ecrire_dans_la_console/" class="md-nav__link">
+      <a href="../../communication/ecrire_dans_la_console/" class="md-nav__link">
         Écrire dans la console
       </a>
     </li>
@@ -552,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../communication/tracer_le_graphe/" class="md-nav__link">
+      <a href="../../communication/tracer_le_graphe/" class="md-nav__link">
         Tracer le graphe
       </a>
     </li>
@@ -600,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../apparence/led/led/" class="md-nav__link">
+      <a href="../../apparence/led/led/" class="md-nav__link">
         Contrôler une LED
       </a>
     </li>
@@ -614,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../apparence/led/led_pwm/" class="md-nav__link">
+      <a href="../../apparence/led/led_pwm/" class="md-nav__link">
         Régler l'intensité lumineuse d'une LED
       </a>
     </li>
@@ -628,7 +578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../apparence/led_rgb/led_rgb/" class="md-nav__link">
+      <a href="../../apparence/led_rgb/led_rgb/" class="md-nav__link">
         Contrôler une LED RGB
       </a>
     </li>
@@ -647,14 +597,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
       
       
       
@@ -663,7 +615,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3_4">
           <span class="md-nav__icon md-icon"></span>
           Capteurs
@@ -676,7 +628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../capteurs/bouton/" class="md-nav__link">
+      <a href="../bouton/" class="md-nav__link">
         Détecter l'appui sur un bouton
       </a>
     </li>
@@ -690,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../capteurs/capteur_lumiere/" class="md-nav__link">
+      <a href="../capteur_lumiere/" class="md-nav__link">
         Capter la luminosité
       </a>
     </li>
@@ -704,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../capteurs/capteur_acceleration/" class="md-nav__link">
+      <a href="../capteur_acceleration/" class="md-nav__link">
         Capter l'accélération
       </a>
     </li>
@@ -716,11 +668,59 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../capteurs/magnetometre/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Capter un champ magnétique
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Capter un champ magnétique
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    Exemple
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aller-plus-loin" class="md-nav__link">
+    Aller plus loin
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -732,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../capteurs/capteur_ultrasons/" class="md-nav__link">
+      <a href="../capteur_ultrasons/" class="md-nav__link">
         Capter la distance
       </a>
     </li>
@@ -746,7 +746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../capteurs/bouton_avec_interruption/" class="md-nav__link">
+      <a href="../bouton_avec_interruption/" class="md-nav__link">
         Détecter instantanément l'appui sur un bouton
       </a>
     </li>
@@ -794,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../actionneurs/servomoteur/" class="md-nav__link">
+      <a href="../../actionneurs/servomoteur/" class="md-nav__link">
         Contrôler un servomoteur
       </a>
     </li>
@@ -842,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../math/manipuler_des_nombres/" class="md-nav__link">
+      <a href="../../math/manipuler_des_nombres/" class="md-nav__link">
         Manipuler des nombres
       </a>
     </li>
@@ -856,7 +856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../math/convertir_une_valeur_dans_une%20_autre_echelle/" class="md-nav__link">
+      <a href="../../math/convertir_une_valeur_dans_une%20_autre_echelle/" class="md-nav__link">
         Convertir une valeur dans une autre échelle
       </a>
     </li>
@@ -877,7 +877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../variables/variable_texte/" class="md-nav__link">
+      <a href="../../variables/variable_texte/" class="md-nav__link">
         Texte
       </a>
     </li>
@@ -918,7 +918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../variables/variable_texte/" class="md-nav__link">
+      <a href="../../variables/variable_texte/" class="md-nav__link">
         Stocker du texte
       </a>
     </li>
@@ -932,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../variables/variable_nombre/" class="md-nav__link">
+      <a href="../../variables/variable_nombre/" class="md-nav__link">
         Stocker des nombres
       </a>
     </li>
@@ -980,7 +980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../listes/liste/" class="md-nav__link">
+      <a href="../../listes/liste/" class="md-nav__link">
         Créer une liste
       </a>
     </li>
@@ -994,7 +994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../listes/obtenir_element_liste/" class="md-nav__link">
+      <a href="../../listes/obtenir_element_liste/" class="md-nav__link">
         Obtenir l'élément d'une liste
       </a>
     </li>
@@ -1008,7 +1008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../listes/supprimer_element_liste/" class="md-nav__link">
+      <a href="../../listes/supprimer_element_liste/" class="md-nav__link">
         Supprimer l'élément d'une liste
       </a>
     </li>
@@ -1029,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fonctions/fonction/" class="md-nav__link">
+      <a href="../../fonctions/fonction/" class="md-nav__link">
         Fonctions
       </a>
     </li>
@@ -1107,7 +1107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../thingz/thingz/" class="md-nav__link">
+      <a href="../../thingz/thingz/" class="md-nav__link">
         thingz
       </a>
     </li>
@@ -1121,7 +1121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../thingz/thingz_accelerometer/" class="md-nav__link">
+      <a href="../../thingz/thingz_accelerometer/" class="md-nav__link">
         thingz.accelerometer
       </a>
     </li>
@@ -1135,7 +1135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../thingz/thingz_compass/" class="md-nav__link">
+      <a href="../../thingz/thingz_compass/" class="md-nav__link">
         thingz.compas
       </a>
     </li>
@@ -1149,7 +1149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../thingz/thingz_button/" class="md-nav__link">
+      <a href="../../thingz/thingz_button/" class="md-nav__link">
         thingz.button
       </a>
     </li>
@@ -1163,7 +1163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../thingz/thingz_led/" class="md-nav__link">
+      <a href="../../thingz/thingz_led/" class="md-nav__link">
         thingz.led
       </a>
     </li>
@@ -1177,7 +1177,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../thingz/thingz_temperature/" class="md-nav__link">
+      <a href="../../thingz/thingz_temperature/" class="md-nav__link">
         thingz.temperature
       </a>
     </li>
@@ -1191,7 +1191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../thingz/thingz_sound/" class="md-nav__link">
+      <a href="../../thingz/thingz_sound/" class="md-nav__link">
         thingz.sound
       </a>
     </li>
@@ -1205,7 +1205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../thingz/thingz_radio/" class="md-nav__link">
+      <a href="../../thingz/thingz_radio/" class="md-nav__link">
         thingz.radio
       </a>
     </li>
@@ -1226,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exceptions/gerer_les_erreurs.md" class="md-nav__link">
+      <a href="../../exceptions/gerer_les_erreurs.md" class="md-nav__link">
         Gérer les erreurs
       </a>
     </li>
@@ -1297,40 +1297,39 @@
                   
 
 
-<h1 id="attendre">Attendre<a class="headerlink" href="#attendre" title="Permanent link">&para;</a></h1>
-<p>Effectue une pause dans l'exécution du code.</p>
+<h1 id="magnetometre">Magnétomètre<a class="headerlink" href="#magnetometre" title="Permanent link">&para;</a></h1>
+<p>Ce capteur permet de mesurer un champ magnétique dans un espace en 3 dimensions. L'usage qui nous intéressera le plus souvent est la détection du nord magnétique. Ainsi, vous pourrez programmer votre carte comme une boussole ou trouvez votre orientation par rapport au nord.</p>
 <h2 id="exemple">Exemple<a class="headerlink" href="#exemple" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5Z"/></svg></span> Exemple avec des blocs</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5m3 1v12h4v-2H8V8h2V6H6m10 10h-2v2h4V6h-4v2h2v8Z"/></svg></span> Exemple avec du code</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><img alt="Bloc attendre" src="../attendre.png" style="width:480px;" /></p>
+<p><img alt="Blocs capteur" src="../magnetometre.png" style="width:480px;" />
+<a href="https://fr.vittascience.com/galaxia/?link=645e2e1ac5860&amp;toolbox=scratch&amp;mode=blocks&amp;embed=1">ouvrir dans vittascience</a></p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># On importe le module utime</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">utime</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># Affichage d&#39;un message avec la fonction print()</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Démarrage du programme&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="c1"># On attend 1 seconde</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="n">utime</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1 seconde écoulée&quot;</span><span class="p">)</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>    <span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="kn">import</span> <span class="nn">math</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">compass</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">compass</span><span class="o">.</span><span class="n">get_y</span><span class="p">()</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">compass</span><span class="o">.</span><span class="n">get_z</span><span class="p">()</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)));</span>
 </code></pre></div></td></tr></table></div>
+<div class="admonition info">
+<p class="admonition-title">Info<p>on remarque que dans ce code une opération mathématique est réalisée. On prend la racine carrée de la somme des carrées de chaque composante. Pour avoir la "norme" résultante. <a href="https://query.libretexts.org/Francais/Livre_%3A_Calculus_(OpenStax)/12%3A_Vecteurs_dans_l'espace/12.02%3A_Vecteurs_en_trois_dimensions">si vraiment vous voulez vous rappeler vos cours du collège</a> </p>
+</p>
+</div>
 </div>
 </div>
 </div>
 <h2 id="aller-plus-loin">Aller plus loin<a class="headerlink" href="#aller-plus-loin" title="Permanent link">&para;</a></h2>
-<p>Dans l'exemple ci-dessus, nous utilisons la fonction <a href="../../../communication/ecrire_dans_la_console/"><code class="highlight"><span class="nb">print</span><span class="p">()</span></code></a> et le module <code>utime</code> qui permet de gérer les éléments de temps. Pour en savoir plus sur ce module, nous vous invitons à lire la <a href="https://www.micropython.fr/reference/#/04.modules_standards/utime/00.module_time?id=module-utime">documentation MicroPython</a>.</p>
+<p>Dans l'exemple ci-dessus, nous utilisons la classe <code class="highlight"><span class="n">math</span></code> qui permet d'incorporer des outils mathématiques dans le programme'. Pour en savoir plus sur cette classe, nous vous invitons à lire la <a href="https://docs-micropython-org.translate.goog/en/latest/library/math.html?_x_tr_sl=ja&amp;_x_tr_tl=fr&amp;_x_tr_hl=fr&amp;_x_tr_pto=wapp">documentation MicroPython</a>.</p>
+<p>Nous utilisons aussi <code class="highlight"><span class="nb">str</span><span class="p">()</span></code>, nous vous invitons à lire la <a href="https://www.micropython.fr/reference/#/03.modules_standards/str/">documentation MicroPython</a>.</p>
+<p>et enfin la librairie thingz avec <a href="../../thingz/thingz_compass/">sa bibliothèque adaptée au magnétomètre</a></p>
+<p>Pour en savoir plus sur les magnétomètres.</p>
+<p><a href="https://fr.wikipedia.org/wiki/Magn%C3%A9tom%C3%A8tre">la page wikipédia</a></p>
 
 
 
@@ -1370,12 +1369,12 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "header.autohide", "navigation.sections"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "header.autohide", "navigation.sections"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.51198bba.min.js"></script>
+      <script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
       
-        <script src="../../../js/extra.js"></script>
+        <script src="../../js/extra.js"></script>
       
     
   </body>
