@@ -34,6 +34,7 @@ nav:
       - 'Contrôler un servomoteur' : 'actionneurs/servomoteur.md'
     - 'Opérateur':
       - 'Manipuler des nombres' : 'math/manipuler_des_nombres.md'
+      - 'Générer un nombre aléatoire' : 'math/aleatoire.md'
       - 'Convertir une valeur dans une autre échelle' : 'math/convertir_une_valeur_dans_une _autre_echelle.md'
     - 'Texte': 'variables/variable_texte.md'
     - 'Variables':
