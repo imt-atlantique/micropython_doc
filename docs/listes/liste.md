@@ -19,7 +19,7 @@ Une liste est une structure de données qui permet de stocker et d'organiser plu
 
         Le bloc qui permet de parcourir une liste ![pour chaque élément](../boucles/for_in.png){: style="height:24px;"} se trouve dans la catégorie de blocs [:fontawesome-solid-code-branch: Contrôle](#){: style="color: rgb(255, 171, 25); font-weight: bold;"}.
         
-        Le bloc pour affecter des éléments à une liste ![éléments à une liste](liste_avec_les_elts.png){: style="height:24px;"} se trouve dans la catégorie de blocs [:fontawesome-solid-list: Listes](#){: style="color: rgb(255, 102, 26); font-weight: bold;"}.
+        Le bloc pour affecter des éléments à une liste ![éléments à une liste](liste.png){: style="height:24px;"} se trouve dans la catégorie de blocs [:fontawesome-solid-list: Listes](#){: style="color: rgb(255, 102, 26); font-weight: bold;"}.
 
 
 === ":material-code-array: Exemple avec du code"
