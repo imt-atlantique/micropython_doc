@@ -12,14 +12,8 @@
         <meta name="author" content="Baptiste Gaultier, Laurent Mattlé">
       
       
-      
-        <link rel="prev" href="../interface/">
-      
-      
-        <link rel="next" href="../controle/temps/attendre/">
-      
       <link rel="icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -27,13 +21,13 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ded33207.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
       
       
-
     
     
     
@@ -48,11 +42,10 @@
     
       <link rel="stylesheet" href="../css/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
-    
     
     
   </head>
@@ -89,9 +82,7 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
     <a href=".." title="MOOCs MicroPython" class="md-header__button md-logo" aria-label="MOOCs MicroPython" data-md-component="logo">
       
@@ -121,6 +112,7 @@
       <form class="md-header__option" data-md-component="palette">
         
           
+          
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Désactiver le mode nocturne"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Désactiver le mode nocturne" for="__palette_2" hidden>
@@ -128,6 +120,7 @@
             </label>
           
         
+          
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Activer le mode nocturne"  type="radio" name="__palette" id="__palette_2">
           
@@ -152,9 +145,9 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Recherche">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" aria-label="Effacer" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -166,7 +159,7 @@
           <div class="md-search-result__meta">
             Initialisation de la recherche
           </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
+          <ol class="md-search-result__list"></ol>
         </div>
       </div>
     </div>
@@ -238,18 +231,17 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
-      
-        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_2">
           Premiers pas
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+      <nav class="md-nav" aria-label="Premiers pas" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Premiers pas
@@ -279,7 +271,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
       
@@ -376,9 +368,29 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-broches-de-la-galaxia" class="md-nav__link">
+    Les broches de la Galaxia
+  </a>
+  
+    <nav class="md-nav" aria-label="Les broches de la Galaxia">
+      <ul class="md-nav__list">
+        
           <li class="md-nav__item">
-  <a href="#une-connectique-compatible-microbit" class="md-nav__link">
-    Une connectique compatible micro:bit
+  <a href="#broches-microbit" class="md-nav__link">
+    Broches micro:bit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ports-grove" class="md-nav__link">
+    Ports Grove
   </a>
   
 </li>
@@ -423,18 +435,17 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
       
       
-      
-        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_3">
           Guides de référence
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" aria-label="Guides de référence" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Guides de référence
@@ -450,18 +461,17 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
       
       
-      
-        <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_3_1">
           Contrôle
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+      <nav class="md-nav" aria-label="Contrôle" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_1">
           <span class="md-nav__icon md-icon"></span>
           Contrôle
@@ -582,18 +592,17 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
       
       
-      
-        <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_3_2">
           Communication
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+      <nav class="md-nav" aria-label="Communication" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_2">
           <span class="md-nav__icon md-icon"></span>
           Communication
@@ -644,18 +653,17 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
       
       
-      
-        <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_3_3">
           Apparence
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+      <nav class="md-nav" aria-label="Apparence" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_3">
           <span class="md-nav__icon md-icon"></span>
           Apparence
@@ -720,18 +728,17 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
       
       
-      
-        <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_3_4">
           Capteurs
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+      <nav class="md-nav" aria-label="Capteurs" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_4">
           <span class="md-nav__icon md-icon"></span>
           Capteurs
@@ -838,18 +845,17 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
       
       
-      
-        <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_3_5">
           Actionneurs
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+      <nav class="md-nav" aria-label="Actionneurs" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_5">
           <span class="md-nav__icon md-icon"></span>
           Actionneurs
@@ -886,18 +892,17 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
       
       
-      
-        <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_3_6">
           Opérateur
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+      <nav class="md-nav" aria-label="Opérateur" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_6">
           <span class="md-nav__icon md-icon"></span>
           Opérateur
@@ -976,18 +981,17 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_8" type="checkbox" id="__nav_3_8" >
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
       
       
-      
-        <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_3_8">
           Variables
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+      <nav class="md-nav" aria-label="Variables" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_8">
           <span class="md-nav__icon md-icon"></span>
           Variables
@@ -1038,18 +1042,17 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_9" type="checkbox" id="__nav_3_9" >
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
       
       
-      
-        <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_3_9">
           Listes
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+      <nav class="md-nav" aria-label="Listes" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_9">
           <span class="md-nav__icon md-icon"></span>
           Listes
@@ -1138,18 +1141,17 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
       
       
-      
-        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_4">
           Annexes
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+      <nav class="md-nav" aria-label="Annexes" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Annexes
@@ -1165,18 +1167,17 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
       
       
-      
-        <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_4_1">
           La bibliothèque thingz
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+      <nav class="md-nav" aria-label="La bibliothèque thingz" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_1">
           <span class="md-nav__icon md-icon"></span>
           La bibliothèque thingz
@@ -1417,9 +1418,29 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-broches-de-la-galaxia" class="md-nav__link">
+    Les broches de la Galaxia
+  </a>
+  
+    <nav class="md-nav" aria-label="Les broches de la Galaxia">
+      <ul class="md-nav__list">
+        
           <li class="md-nav__item">
-  <a href="#une-connectique-compatible-microbit" class="md-nav__link">
-    Une connectique compatible micro:bit
+  <a href="#broches-microbit" class="md-nav__link">
+    Broches micro:bit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ports-grove" class="md-nav__link">
+    Ports Grove
   </a>
   
 </li>
@@ -1444,11 +1465,10 @@
               </div>
             
           
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
                 
-                  
 
 
   <h1>La carte Galaxia</h1>
@@ -1615,38 +1635,89 @@
 <p>Leur utilisation n'est pas très différente de celle des boutons A et B. Ils sont disposés en cercle pour offrir un pad tactile qui peut être utilisé comme une flèche directionnelle, ils donnent ainsi à la Galaxia un petit air de console de jeu.</p>
 <h3 id="le-port-micro-usb"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 2c-1.1 0-2 .9-2 2v8H5v4l4 4v2h6v-2l4-4v-4h-1V4a2 2 0 0 0-2-2M8 4h8v8H8m1-5v2h2V7m2 0v2h2V7Z"/></svg></span> Le port micro-USB<a class="headerlink" href="#le-port-micro-usb" title="Permanent link">&para;</a></h3>
 <p>Il vous sert à alimenter votre Galaxia, à communiquer/programmer avec l'ordinateur grâce au <a href="../communication/ecrire_dans_la_console/">port série</a>. Une fois programmée, on peut l'utiliser pour brancher une batterie USB et ainsi faire des objets mobiles.</p>
-<h3 id="une-connectique-compatible-microbit"><img alt="micro:bit icon" src="../img/microbit_light.svg#only-light" /> <img alt="micro:bit icon" src="../img/microbit_dark.svg#only-dark" /> Une connectique compatible micro:bit<a class="headerlink" href="#une-connectique-compatible-microbit" title="Permanent link">&para;</a></h3>
-<p>Il vous permet de connecter la carte Galaxia à des robots, comme le <a href="https://fr.vittascience.com/shop/97/robot-maqueen-pour-carte-micro:bit">Maqueen</a> ou d'autres accessoires compatibles micro:bit.</p>
+<h2 id="les-broches-de-la-galaxia">Les broches de la Galaxia<a class="headerlink" href="#les-broches-de-la-galaxia" title="Permanent link">&para;</a></h2>
+<p>Ce qui est chouette avec un microcontrôleur, c'est qu'on peut y brancher plein de capteurs et actionneurs. Ces composants vont être branchés sur les broches (ou <em>pins</em> en anglais) du microcontrôleur ou sur les ports <em>Grove</em>, tout ça est décrit ci-dessous.</p>
+<h3 id="broches-microbit"><img alt="micro:bit icon" src="../img/microbit_light.svg#only-light" /> <img alt="micro:bit icon" src="../img/microbit_dark.svg#only-dark" /> Broches micro:bit<a class="headerlink" href="#broches-microbit" title="Permanent link">&para;</a></h3>
+<p>Les broches <em>micro:bit</em> permettent de brancher des composants électroniques simples en utilisant des fils de prototypage avec pinces crocodiles ou des modules d'extensions (ou <em>shields</em> en anglais) compatibles avec la carte <em>micro:bit</em>. </p>
+<p>Voici les numéros des broches de la Galaxia :</p>
+<div class="admonition warning inline end">
+<p class="admonition-title">À noter !</p>
+<p>Vous noterez que les noms de broches que nous utilisons dans le MOOC (<code>P0</code>, <code>P1</code>, <code>P2</code>...) ne sont pas les mêmes que les numéros de broches. <code>P0</code> correspond à la broche n°3, <code>P1</code> correspond à la broche n°2, <code>P2</code> correspond à la broche n°1... Ce sont les numéros de broche qui devront être reportées dans votre code. Pas leur nom !
+Reportez à <a href="../apparence/led/led/">cet exemple de code</a> et aux numéros de broches indiqués sur le schéma ci-contre pour écrire vos programmes.</p>
+</div>
+<p><img alt="Broches micro:bit de la Galaxia" src="../img/pinout_galaxia_microbit_light.svg#only-light" /> <img alt="Broches micro:bit de la Galaxia" src="../img/pinout_galaxia_microbit_dark.svg#only-dark" /></p>
+<p>Pour brancher un actionneur simple comme une LED, nous aurons besoins de deux fils de prototypages avec des terminaisons femelles d'un côté : c'est là que nous viendront introduire les "pattes" de la LED. De l'autre côté, ces deux fils seront terminés par des pinces crocodiles qui permettront de venir "mordre" une des broches <em>micro:bit</em> décrites ci-dessus. Là encore, nous à vous invitons à consulter <a href="../apparence/led/led/">cet exemple</a> pour brancher une LED et écrire le programme associé.</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Les LEDs ne peuvent pas être branchées n'importe comment, elles ont un "sens". Ce qui signifie qu'il faudra observer les "pattes" de la LED et de repérer la moins longue, vous devrez connecter cette patte à la broche <code>GND</code> tandis que l'autre patte devra être connecté à une des broches <code>P0</code>, <code>P1</code>, <code>P2</code>...</p>
+<p><strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.33 12.91c.09 1.55-.62 3.04-1.89 3.95l.77 1.49c.23.45.26.98.06 1.45-.19.47-.58.84-1.06 1l-.79.25a1.687 1.687 0 0 1-1.86-.55L14.44 18c-.89-.15-1.73-.53-2.44-1.1-.5.15-1 .23-1.5.23-.88 0-1.76-.27-2.5-.79-.53.16-1.07.23-1.62.22-.79.01-1.57-.15-2.3-.45a4.105 4.105 0 0 1-2.43-3.61c-.08-.72.04-1.45.35-2.11-.29-.75-.32-1.57-.07-2.33C2.3 7.11 3 6.32 3.87 5.82c.58-1.69 2.21-2.82 4-2.7 1.6-1.5 4.05-1.66 5.83-.37.42-.11.86-.17 1.3-.17 1.36-.03 2.65.57 3.5 1.64 2.04.53 3.5 2.35 3.58 4.47.05 1.11-.25 2.2-.86 3.13.07.36.11.72.11 1.09m-5-1.41c.57.07 1.02.5 1.02 1.07a1 1 0 0 1-1 1h-.63c-.32.9-.88 1.69-1.62 2.29.25.09.51.14.77.21 5.13-.07 4.53-3.2 4.53-3.25a2.592 2.592 0 0 0-2.69-2.49 1 1 0 0 1-1-1 1 1 0 0 1 1-1c1.23.03 2.41.49 3.33 1.3.05-.29.08-.59.08-.89-.06-1.24-.62-2.32-2.87-2.53-1.25-2.96-4.4-1.32-4.4-.4-.03.23.21.72.25.75a1 1 0 0 1 1 1c0 .55-.45 1-1 1-.53-.02-1.03-.22-1.43-.56-.48.31-1.03.5-1.6.56-.57.05-1.04-.35-1.07-.9a.968.968 0 0 1 .88-1.1c.16-.02.94-.14.94-.77 0-.66.25-1.29.68-1.79-.92-.25-1.91.08-2.91 1.29C6.75 5 6 5.25 5.45 7.2 4.5 7.67 4 8 3.78 9c1.08-.22 2.19-.13 3.22.25.5.19.78.75.59 1.29-.19.52-.77.78-1.29.59-.73-.32-1.55-.34-2.3-.06-.32.27-.32.83-.32 1.27 0 .74.37 1.43 1 1.83.53.27 1.12.41 1.71.4-.15-.26-.28-.53-.39-.81a1.038 1.038 0 0 1 1.96-.68c.4 1.14 1.42 1.92 2.62 2.05 1.37-.07 2.59-.88 3.19-2.13.23-1.38 1.34-1.5 2.56-1.5m2 7.47-.62-1.3-.71.16 1 1.25.33-.11m-4.65-8.61a1 1 0 0 0-.91-1.03c-.71-.04-1.4.2-1.93.67-.57.58-.87 1.38-.84 2.19a1 1 0 0 0 1 1c.57 0 1-.45 1-1 0-.27.07-.54.23-.76.12-.1.27-.15.43-.15.55.03 1.02-.38 1.02-.92Z"/></svg></span> Moyen mnémotechnique :</strong> La patte la <strong>moins</strong> longue devra être branché sur le <strong>moins</strong> ou <em>GND</em> en anglais.</p>
+</div>
+<h3 id="ports-grove"><img alt="Grove icon" src="../img/grove_light.svg#only-light" /> <img alt="Grove icon" src="../img/grove_dark.svg#only-dark" /> Ports Grove<a class="headerlink" href="#ports-grove" title="Permanent link">&para;</a></h3>
+<p>Les ports <em>Grove</em> permettent de brancher des modules électroniques grâce à des câbles 4 couleurs (Noir, Rouge, Jaune, Blanc) munis de détrompeurs. Ces modules embarquent souvent des circuits intégrés qui assurent une fonction complexe : capteur de température, bandeau de LEDs RGB, module de communication avec un compteur électrique...
+Nous à vous invitons à consulter <a href="../actionneurs/servomoteur/">cet exemple</a> pour brancher un servomoteur sur le port <code>Grove 1</code> et écrire le programme associé.</p>
+<p>Voici les numéros des broches des deux ports <em>Grove</em> de la Galaxia :
+<img alt="Broches micro:bit de la Galaxia" src="../img/pinout_galaxia_grove.svg" /></p>
 <h2 id="brancher-la-carte-galaxia-a-un-ordinateur">Brancher la carte Galaxia à un ordinateur<a class="headerlink" href="#brancher-la-carte-galaxia-a-un-ordinateur" title="Permanent link">&para;</a></h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>La section qui suit est destinée aux heureux·euses propriétaires de notre <a href="https://fr.vittascience.com/shop/279/Carte-Galaxia">kit MOOCs MicroPython</a>. L'achat de ce kit est optionnel et toutes les activités de ce MOOC peut être simulées avec <a href="../interface/">l'interface Vittascience</a>.</p>
+<p>La section qui suit est destinée aux heureux·euses propriétaires de notre <a href="https://fr.vittascience.com/shop/347/kit-micropython-avec-la-galaxia">kit MOOCs MicroPython</a>. L'achat de ce kit est optionnel et toutes les activités de ce MOOC peut être simulées avec <a href="../interface/">l'interface Vittascience</a>.</p>
 </div>
 <p>L'interface Vittascience permet de simuler une carte électronique, des capteurs et des actionneurs. Et ça c'est chouette ! Mais ce qui est encore mieux, c'est de manipuler tout ça dans la vraie vie <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 8-1.33.09C9.81 7.07 7.4 4.5 5 4.5c0 0-1.97 2.96-.04 6.91-.55.83-.89 1.26-.96 2.25l-1.93.29.21.98 1.76-.26.14.71-1.57.94.47.89 1.45-.89C5.68 18.76 8.59 20 12 20s6.32-1.24 7.47-3.68l1.45.89.47-.89-1.57-.94.14-.71 1.76.26.21-.98-1.93-.29c-.07-.99-.41-1.42-.96-2.25C20.97 7.46 19 4.5 19 4.5c-2.4 0-4.81 2.57-5.67 3.59L12 8m-3 3a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m6 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-4 3h2l-.7 1.39c.2.64.76 1.11 1.45 1.11a1.5 1.5 0 0 0 1.5-1.5h.5a2 2 0 0 1-2 2c-.75 0-1.4-.41-1.75-1-.35.59-1 1-1.75 1a2 2 0 0 1-2-2h.5a1.5 1.5 0 0 0 1.5 1.5c.69 0 1.25-.47 1.45-1.11L11 14Z"/></svg></span></p>
 <p>Pour cela, veuillez suivre les étapes ci-dessous :</p>
 <ol>
 <li>Connectez le <a href="#le-port-micro-usb">port micro-usb</a> de votre Galaxia à votre ordinateur en utilisant le câble micro-USB vers USB fourni dans le kit.</li>
 <li>Depuis le navigateur Chrome (ou Edge ou Opera), ouvrez l'<a href="../interface/">interface Vittascience</a> et ouvrez la console en bas de l'interface avec le petit bouton <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.11 0 2-.89 2-2V5a2 2 0 0 0-2-2m-2.41 12.71L12 11.12l-4.59 4.59L6 14.29l6-6 6 6-1.41 1.42Z"/></svg></span>.</li>
-<li>Cliquez ensuite sur le bouton <a class="btn-light" href="#" style="color:black;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M9.4 86.6c-12.5-12.5-12.5-32.7 0-45.2s32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L178.7 256 9.4 86.6zM256 416h288c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg></span> <abbr title="Acronyme des mots anglais Read, Eval, Print et Loop. La console permet effectivement de Read : lit les commandes tapées par l'utilisateur puis Eval: interprète ces commandes puis Print : affiche le résultat des commandes et enfin Loop : on recommence à l'étape Read !">REPL</abbr></a> pour ouvrir la communication entre votre ordinateur et la carte Galaxia.</li>
+<li>Cliquez ensuite sur le bouton <a class="btn-light" href="#" style="color:black;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M9.372 86.63c-12.496-12.5-12.496-32.76 0-45.26 12.498-12.49 32.758-12.49 45.258 0L246.6 233.4c12.5 12.5 12.5 32.7 0 45.2l-191.97 192c-12.5 12.5-32.76 12.5-45.258 0-12.496-12.5-12.496-32.7 0-45.2L178.7 256 9.372 86.63zM544 416c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32h288z"/></svg></span> <abbr title="Acronyme des mots anglais Read, Eval, Print et Loop. La console permet effectivement de Read : lit les commandes tapées par l'utilisateur puis Eval: interprète ces commandes puis Print : affiche le résultat des commandes et enfin Loop : on recommence à l'étape Read !">REPL</abbr></a> pour ouvrir la communication entre votre ordinateur et la carte Galaxia.</li>
 <li>Choissisez enfin le port USB sur lequel est branché votre Galaxia et cliquez sur <a class="btn-light" href="#" style="color:black;">Connexion</a></li>
 <li>Dès lors, vous pouvez voir les messages envoyées depuis votre carte Galaxia (pour en savoir plus sur les messages sur le port série, c'est par <a href="../communication/ecrire_dans_la_console/">ici</a></li>
-<li>Vous pouvez également téleverser votre code sur la carte grâce au bouton <a class="btn-light" href="#" style="color:black;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288h111.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5l76.9-179.5z"/></svg></span> Téléverser</a></li>
+<li>Vous pouvez également téleverser votre code sur la carte grâce au bouton <a class="btn-light" href="#" style="color:black;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M240.5 224H352c13.3 0 25.3 8.3 29.1 20.7 5.5 12.5 2 26.6-8 35.4l-256 224c-11.3 9.8-27.83 10.6-39.91 1.8-12.09-8.8-16.49-24.8-10.6-38.5L143.5 288H31.1c-12.43 0-24.367-8.3-29.056-20.7a32.094 32.094 0 0 1 8.886-35.4L266.9 7.918c11.3-9.838 27.8-10.587 39.9-1.804 12.1 8.786 16.5 24.756 10.6 38.496L240.5 224z"/></svg></span> Téléverser</a></li>
 </ol>
 
-
-
-
-
-                
-              </article>
-            </div>
-          
-          
+              
+            </article>
+            
+          </div>
         </div>
         
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+      
+        
+        <a href="../interface/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: L&#39;interface Vittascience" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              L'interface Vittascience
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../controle/temps/attendre/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Attendre" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Attendre
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1668,11 +1739,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "header.autohide", "navigation.sections"], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "header.autohide", "navigation.sections"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
-    
-      <script src="../assets/javascripts/bundle.51198bba.min.js"></script>
+      <script src="../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../js/extra.js"></script>
       
