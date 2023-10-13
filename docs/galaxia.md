@@ -177,13 +177,41 @@ Leur utilisation n'est pas très différente de celle des boutons A et B. Ils so
 ### :material-usb-port: Le port micro-USB 
 Il vous sert à alimenter votre Galaxia, à communiquer/programmer avec l'ordinateur grâce au [port série](communication/ecrire_dans_la_console.md). Une fois programmée, on peut l'utiliser pour brancher une batterie USB et ainsi faire des objets mobiles.
 
-### ![micro:bit icon](img/microbit_light.svg#only-light) ![micro:bit icon](img/microbit_dark.svg#only-dark) Une connectique compatible micro:bit
-Il vous permet de connecter la carte Galaxia à des robots, comme le [Maqueen](https://fr.vittascience.com/shop/97/robot-maqueen-pour-carte-micro:bit) ou d'autres accessoires compatibles micro:bit.
+## Les broches de la Galaxia
+
+Ce qui est chouette avec un microcontrôleur, c'est qu'on peut y brancher plein de capteurs et actionneurs. Ces composants vont être branchés sur les broches (ou _pins_ en anglais) du microcontrôleur ou sur les ports _Grove_, tout ça est décrit ci-dessous.
+
+### ![micro:bit icon](img/microbit_light.svg#only-light) ![micro:bit icon](img/microbit_dark.svg#only-dark) Broches micro:bit
+Les broches _micro:bit_ permettent de brancher des composants électroniques simples en utilisant des fils de prototypage avec pinces crocodiles ou des modules d'extensions (ou _shields_ en anglais) compatibles avec la carte _micro:bit_. 
+
+Voici les numéros des broches de la Galaxia :
+
+!!! warning inline end "À noter !"
+    Vous noterez que les noms de broches que nous utilisons dans le MOOC (`P0`, `P1`, `P2`...) ne sont pas les mêmes que les numéros de broches. `P0` correspond à la broche n°3, `P1` correspond à la broche n°2, `P2` correspond à la broche n°1... Ce sont les numéros de broche qui devront être reportées dans votre code. Pas leur nom !
+    Reportez à [cet exemple de code](./apparence/led/led.md) et aux numéros de broches indiqués sur le schéma ci-contre pour écrire vos programmes.
+
+![Broches micro:bit de la Galaxia](img/pinout_galaxia_microbit_light.svg#only-light) ![Broches micro:bit de la Galaxia](img/pinout_galaxia_microbit_dark.svg#only-dark)
+
+Pour brancher un actionneur simple comme une LED, nous aurons besoins de deux fils de prototypages avec des terminaisons femelles d'un côté : c'est là que nous viendront introduire les "pattes" de la LED. De l'autre côté, ces deux fils seront terminés par des pinces crocodiles qui permettront de venir "mordre" une des broches _micro:bit_ décrites ci-dessus. Là encore, nous à vous invitons à consulter [cet exemple](./apparence/led/led.md) pour brancher une LED et écrire le programme associé.
+
+!!! danger
+    Les LEDs ne peuvent pas être branchées n'importe comment, elles ont un "sens". Ce qui signifie qu'il faudra observer les "pattes" de la LED et de repérer la moins longue, vous devrez connecter cette patte à la broche `GND` tandis que l'autre patte devra être connecté à une des broches `P0`, `P1`, `P2`...
+    
+    ** :material-brain: Moyen mnémotechnique :** La patte la **moins** longue devra être branché sur le **moins** ou _GND_ en anglais.
+
+### ![Grove icon](img/grove_light.svg#only-light) ![Grove icon](img/grove_dark.svg#only-dark) Ports Grove
+Les ports _Grove_ permettent de brancher des modules électroniques grâce à des câbles 4 couleurs (Noir, Rouge, Jaune, Blanc) munis de détrompeurs. Ces modules embarquent souvent des circuits intégrés qui assurent une fonction complexe : capteur de température, bandeau de LEDs RGB, module de communication avec un compteur électrique...
+Nous à vous invitons à consulter [cet exemple](./actionneurs/servomoteur.md) pour brancher un servomoteur sur le port `Grove 1` et écrire le programme associé.
+
+Voici les numéros des broches des deux ports _Grove_ de la Galaxia :
+![Broches micro:bit de la Galaxia](img/pinout_galaxia_grove.svg)
+
+
 
 ## Brancher la carte Galaxia à un ordinateur
 
 !!! info
-    La section qui suit est destinée aux heureux·euses propriétaires de notre [kit MOOCs MicroPython](https://fr.vittascience.com/shop/279/Carte-Galaxia). L'achat de ce kit est optionnel et toutes les activités de ce MOOC peut être simulées avec [l'interface Vittascience](interface.md).
+    La section qui suit est destinée aux heureux·euses propriétaires de notre [kit MOOCs MicroPython](https://fr.vittascience.com/shop/347/kit-micropython-avec-la-galaxia). L'achat de ce kit est optionnel et toutes les activités de ce MOOC peut être simulées avec [l'interface Vittascience](interface.md).
 		
 
 L'interface Vittascience permet de simuler une carte électronique, des capteurs et des actionneurs. Et ça c'est chouette ! Mais ce qui est encore mieux, c'est de manipuler tout ça dans la vraie vie :material-cat:
