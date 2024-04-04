@@ -1331,7 +1331,14 @@
 </div>
 <h2 id="aller-plus-loin">Aller plus loin<a class="headerlink" href="#aller-plus-loin" title="Permanent link">&para;</a></h2>
 <p>On a souvent l'habitude de représenter le cours du programme avec un organigramme de programmation :</p>
-<p><img alt="mooc_ifelse" src="../mooc-boutons.svg" /></p>
+<pre class="mermaid"><code>graph LR
+  A[Début de la boucle infinie] --&gt; B{A est appuyé et B pas appuyé};
+  B --&gt;|Vrai| C[Allumer la LED en vert];
+  B --&gt;|Faux| D{A pas appuyé et B appuyé};
+  D --&gt;|Vrai| E[Allumer la LED en orange];
+  D --&gt;|Faux| F{A et B appuyés};
+  F --&gt;|Vrai| G[Allumer la LED en vert];
+  F --&gt;|Faux| H[LED éteinte];</code></pre>
 <p>Si vous voulez en savoir plus sur les organigrammes, voici une chouette page <a href="https://fr.wikipedia.org/wiki/Organigramme_de_programmation">Wikipédia</a>.
 Dans l'exemple ci-dessus, nous utilisons les fonctions du langage MicroPython <code class="highlight"><span class="k">if</span></code> et <code class="highlight"><span class="k">else</span></code>. Pour en savoir plus, nous vous invitons à lire la <a href="https://www.micropython.fr/reference/#/02.mots_cles/if_elif_else?id=if-elif-else-">documentation MicroPython</a>.</p>
 
