@@ -7,7 +7,7 @@ hide:
 
 Permet d'exécuter des instructions si une condition est vraie.
 
-Dans l'exemple ci-dessous, nous allons allumer la LED RGB de la Galaxia en rouge si le seuil de luminosité est supérieur à un certain seuil (125), sinon la LED est allumée en vert.
+Dans l'exemple ci-dessous, nous allons allumer la LED RGB de la Galaxia en rouge si la luminosité est supérieure à un certain seuil (125), sinon la LED est allumée en vert.
 
 === ":material-puzzle: Exemple avec des blocs"
     ![Bloc Si/Sinon](executer_des_instructions_selon_une_condition.png){: style="width:380px;"}

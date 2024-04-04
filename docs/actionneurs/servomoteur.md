@@ -43,4 +43,4 @@ Dans l'exemple ci-dessous, nous allons placer le servomoteur (branché sur le po
     ```
 
 ## Aller plus loin
-Dans l'exemple ci-dessus, nous utilisons la class `#!python PWM()` qui permet, entre autres, de contrôler un servomoteur. Cette classe est détaillée dans la [documentation MicroPython](https://www.micropython.fr/reference/06.ports/pi_pico/machine/PWM/classe_PWM/).
+Dans l'exemple ci-dessus, nous utilisons la class `#!python PWM()` qui permet, entre autres, de contrôler un servomoteur. Cette classe est détaillée dans la [documentation MicroPython](https://www.micropython.fr/reference/#/05.micropython/machine/classe_PWM).

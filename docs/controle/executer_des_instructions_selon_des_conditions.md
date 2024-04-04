@@ -47,7 +47,16 @@ Dans l'exemple ci-dessous, nous allons modifier l'état d'une LED RGB,
 
 On a souvent l'habitude de représenter le cours du programme avec un organigramme de programmation :
 
-![mooc_ifelse](mooc-boutons.svg)
+``` mermaid
+graph LR
+  A[Début de la boucle infinie] --> B{A est appuyé et B pas appuyé};
+  B -->|Vrai| C[Allumer la LED en vert];
+  B -->|Faux| D{A pas appuyé et B appuyé};
+  D -->|Vrai| E[Allumer la LED en orange];
+  D -->|Faux| F{A et B appuyés};
+  F -->|Vrai| G[Allumer la LED en vert];
+  F -->|Faux| H[LED éteinte];
+```
 
 
 Si vous voulez en savoir plus sur les organigrammes, voici une chouette page [Wikipédia](https://fr.wikipedia.org/wiki/Organigramme_de_programmation).
