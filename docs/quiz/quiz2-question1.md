@@ -12,6 +12,6 @@ hide:
 === ":material-code-array: Exemple avec du code"
 
     ```python
-    for i in range(0, 9, 2):
+    for i in range(0, 8, 2):
       print('Tchou')
     ```

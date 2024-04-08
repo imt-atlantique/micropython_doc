@@ -7,7 +7,7 @@ hide:
 
 Rendre une partie de programme accessible par son nom en lui passant tout ce qui lui est nécessaire pour fonctionner.
 
-Les variables déclarées dans la fonction ne sont valable qu'en local dans la fonction (on parle de la portée d'une variable). De plus, dans une fonction, les variables globales ne sont disponibles qu'en lecture.
+Les variables déclarées dans la fonction ne sont valables qu'en local dans la fonction (on parle de la portée d'une variable).
 
 ## Exemple
 
@@ -22,7 +22,7 @@ Les variables déclarées dans la fonction ne sont valable qu'en local dans la f
 
         On ajoute le nombre de paramètres nécessaires avec le :octicons-plus-circle-16:. et on nomme ces paramètres avec les champs prévus à cet effet.
 
-        Notez que dans cette catégorie il existe deux types de blocs. Des blocs pour les fonctions qui peuvent renvoyer un résultat (ces fonctions sont appelées "fonctions avec sortie"). D'autres qui ne renvoient rien, appelées "fonctions sans sortie".
+        Notez que dans cette catégorie il existe deux types de blocs. Des blocs pour les fonctions qui peuvent renvoyer un résultat, appelées "fonctions avec sortie". D'autres qui ne renvoient rien, appelées "fonctions sans sortie".
 
 === ":material-code-array: Exemple avec du code"
 
@@ -51,4 +51,4 @@ Les variables déclarées dans la fonction ne sont valable qu'en local dans la f
 
 ## Aller plus loin
 
-Dans l'exemple ci-dessus, nous utilisons la classe `#!python def` qui permet de définir une fonction. Pour en savoir plus sur cette classe, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/#/02.mots_cles/def/). Nous faisons également référence à la portée d'une variable, pour en savoir plus sur cette notion, tout est sur la [documentation Micropython](https://www.micropython.fr/reference/#/02.mots_cles/global/#portee-de-la-variable-definition).
+Dans l'exemple ci-dessus, nous utilisons la classe `#!python def` qui permet de définir une fonction. Pour en savoir plus sur cette classe, nous vous invitons à lire la [documentation MicroPython](https://www.micropython.fr/reference/#/02.mots_cles/def). Nous faisons également référence à la portée d'une variable, pour en savoir plus sur cette notion, tout est sur la [documentation Micropython](https://www.micropython.fr/reference/#/02.mots_cles/global).
