@@ -49,8 +49,8 @@ nav:
     - 'Réseau':
         - "Scanner les réseaux wifi" : 'reseau/scanner_wifi_station.md'
         - "Se connecter au wifi" : 'reseau/connecter_wifi_station.md'
-        - "Récupérer une donnée" : 'reseau/connecter_wifi_station.md'
-        - "Envoyer une donnée" : 'reseau/connecter_wifi_station.md'
+        - "Récupérer une donnée" : 'reseau/requete_http_get.md'
+        - "Envoyer une donnée" : 'reseau/requete_http_post.md'
   - 'Annexes':
     - 'La bibliothèque thingz': 
         - 'thingz': 'thingz/thingz.md'
