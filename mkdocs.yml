@@ -32,6 +32,7 @@ nav:
       - "Détecter instantanément l'appui sur un bouton" : 'capteurs/bouton_avec_interruption.md'
     - 'Actionneurs': 
       - 'Contrôler un servomoteur' : 'actionneurs/servomoteur.md'
+    - 'Son': 'son/son.md'
     - 'Opérateur':
       - 'Manipuler des nombres' : 'math/manipuler_des_nombres.md'
       - 'Générer un nombre aléatoire' : 'math/aleatoire.md'
@@ -45,6 +46,11 @@ nav:
         - "Obtenir l'élément d'une liste" : 'listes/obtenir_element_liste.md'
         - "Supprimer l'élément d'une liste" : 'listes/supprimer_element_liste.md'
     - 'Fonctions': 'fonctions/fonction.md'
+    - 'Réseau':
+        - "Scanner les réseaux wifi" : 'reseau/scanner_wifi_station.md'
+        - "Se connecter au wifi" : 'reseau/connecter_wifi_station.md'
+        - "Récupérer une donnée" : 'reseau/connecter_wifi_station.md'
+        - "Envoyer une donnée" : 'reseau/connecter_wifi_station.md'
   - 'Annexes':
     - 'La bibliothèque thingz': 
         - 'thingz': 'thingz/thingz.md'
@@ -84,6 +90,7 @@ theme:
       - navigation.tracking
       - header.autohide
       - navigation.sections
+      - content.code.copy
 
 markdown_extensions:
     - toc:
