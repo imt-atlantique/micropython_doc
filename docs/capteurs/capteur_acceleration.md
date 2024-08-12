@@ -11,7 +11,6 @@ Mesurer l'accélération permet de calculer la vitesse, le déplacement, les cho
 
 === ":material-puzzle: Exemple avec des blocs"
     ![Blocs capteur](accelerometer.png){: style="width:480px;"}
-    [ouvrir dans vittascience](https://fr.vittascience.com/galaxia/?link=645e2e1ac5860&toolbox=scratch&mode=blocks&embed=1)
 
 === ":material-code-array: Exemple avec du code"
 
