@@ -1054,6 +1054,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../reseau/json/" class="md-nav__link">
+        Échanger des données JSON
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../reseau/requete_http_get/" class="md-nav__link">
         Récupérer une donnée
       </a>
@@ -1068,7 +1082,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reseau/requete_http_post.md" class="md-nav__link">
+      <a href="../../reseau/requete_http_post/" class="md-nav__link">
         Envoyer une donnée
       </a>
     </li>
@@ -1493,68 +1507,41 @@
 <li>"none"</li>
 </ul>
 <p>Exemple de code utilisant la fonction <code>get_gestures()</code> pour détecter les mouvements de secousse de la carte Galaxia :
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span>
-<span class="normal"><a href="#__codelineno-0-6">6</a></span>
-<span class="normal"><a href="#__codelineno-0-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a>    <span class="n">gesture</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">current_gesture</span><span class="p">()</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a>    <span class="k">if</span> <span class="n">gesture</span> <span class="o">==</span> <span class="s2">&quot;shake&quot;</span><span class="p">:</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;shake!&quot;</span><span class="p">);</span>
-</code></pre></div></td></tr></table></div></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span>
-<span class="normal"><a href="#__codelineno-1-11">11</a></span>
-<span class="normal"><a href="#__codelineno-1-12">12</a></span>
-<span class="normal"><a href="#__codelineno-1-13">13</a></span>
-<span class="normal"><a href="#__codelineno-1-14">14</a></span>
-<span class="normal"><a href="#__codelineno-1-15">15</a></span>
-<span class="normal"><a href="#__codelineno-1-16">16</a></span>
-<span class="normal"><a href="#__codelineno-1-17">17</a></span>
-<span class="normal"><a href="#__codelineno-1-18">18</a></span>
-<span class="normal"><a href="#__codelineno-1-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1">## testing</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a>
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a>
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7"></a>    <span class="n">gesture</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">current_gesture</span><span class="p">()</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8"></a>    <span class="k">if</span> <span class="n">gesture</span> <span class="o">==</span> <span class="s2">&quot;shake&quot;</span><span class="p">:</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;shake!&quot;</span><span class="p">);</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10"></a>    <span class="k">if</span> <span class="n">gesture</span> <span class="o">==</span> <span class="s2">&quot;tap&quot;</span><span class="p">:</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;tap détecté !&quot;</span><span class="p">);</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12"></a>    <span class="k">if</span> <span class="n">gesture</span> <span class="o">==</span> <span class="s2">&quot;up&quot;</span><span class="p">:</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;up !&quot;</span><span class="p">);</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14"></a>    <span class="k">if</span> <span class="n">gesture</span> <span class="o">==</span> <span class="s2">&quot;down ! &quot;</span><span class="p">:</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;down !&quot;</span><span class="p">);</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16"></a>    <span class="k">if</span> <span class="n">gesture</span> <span class="o">==</span> <span class="s2">&quot;6g&quot;</span><span class="p">:</span>
-<a id="__codelineno-1-17" name="__codelineno-1-17"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;6g !&quot;</span><span class="p">);</span>
-<a id="__codelineno-1-18" name="__codelineno-1-18"></a>    <span class="k">if</span> <span class="n">gesture</span> <span class="o">==</span> <span class="s2">&quot;left&quot;</span><span class="p">:</span>
-<a id="__codelineno-1-19" name="__codelineno-1-19"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;left !&quot;</span><span class="p">);</span>
-</code></pre></div></td></tr></table></div>
+<div class="language-python highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">gesture</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">current_gesture</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">gesture</span> <span class="o">==</span> <span class="s2">&quot;shake&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;shake!&quot;</span><span class="p">);</span>
+</code></pre></div></p>
+<div class="language-python highlight"><pre><span></span><code><span class="c1">## testing</span>
+<span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
+
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">gesture</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">current_gesture</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">gesture</span> <span class="o">==</span> <span class="s2">&quot;shake&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;shake!&quot;</span><span class="p">);</span>
+    <span class="k">if</span> <span class="n">gesture</span> <span class="o">==</span> <span class="s2">&quot;tap&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;tap détecté !&quot;</span><span class="p">);</span>
+    <span class="k">if</span> <span class="n">gesture</span> <span class="o">==</span> <span class="s2">&quot;up&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;up !&quot;</span><span class="p">);</span>
+    <span class="k">if</span> <span class="n">gesture</span> <span class="o">==</span> <span class="s2">&quot;down ! &quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;down !&quot;</span><span class="p">);</span>
+    <span class="k">if</span> <span class="n">gesture</span> <span class="o">==</span> <span class="s2">&quot;6g&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;6g !&quot;</span><span class="p">);</span>
+    <span class="k">if</span> <span class="n">gesture</span> <span class="o">==</span> <span class="s2">&quot;left&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;left !&quot;</span><span class="p">);</span>
+</code></pre></div>
 <h3 id="get_x">get_x()<a class="headerlink" href="#get_x" title="Permanent link">&para;</a></h3>
 <p>Renvoie un float représentant la valeur de l’accélération sur l’axe x en mG.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span>
-<span class="normal"><a href="#__codelineno-2-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a>
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">accelerometer</span><span class="o">.</span><span class="n">get_x</span><span class="p">()));</span>
-</code></pre></div></td></tr></table></div>
+<div class="language-python highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">accelerometer</span><span class="o">.</span><span class="n">get_x</span><span class="p">()));</span>
+</code></pre></div>
 <h3 id="get_y">get_y()<a class="headerlink" href="#get_y" title="Permanent link">&para;</a></h3>
 <p>Renvoie un réel <strong>float</strong> représentant la valeur de l’accélération sur l’axe y en mG</p>
 <h3 id="get_z">get_z()<a class="headerlink" href="#get_z" title="Permanent link">&para;</a></h3>
@@ -1643,6 +1630,8 @@ et renvoie un booleen (True si le geste a été actif depuis le dernier appel à
       <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../dist/run_code_main.js"></script>
       
     
   </body>

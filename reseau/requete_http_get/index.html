@@ -1058,6 +1058,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../json/" class="md-nav__link">
+        Échanger des données JSON
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -1084,7 +1098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../requete_http_post.md" class="md-nav__link">
+      <a href="../requete_http_post/" class="md-nav__link">
         Envoyer une donnée
       </a>
     </li>
@@ -1340,90 +1354,50 @@
 <p><img alt="Carte Galaxia" src="../../img/galaxia_board.svg" style="height:380px;" /></p>
 <h2 id="exemple">Exemple<a class="headerlink" href="#exemple" title="Permanent link">&para;</a></h2>
 <p>Dans l'exemple ci-dessous, nous allons connecter le module ESP de la Galaxia à un réseau wifi grâce au module <code>network</code> (voir l'exemple <a href="../connecter_wifi_station/">se connecter à un réseau wifi</a>). Nous enverrons ensuite une requête HTTP <code>GET</code> à l'adresse <code>http://worldtimeapi.org/api/timezone/Europe/Paris</code> pour récupérer l'heure actuelle en France, le tout grâce au module additionnel <code>requests</code>.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span>
-<span class="normal"><a href="#__codelineno-0-19">19</a></span>
-<span class="normal"><a href="#__codelineno-0-20">20</a></span>
-<span class="normal"><a href="#__codelineno-0-21">21</a></span>
-<span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span>
-<span class="normal"><a href="#__codelineno-0-24">24</a></span>
-<span class="normal"><a href="#__codelineno-0-25">25</a></span>
-<span class="normal"><a href="#__codelineno-0-26">26</a></span>
-<span class="normal"><a href="#__codelineno-0-27">27</a></span>
-<span class="normal"><a href="#__codelineno-0-28">28</a></span>
-<span class="normal"><a href="#__codelineno-0-29">29</a></span>
-<span class="normal"><a href="#__codelineno-0-30">30</a></span>
-<span class="normal"><a href="#__codelineno-0-31">31</a></span>
-<span class="normal"><a href="#__codelineno-0-32">32</a></span>
-<span class="normal"><a href="#__codelineno-0-33">33</a></span>
-<span class="normal"><a href="#__codelineno-0-34">34</a></span>
-<span class="normal"><a href="#__codelineno-0-35">35</a></span>
-<span class="normal"><a href="#__codelineno-0-36">36</a></span>
-<span class="normal"><a href="#__codelineno-0-37">37</a></span>
-<span class="normal"><a href="#__codelineno-0-38">38</a></span>
-<span class="normal"><a href="#__codelineno-0-39">39</a></span>
-<span class="normal"><a href="#__codelineno-0-40">40</a></span>
-<span class="normal"><a href="#__codelineno-0-41">41</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># On commence par importer les modules network et time</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">network</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kn">import</span> <span class="nn">time</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="c1"># On importe le module additionnel requests</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="kn">import</span> <span class="nn">requests</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="c1"># On spécifie les informations du réseau wifi</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="c1"># (remplacez &quot;mon_reseau&quot; et &quot;mon_mot_de_passe&quot; </span>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="c1"># par les informations de votre réseau)</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="n">ssid</span> <span class="o">=</span> <span class="s2">&quot;mon_reseau&quot;</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;mon_mot_de_passe&quot;</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13"></a>
-<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="c1"># On vient créer une instance de l&#39;interface wifi en mode station</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="n">sta_if</span> <span class="o">=</span> <span class="n">network</span><span class="o">.</span><span class="n">WLAN</span><span class="p">(</span><span class="n">network</span><span class="o">.</span><span class="n">STA_IF</span><span class="p">)</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a>
-<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="c1"># On active l&#39;interface wifi</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="n">sta_if</span><span class="o">.</span><span class="n">active</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19"></a>
-<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="c1"># Et on se connecte au réseau wifi</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Connexion au réseau </span><span class="si">{</span><span class="n">ssid</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="k">if</span> <span class="ow">not</span> <span class="n">sta_if</span><span class="o">.</span><span class="n">isconnected</span><span class="p">():</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a>    <span class="n">sta_if</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">ssid</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24"></a>    <span class="k">while</span> <span class="ow">not</span> <span class="n">sta_if</span><span class="o">.</span><span class="n">isconnected</span><span class="p">():</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26"></a>        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27"></a>
-<a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="c1"># On affiche que la connexion a bien été établie</span>
-<a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Connecté au réseau </span><span class="si">{</span><span class="n">ssid</span><span class="si">}</span><span class="s2"> !&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-30" name="__codelineno-0-30"></a>
-<a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="c1"># On peut maintenant envoyer une requête HTTP GET pour obtenir l&#39;heure actuelle en France</span>
-<a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://worldtimeapi.org/api/timezone/Europe/Paris&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-33" name="__codelineno-0-33"></a>
-<a id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="c1"># On affiche la réponse du serveur si le code HTTP est 200 (OK)</span>
-<a id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
-<a id="__codelineno-0-36" name="__codelineno-0-36"></a>  <span class="c1"># On affiche la réponse du serveur au format JSON</span>
-<a id="__codelineno-0-37" name="__codelineno-0-37"></a>  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Réponse du serveur : </span><span class="si">{</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-38" name="__codelineno-0-38"></a>
-<a id="__codelineno-0-39" name="__codelineno-0-39"></a>  <span class="c1"># On peut aussi extraire des informations spécifiques de la réponse</span>
-<a id="__codelineno-0-40" name="__codelineno-0-40"></a>  <span class="c1"># Par exemple, l&#39;heure actuelle en France (la valeur de l&#39;élément &#39;datetime&#39;)</span>
-<a id="__codelineno-0-41" name="__codelineno-0-41"></a>  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Il est actuellement </span><span class="si">{</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;datetime&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> en France.&quot;</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
+<div class="language-py highlight"><pre><span></span><code><span class="c1"># On commence par importer les modules network et time</span>
+<span class="kn">import</span> <span class="nn">network</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="c1"># On importe le module additionnel requests</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="c1"># On spécifie les informations du réseau wifi</span>
+<span class="c1"># (remplacez &quot;mon_reseau&quot; et &quot;mon_mot_de_passe&quot; </span>
+<span class="c1"># par les informations de votre réseau)</span>
+<span class="n">ssid</span> <span class="o">=</span> <span class="s2">&quot;mon_reseau&quot;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;mon_mot_de_passe&quot;</span>
+
+<span class="c1"># On vient créer une instance de l&#39;interface wifi en mode station</span>
+<span class="n">sta_if</span> <span class="o">=</span> <span class="n">network</span><span class="o">.</span><span class="n">WLAN</span><span class="p">(</span><span class="n">network</span><span class="o">.</span><span class="n">STA_IF</span><span class="p">)</span>
+
+<span class="c1"># On active l&#39;interface wifi</span>
+<span class="n">sta_if</span><span class="o">.</span><span class="n">active</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Et on se connecte au réseau wifi</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Connexion au réseau </span><span class="si">{</span><span class="n">ssid</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">sta_if</span><span class="o">.</span><span class="n">isconnected</span><span class="p">():</span>
+  <span class="n">sta_if</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">ssid</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
+  <span class="k">while</span> <span class="ow">not</span> <span class="n">sta_if</span><span class="o">.</span><span class="n">isconnected</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># On affiche que la connexion a bien été établie</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Connecté au réseau </span><span class="si">{</span><span class="n">ssid</span><span class="si">}</span><span class="s2"> !&quot;</span><span class="p">)</span>
+
+<span class="c1"># On peut maintenant envoyer une requête HTTP GET pour obtenir l&#39;heure actuelle en France</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://worldtimeapi.org/api/timezone/Europe/Paris&quot;</span><span class="p">)</span>
+
+<span class="c1"># On affiche la réponse du serveur si le code HTTP est 200 (OK)</span>
+<span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+  <span class="c1"># On affiche la réponse du serveur au format JSON</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Réponse du serveur : </span><span class="si">{</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+  <span class="c1"># On peut aussi extraire des informations spécifiques de la réponse</span>
+  <span class="c1"># Par exemple, l&#39;heure actuelle en France contenue dans la valeur de l&#39;élément &#39;datetime&#39;</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Il est actuellement </span><span class="si">{</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;datetime&#39;</span><span class="p">][</span><span class="mi">11</span><span class="p">:</span><span class="mi">16</span><span class="p">]</span><span class="si">}</span><span class="s2"> en France.&quot;</span><span class="p">)</span>
+</code></pre></div>
 <h2 id="aller-plus-loin">Aller plus loin<a class="headerlink" href="#aller-plus-loin" title="Permanent link">&para;</a></h2>
-<p>Dans l'exemple ci-dessus, nous utilisons le module <code class="highlight"><span class="n">network</span></code> qui est décrit en détails <a href="https://docs.micropython.org/en/v1.12/library/network.html#module-network">ici</a>.</p>
+<p>Dans l'exemple ci-dessus, nous utilisons les modules [] <code class="language-python highlight"><span class="n">network</span></code> qui est décrit en anglais <a href="https://docs.micropython.org/en/v1.12/library/network.html#module-network">ici</a> et le module additionnel <code class="language-python highlight"><span class="n">requests</span></code> qui est décrit en anglais <a href="https://docs.micropython.org/en/latest/esp8266/tutorial/requests.html">ici</a></p>
 
               
             </article>
@@ -1441,7 +1415,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
       
         
-        <a href="../connecter_wifi_station/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Se connecter au wifi" rel="prev">
+        <a href="../json/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Échanger des données JSON" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1450,20 +1424,20 @@
               <span class="md-footer__direction">
                 Précédent
               </span>
-              Se connecter au wifi
+              Échanger des données JSON
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../thingz/thingz/" class="md-footer__link md-footer__link--next" aria-label="Suivant: thingz" rel="next">
+        <a href="../requete_http_post/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Envoyer une donnée" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Suivant
               </span>
-              thingz
+              Envoyer une donnée
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1499,6 +1473,8 @@
       <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../dist/run_code_main.js"></script>
       
     
   </body>

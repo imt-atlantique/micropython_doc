@@ -1108,6 +1108,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../reseau/json/" class="md-nav__link">
+        Échanger des données JSON
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../reseau/requete_http_get/" class="md-nav__link">
         Récupérer une donnée
       </a>
@@ -1122,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reseau/requete_http_post.md" class="md-nav__link">
+      <a href="../../reseau/requete_http_post/" class="md-nav__link">
         Envoyer une donnée
       </a>
     </li>
@@ -1404,16 +1418,12 @@
 <a href="https://fr.vittascience.com/galaxia/?link=645e2e1ac5860&amp;toolbox=scratch&amp;mode=blocks&amp;embed=1">ouvrir dans vittascience</a></p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>    <span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="kn">import</span> <span class="nn">math</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">compass</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">compass</span><span class="o">.</span><span class="n">get_y</span><span class="p">()</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">compass</span><span class="o">.</span><span class="n">get_z</span><span class="p">()</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)));</span>
-</code></pre></div></td></tr></table></div>
+<div class="language-python highlight"><pre><span></span><code>    <span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
+    <span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
+    <span class="kn">import</span> <span class="nn">math</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">compass</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">compass</span><span class="o">.</span><span class="n">get_y</span><span class="p">()</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">compass</span><span class="o">.</span><span class="n">get_z</span><span class="p">()</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)));</span>
+</code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">Info<p>on remarque que dans ce code une opération mathématique est réalisée. On prend la racine carrée de la somme des carrées de chaque composante. Pour avoir la "norme" résultante. <a href="https://query.libretexts.org/Francais/Livre_%3A_Calculus_(OpenStax)/12%3A_Vecteurs_dans_l'espace/12.02%3A_Vecteurs_en_trois_dimensions">si vraiment vous voulez vous rappeler vos cours du collège</a> </p>
 </p>
@@ -1422,8 +1432,8 @@
 </div>
 </div>
 <h2 id="aller-plus-loin">Aller plus loin<a class="headerlink" href="#aller-plus-loin" title="Permanent link">&para;</a></h2>
-<p>Dans l'exemple ci-dessus, nous utilisons la classe <code class="highlight"><span class="n">math</span></code> qui permet d'incorporer des outils mathématiques dans le programme'. Pour en savoir plus sur cette classe, nous vous invitons à lire la <a href="https://docs-micropython-org.translate.goog/en/latest/library/math.html?_x_tr_sl=ja&amp;_x_tr_tl=fr&amp;_x_tr_hl=fr&amp;_x_tr_pto=wapp">documentation MicroPython</a>.</p>
-<p>Nous utilisons aussi <code class="highlight"><span class="nb">str</span><span class="p">()</span></code>, nous vous invitons à lire la <a href="https://www.micropython.fr/reference/#/03.modules_standards/str/">documentation MicroPython</a>.</p>
+<p>Dans l'exemple ci-dessus, nous utilisons la classe <code class="language-python highlight"><span class="n">math</span></code> qui permet d'incorporer des outils mathématiques dans le programme'. Pour en savoir plus sur cette classe, nous vous invitons à lire la <a href="https://docs-micropython-org.translate.goog/en/latest/library/math.html?_x_tr_sl=ja&amp;_x_tr_tl=fr&amp;_x_tr_hl=fr&amp;_x_tr_pto=wapp">documentation MicroPython</a>.</p>
+<p>Nous utilisons aussi <code class="language-python highlight"><span class="nb">str</span><span class="p">()</span></code>, nous vous invitons à lire la <a href="https://www.micropython.fr/reference/#/03.modules_standards/str/">documentation MicroPython</a>.</p>
 <p>et enfin la librairie thingz avec <a href="../../thingz/thingz_compass/">sa bibliothèque adaptée au magnétomètre</a></p>
 <p>Pour en savoir plus sur les magnétomètres.</p>
 <p><a href="https://fr.wikipedia.org/wiki/Magn%C3%A9tom%C3%A8tre">la page wikipédia</a></p>
@@ -1502,6 +1512,8 @@
       <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../dist/run_code_main.js"></script>
       
     
   </body>

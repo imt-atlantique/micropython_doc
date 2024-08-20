@@ -1108,6 +1108,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../reseau/json/" class="md-nav__link">
+        Échanger des données JSON
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../reseau/requete_http_get/" class="md-nav__link">
         Récupérer une donnée
       </a>
@@ -1122,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reseau/requete_http_post.md" class="md-nav__link">
+      <a href="../../reseau/requete_http_post/" class="md-nav__link">
         Envoyer une donnée
       </a>
     </li>
@@ -1395,7 +1409,7 @@
 
 
 <h1 id="manipuler-des-nombres">Manipuler des nombres<a class="headerlink" href="#manipuler-des-nombres" title="Permanent link">&para;</a></h1>
-<p>Le module <code class="highlight"><span class="n">math</span></code> fournit des fonctions permettant de manipuler des nombres.</p>
+<p>Le module <code class="language-python highlight"><span class="n">math</span></code> fournit des fonctions permettant de manipuler des nombres.</p>
 <h2 id="exemple">Exemple<a class="headerlink" href="#exemple" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5Z"/></svg></span> Exemple avec des blocs</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5m3 1v12h4v-2H8V8h2V6H6m10 10h-2v2h4V6h-4v2h2v8Z"/></svg></span> Exemple avec du code</label></div>
 <div class="tabbed-content">
@@ -1403,47 +1417,30 @@
 <p><img alt="Blocs manipuler des nombres" src="../manipuler_des_nombres.png" style="width:480px;" /></p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">math</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1"># On initialise une variable appelée nombre à 6</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="n">nombre</span> <span class="o">=</span> <span class="mi">6</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="c1"># La ligne suivante va afficher 6 dans la console</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span> <span class="o">+</span> <span class="mi">3</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="c1"># La ligne suivante va afficher 9 dans la console</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="n">nombre</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="c1"># La ligne suivante va afficher 3 dans la console</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span> <span class="o">/</span> <span class="mi">6</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="c1"># La ligne suivante va afficher 0.5 dans la console</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="n">nombre</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="c1"># La ligne suivante va afficher 1 (arrondi par excès du nombre flottant 0.5)</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
+<div class="language-python highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="c1"># On initialise une variable appelée nombre à 6</span>
+<span class="n">nombre</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="c1"># La ligne suivante va afficher 6 dans la console</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+<span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span> <span class="o">+</span> <span class="mi">3</span>
+<span class="c1"># La ligne suivante va afficher 9 dans la console</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+<span class="n">nombre</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+<span class="c1"># La ligne suivante va afficher 3 dans la console</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+<span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span> <span class="o">/</span> <span class="mi">6</span>
+<span class="c1"># La ligne suivante va afficher 0.5 dans la console</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+<span class="n">nombre</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+<span class="c1"># La ligne suivante va afficher 1 (arrondi par excès du nombre flottant 0.5)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+</code></pre></div>
 </div>
 </div>
 </div>
 <h2 id="aller-plus-loin">Aller plus loin<a class="headerlink" href="#aller-plus-loin" title="Permanent link">&para;</a></h2>
-<p>Dans l'exemple ci-dessus, nous utilisons le module <code class="highlight"><span class="n">math</span></code>.Pour en savoir plus sur ce module, nous vous invitons à lire la <a href="https://www.micropython.fr/reference/#/04.modules_standards/math/00.math">documentation MicroPython</a>.</p>
+<p>Dans l'exemple ci-dessus, nous utilisons le module <code class="language-python highlight"><span class="n">math</span></code>.Pour en savoir plus sur ce module, nous vous invitons à lire la <a href="https://www.micropython.fr/reference/#/04.modules_standards/math/00.math">documentation MicroPython</a>.</p>
 
               
             </article>
@@ -1519,6 +1516,8 @@
       <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../dist/run_code_main.js"></script>
       
     
   </body>

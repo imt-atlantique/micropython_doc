@@ -1056,6 +1056,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../reseau/json/" class="md-nav__link">
+        Échanger des données JSON
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../reseau/requete_http_get/" class="md-nav__link">
         Récupérer une donnée
       </a>
@@ -1070,7 +1084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reseau/requete_http_post.md" class="md-nav__link">
+      <a href="../../reseau/requete_http_post/" class="md-nav__link">
         Envoyer une donnée
       </a>
     </li>
@@ -1393,29 +1407,22 @@
 
 
 <h1 id="gerer-les-erreurs">Gérer les erreurs<a class="headerlink" href="#gerer-les-erreurs" title="Permanent link">&para;</a></h1>
-<p>Si vous regardez la traduction en code de certains blocs (comme par exemple le bloc <a href="../../apparence/led/led/">Contrôler la LED</a>), vous remarquerez des bloc de code commençant par <code class="highlight"><span class="k">try</span><span class="p">:</span></code> , <code class="highlight"><span class="k">except</span> <span class="p">:</span></code> etc..</p>
+<p>Si vous regardez la traduction en code de certains blocs (comme par exemple le bloc <a href="../../apparence/led/led/">Contrôler la LED</a>), vous remarquerez des bloc de code commençant par <code class="language-python highlight"><span class="k">try</span><span class="p">:</span></code> , <code class="language-python highlight"><span class="k">except</span> <span class="p">:</span></code> etc..</p>
 <p>Ces mots clés nous permettent de gérer les erreurs lors de l'exécution de notre programme et éviter que celui-ci ne s'arrête. Pour qu'il puisse continuer on offre une autre alternative :</p>
-<p>Le bloc <code class="highlight"><span class="k">try</span><span class="p">:</span></code> permet de tester un bloc de code pour voir s'il contient des erreurs.</p>
-<p>Le bloc <code class="highlight"><span class="k">except</span> <span class="p">:</span></code>  permet de gérer l'erreur, en proposant une alternative à l'arrêt du programme.</p>
-<p>Le bloc <code class="highlight"><span class="k">else</span> <span class="p">:</span></code> permet d'exécuter du code lorsqu'il n'y a pas d'erreur.</p>
-<p>Le bloc <code class="highlight"><span class="k">finally</span> <span class="p">:</span></code> vous permet d'exécuter du code, quel que soit le résultat des blocs <code class="highlight"><span class="k">try</span><span class="p">:</span></code> et <code class="highlight"><span class="k">except</span> <span class="p">:</span></code>.</p>
+<p>Le bloc <code class="language-python highlight"><span class="k">try</span><span class="p">:</span></code> permet de tester un bloc de code pour voir s'il contient des erreurs.</p>
+<p>Le bloc <code class="language-python highlight"><span class="k">except</span> <span class="p">:</span></code>  permet de gérer l'erreur, en proposant une alternative à l'arrêt du programme.</p>
+<p>Le bloc <code class="language-python highlight"><span class="k">else</span> <span class="p">:</span></code> permet d'exécuter du code lorsqu'il n'y a pas d'erreur.</p>
+<p>Le bloc <code class="language-python highlight"><span class="k">finally</span> <span class="p">:</span></code> vous permet d'exécuter du code, quel que soit le résultat des blocs <code class="language-python highlight"><span class="k">try</span><span class="p">:</span></code> et <code class="language-python highlight"><span class="k">except</span> <span class="p">:</span></code>.</p>
 <h2 id="exemple">Exemple<a class="headerlink" href="#exemple" title="Permanent link">&para;</a></h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span>
-<span class="normal"><a href="#__codelineno-0-6">6</a></span>
-<span class="normal"><a href="#__codelineno-0-7">7</a></span>
-<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>    <span class="k">try</span><span class="p">:</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;la variable n&#39;est pas définie&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a>    <span class="k">except</span><span class="p">:</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;quelque chose s&#39;est mal passée&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a>    <span class="k">finally</span><span class="p">:</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &#39;try except&#39; traversé&quot;</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
+<div class="language-python highlight"><pre><span></span><code>    <span class="k">try</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;la variable n&#39;est pas définie&quot;</span><span class="p">)</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;quelque chose s&#39;est mal passée&quot;</span><span class="p">)</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &#39;try except&#39; traversé&quot;</span><span class="p">)</span>
+</code></pre></div>
 <h2 id="aller-plus-loin">Aller plus loin<a class="headerlink" href="#aller-plus-loin" title="Permanent link">&para;</a></h2>
 <p>Ces fonctionnalités nous viennent directement du language python. Vous pouvez facilement trouver de la documentation par exemple <a href="https://zestedesavoir.com/tutoriels/2514/un-zeste-de-python/6-entrees-sorties/6-exceptions/">ici</a>).</p>
 
@@ -1478,6 +1485,8 @@
       <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../dist/run_code_main.js"></script>
       
     
   </body>

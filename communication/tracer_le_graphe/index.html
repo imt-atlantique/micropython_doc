@@ -1108,6 +1108,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../reseau/json/" class="md-nav__link">
+        Échanger des données JSON
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../reseau/requete_http_get/" class="md-nav__link">
         Récupérer une donnée
       </a>
@@ -1122,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reseau/requete_http_post.md" class="md-nav__link">
+      <a href="../../reseau/requete_http_post/" class="md-nav__link">
         Envoyer une donnée
       </a>
     </li>
@@ -1409,24 +1423,19 @@ la taille du graphe augmente avec le temps et s'adapte aux valeurs qu'il reçoit
     from machine import *
     from thingz import *
     import utime</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>while True:
+<div class="language-text highlight"><pre><span></span><code>while True:
 print(&#39;@Graph:Donnée1:&#39; + str(led.read_light_level()) + &#39;|&#39;)
 utime.sleep_ms(50)
 utime.sleep(1)
 
     ```
-</code></pre></div></td></tr></table></div>
+</code></pre></div>
 </div>
 </div>
 </div>
 <h2 id="aller-plus-loin">Aller plus loin<a class="headerlink" href="#aller-plus-loin" title="Permanent link">&para;</a></h2>
 <p>Ce mode dépend de l'interface que vous utilisez et si celui-ci le propose. il est interessant de visualiser rapidement ce que donnerais une représentation graphique avec d'autres outils
-Dans l'exemple ci-dessus, nous utilisons la fonction <code class="highlight"><span class="nb">print</span><span class="p">()</span></code> qui fait partie du langage MicroPython (donc pas besoin d'importer un module pour l'utiliser). Cette fonction peut prendre un ou plusieurs paramètres détaillés dans la <a href="https://www.micropython.fr/reference/#/03.builtin/print">documentation MicroPython</a>.</p>
+Dans l'exemple ci-dessus, nous utilisons la fonction <code class="language-python highlight"><span class="nb">print</span><span class="p">()</span></code> qui fait partie du langage MicroPython (donc pas besoin d'importer un module pour l'utiliser). Cette fonction peut prendre un ou plusieurs paramètres détaillés dans la <a href="https://www.micropython.fr/reference/#/03.builtin/print">documentation MicroPython</a>.</p>
 
               
             </article>
@@ -1502,6 +1511,8 @@ Dans l'exemple ci-dessus, nous utilisons la fonction <code class="highlight"><sp
       <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../dist/run_code_main.js"></script>
       
     
   </body>

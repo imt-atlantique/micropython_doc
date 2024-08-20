@@ -1056,6 +1056,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../reseau/json/" class="md-nav__link">
+        Échanger des données JSON
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../reseau/requete_http_get/" class="md-nav__link">
         Récupérer une donnée
       </a>
@@ -1070,7 +1084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reseau/requete_http_post.md" class="md-nav__link">
+      <a href="../../reseau/requete_http_post/" class="md-nav__link">
         Envoyer une donnée
       </a>
     </li>
@@ -1327,52 +1341,30 @@
 <p><img alt="Exemple avec des blocs" src="../quiz2-question4.png" style="width:480px;" /></p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span>
-<span class="normal"><a href="#__codelineno-0-19">19</a></span>
-<span class="normal"><a href="#__codelineno-0-20">20</a></span>
-<span class="normal"><a href="#__codelineno-0-21">21</a></span>
-<span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kn">import</span> <span class="nn">utime</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="c1"># Initialisation d&#39;un servomoteur sur la broche P19</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="n">p19</span> <span class="o">=</span> <span class="n">PWM</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">13</span><span class="p">),</span> <span class="n">freq</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">duty</span><span class="o">=</span><span class="mi">205</span><span class="p">)</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="k">def</span> <span class="nf">setServoAngle</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="n">angle</span><span class="p">):</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a>  <span class="k">if</span> <span class="p">(</span><span class="n">angle</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">angle</span> <span class="o">&lt;=</span> <span class="mi">180</span><span class="p">):</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a>    <span class="n">pin</span><span class="o">.</span><span class="n">duty</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="mf">0.025</span><span class="o">*</span><span class="mi">1023</span> <span class="o">+</span> <span class="p">(</span><span class="n">angle</span><span class="o">*</span><span class="mf">0.1</span><span class="o">*</span><span class="mi">1023</span><span class="p">)</span><span class="o">/</span><span class="mi">180</span><span class="p">))</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11"></a>  <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a>    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Servomotor angle have to be set between 0 and 180&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13"></a>
-<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="n">angle_servo</span> <span class="o">=</span> <span class="mi">0</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="n">duree</span> <span class="o">=</span> <span class="mi">0</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a>
-<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18"></a>  <span class="n">angle_servo</span> <span class="o">=</span> <span class="n">angle_servo</span> <span class="o">+</span> <span class="mi">1</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19"></a>  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">181</span><span class="p">):</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20"></a>    <span class="n">setServoAngle</span><span class="p">(</span><span class="n">p19</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21"></a>    <span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22"></a>    <span class="n">duree</span> <span class="o">=</span> <span class="n">duree</span> <span class="o">+</span> <span class="mi">10</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
+<div class="language-python highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">utime</span>
+
+<span class="c1"># Initialisation d&#39;un servomoteur sur la broche P19</span>
+<span class="n">p19</span> <span class="o">=</span> <span class="n">PWM</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">13</span><span class="p">),</span> <span class="n">freq</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">duty</span><span class="o">=</span><span class="mi">205</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">setServoAngle</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="n">angle</span><span class="p">):</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">angle</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">angle</span> <span class="o">&lt;=</span> <span class="mi">180</span><span class="p">):</span>
+    <span class="n">pin</span><span class="o">.</span><span class="n">duty</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="mf">0.025</span><span class="o">*</span><span class="mi">1023</span> <span class="o">+</span> <span class="p">(</span><span class="n">angle</span><span class="o">*</span><span class="mf">0.1</span><span class="o">*</span><span class="mi">1023</span><span class="p">)</span><span class="o">/</span><span class="mi">180</span><span class="p">))</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Servomotor angle have to be set between 0 and 180&quot;</span><span class="p">)</span>
+
+<span class="n">angle_servo</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">duree</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="n">angle_servo</span> <span class="o">=</span> <span class="n">angle_servo</span> <span class="o">+</span> <span class="mi">1</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">181</span><span class="p">):</span>
+    <span class="n">setServoAngle</span><span class="p">(</span><span class="n">p19</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+    <span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+    <span class="n">duree</span> <span class="o">=</span> <span class="n">duree</span> <span class="o">+</span> <span class="mi">10</span>
+<span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div>
 </div>
 </div>
 </div>
@@ -1413,6 +1405,8 @@
       <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../dist/run_code_main.js"></script>
       
     
   </body>

@@ -17,7 +17,7 @@
     
     
       
-        <title>Quiz1 question3 - MOOCs MicroPython</title>
+        <title>Échanger des données JSON - MOOCs MicroPython</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#echanger-des-donnees-avec-json" class="md-skip">
           Aller au contenu
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Quiz1 question3
+              Échanger des données JSON
             
           </span>
         </div>
@@ -185,7 +185,7 @@
               
                 
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -288,14 +288,16 @@
 
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -1000,12 +1002,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_12" type="checkbox" id="__nav_3_12" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_12" type="checkbox" id="__nav_3_12" checked>
       
       
       
@@ -1028,7 +1032,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reseau/scanner_wifi_station/" class="md-nav__link">
+      <a href="../scanner_wifi_station/" class="md-nav__link">
         Scanner les réseaux wifi
       </a>
     </li>
@@ -1042,7 +1046,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reseau/connecter_wifi_station/" class="md-nav__link">
+      <a href="../connecter_wifi_station/" class="md-nav__link">
         Se connecter au wifi
       </a>
     </li>
@@ -1054,11 +1058,86 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../reseau/json/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Échanger des données JSON
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Échanger des données JSON
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exemples" class="md-nav__link">
+    Exemples
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extraire-les-conditions-meteorologiques-a-lyon" class="md-nav__link">
+    Extraire les conditions météorologiques à Lyon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extraire-les-informations-sur-la-prochaine-arrivee-a-lyon-part-dieu" class="md-nav__link">
+    Extraire les informations sur la prochaine arrivée à Lyon Part-Dieu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generer-un-json-a-partir-dun-dictionnaire-python" class="md-nav__link">
+    Générer un JSON à partir d'un dictionnaire python
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aller-plus-loin" class="md-nav__link">
+    Aller plus loin
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1070,7 +1149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reseau/requete_http_get/" class="md-nav__link">
+      <a href="../requete_http_get/" class="md-nav__link">
         Récupérer une donnée
       </a>
     </li>
@@ -1084,7 +1163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reseau/requete_http_post/" class="md-nav__link">
+      <a href="../requete_http_post/" class="md-nav__link">
         Envoyer une donnée
       </a>
     </li>
@@ -1322,6 +1401,55 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exemples" class="md-nav__link">
+    Exemples
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extraire-les-conditions-meteorologiques-a-lyon" class="md-nav__link">
+    Extraire les conditions météorologiques à Lyon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extraire-les-informations-sur-la-prochaine-arrivee-a-lyon-part-dieu" class="md-nav__link">
+    Extraire les informations sur la prochaine arrivée à Lyon Part-Dieu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generer-un-json-a-partir-dun-dictionnaire-python" class="md-nav__link">
+    Générer un JSON à partir d'un dictionnaire python
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aller-plus-loin" class="md-nav__link">
+    Aller plus loin
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1334,30 +1462,152 @@
                 
 
 
-<h1 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5Z"/></svg></span> Exemple avec des blocs</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5m3 1v12h4v-2H8V8h2V6H6m10 10h-2v2h4V6h-4v2h2v8Z"/></svg></span> Exemple avec du code</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p><img alt="Exemple avec des blocs" src="../quiz1_question3.png" style="width:480px;" /></p>
-</div>
-<div class="tabbed-block">
-<div class="language-python highlight"><pre><span></span><code><span class="c1"># On importe les modules</span>
-<span class="c1"># dont on a besoin</span>
-<span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">utime</span>
+<h1 id="echanger-des-donnees-avec-json">Échanger des données avec JSON<a class="headerlink" href="#echanger-des-donnees-avec-json" title="Permanent link">&para;</a></h1>
+<p>JSON (pour <em>JavaScript Object Notation</em>) est un format d'échange de données léger, facile à lire et à écrire pour les humain·es, et simple à analyser et à générer pour les objets connectés et, de manière plus générale, les ordinateurs.</p>
+<p>La structure du langage JSON est basée sur deux structures de données :</p>
+<ul>
+<li>
+<p><strong>L'objet :</strong> une collection non ordonnée de paires clé/valeur, où les clés sont des chaînes de caractères uniques et les valeurs peuvent être de différents types (texte, nombre, booléen, tableau ou null). Un exemple :
+  <div class="language-json highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;city&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Lyon&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;France&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;weather&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ciel dégagé&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;temperature&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;wind_speed&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;humidity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Le tableau (ou liste) :</strong> une liste ordonnée de valeurs, qui peuvent être de n'importe quel type JSON mentionné ci-dessus. Un exemple avec la valeur de l'objet appelé <code>arrivals</code> dans le JSON ci-dessous qui est une liste de 3 objets :
+  <div class="language-json highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;station_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Lyon Part-Dieu&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;arrivals&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;train_number&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TGV 5521&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;destination&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Montpellier Saint-Roch&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;arrival_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10:56&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;platform&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;H&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;train_number&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TGV 5382&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;destination&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Rennes&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;arrival_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;11:44&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;platform&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;C&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;train_number&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TER 886760&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;destination&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Saint-Étienne Châteaucreux&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;arrival_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;11:48&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;platform&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;J&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></p>
+</li>
+</ul>
+<h2 id="exemples">Exemples<a class="headerlink" href="#exemples" title="Permanent link">&para;</a></h2>
+<p>Dans les deux exemples ci-dessous, nous allons utiliser la méthode <code class="language-python highlight"><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">()</span></code> du module <code class="language-python highlight"><span class="n">json</span></code> pour convertir le JSON (qui sera un texte déclaré au début du programme) en un dictionnaire python afin d'extraire et d'afficher des informations qui nous intéressent :</p>
+<h3 id="extraire-les-conditions-meteorologiques-a-lyon">Extraire les conditions météorologiques à Lyon<a class="headerlink" href="#extraire-les-conditions-meteorologiques-a-lyon" title="Permanent link">&para;</a></h3>
+<div class="language-py highlight"><pre><span></span><code><span class="c1">## On déclare le texte JSON, veuillez noter que le JSON est entouré de triples</span>
+<span class="c1"># guillemets pour le définir comme une chaîne de caractères python sur plusieurs lignes</span>
+<span class="n">json_string</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">{</span>
+<span class="s1">  &quot;city&quot;: &quot;Lyon&quot;,</span>
+<span class="s1">  &quot;country&quot;: &quot;France&quot;,</span>
+<span class="s1">  &quot;weather&quot;: &quot;Ciel dégagé&quot;,</span>
+<span class="s1">  &quot;temperature&quot;: 20,</span>
+<span class="s1">  &quot;wind_speed&quot;: 5,</span>
+<span class="s1">  &quot;humidity&quot;: 60</span>
+<span class="s1">}</span>
+<span class="s1">&#39;&#39;&#39;</span>
 
-<span class="c1"># On déclare une LED sur la broche P0</span>
-<span class="n">p0</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+<span class="c1"># On importe le module json</span>
+<span class="kn">import</span> <span class="nn">json</span>
 
-<span class="n">p0</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
-<span class="n">utime</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">p0</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
-<span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">5000</span><span class="p">)</span>
-<span class="n">p0</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
+<span class="c1"># On utilise la fonction json.loads() pour convertir le texte en un dictionnaire python</span>
+<span class="n">weather_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">json_string</span><span class="p">)</span>
+
+<span class="c1"># On vient extraire la ville et on la stocke dans une variable</span>
+<span class="n">city</span> <span class="o">=</span> <span class="n">weather_data</span><span class="p">[</span><span class="s2">&quot;city&quot;</span><span class="p">]</span>
+
+<span class="c1"># On vient mainteant extraire la température et on la stocke dans une variable</span>
+<span class="n">temperature</span> <span class="o">=</span> <span class="n">weather_data</span><span class="p">[</span><span class="s2">&quot;temperature&quot;</span><span class="p">]</span>
+
+<span class="c1"># On affiche le résultat en utilisant des f-strings et les variables que nous avons créées</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La température à </span><span class="si">{</span><span class="n">city</span><span class="si">}</span><span class="s2"> est de </span><span class="si">{</span><span class="n">temperature</span><span class="si">}</span><span class="s2">°C.&quot;</span><span class="p">)</span>
 </code></pre></div>
-</div>
-</div>
-</div>
+<h3 id="extraire-les-informations-sur-la-prochaine-arrivee-a-lyon-part-dieu">Extraire les informations sur la prochaine arrivée à Lyon Part-Dieu<a class="headerlink" href="#extraire-les-informations-sur-la-prochaine-arrivee-a-lyon-part-dieu" title="Permanent link">&para;</a></h3>
+<div class="language-py highlight"><pre><span></span><code><span class="n">json_string</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">{</span>
+<span class="s1">  &quot;station_name&quot;: &quot;Lyon Part-Dieu&quot;,</span>
+<span class="s1">  &quot;arrivals&quot;: [</span>
+<span class="s1">    {</span>
+<span class="s1">      &quot;train_number&quot;: &quot;TGV 5521&quot;,</span>
+<span class="s1">      &quot;destination&quot;: &quot;Montpellier Saint-Roch&quot;,</span>
+<span class="s1">      &quot;arrival_time&quot;: &quot;10:56&quot;,</span>
+<span class="s1">      &quot;platform&quot;: &quot;H&quot;</span>
+<span class="s1">    },</span>
+<span class="s1">    {</span>
+<span class="s1">      &quot;train_number&quot;: &quot;TGV 5382&quot;,</span>
+<span class="s1">      &quot;destination&quot;: &quot;Rennes&quot;,</span>
+<span class="s1">      &quot;arrival_time&quot;: &quot;11:44&quot;,</span>
+<span class="s1">      &quot;platform&quot;: &quot;C&quot;</span>
+<span class="s1">    },</span>
+<span class="s1">    {</span>
+<span class="s1">      &quot;train_number&quot;: &quot;TER 886760&quot;,</span>
+<span class="s1">      &quot;destination&quot;: &quot;Saint-Étienne Châteaucreux&quot;,</span>
+<span class="s1">      &quot;arrival_time&quot;: &quot;11:48&quot;,</span>
+<span class="s1">      &quot;platform&quot;: &quot;J&quot;</span>
+<span class="s1">    }</span>
+<span class="s1">  ]</span>
+<span class="s1">}</span>
+<span class="s1">&#39;&#39;&#39;</span>
+
+<span class="c1"># On importe le module json</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="c1"># On utilise la fonction json.loads() pour convertir le texte en un dictionnaire python</span>
+<span class="n">train_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">json_string</span><span class="p">)</span>
+
+<span class="c1"># On vient extraire le nom, l&#39;heure d&#39;arrivée et le numéro de la voie du prochain train</span>
+<span class="c1"># On notera que les données sont stockées dans une liste, on utilise donc l&#39;index 0</span>
+<span class="c1"># pour accéder au premier élément de la liste</span>
+<span class="n">next_train_number</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="s2">&quot;arrivals&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;train_number&quot;</span><span class="p">]</span>
+<span class="n">next_train_arrival_time</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="s2">&quot;arrivals&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;arrival_time&quot;</span><span class="p">]</span>
+<span class="n">next_train_platform</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="s2">&quot;arrivals&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;platform&quot;</span><span class="p">]</span>
+
+<span class="c1"># On affiche le résultat en utilisant des f-strings et les variables que nous avons créées</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Le prochain train est le </span><span class="si">{</span><span class="n">next_train_number</span><span class="si">}</span><span class="s2"> et il arrivera à </span><span class="si">{</span><span class="n">next_train_arrival_time</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="generer-un-json-a-partir-dun-dictionnaire-python">Générer un JSON à partir d'un dictionnaire python<a class="headerlink" href="#generer-un-json-a-partir-dun-dictionnaire-python" title="Permanent link">&para;</a></h3>
+<p>Dans l'exemple ci-dessous, nous utiliserons utiliser la fonction <code class="language-python highlight"><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">()</span></code> du module <code class="language-python highlight"><span class="n">json</span></code> pour générer une chaîne de caractères JSON à partir d'un dictionnaire python :</p>
+<div class="language-py highlight"><pre><span></span><code><span class="n">next_train_number</span> <span class="o">=</span> <span class="s2">&quot;TGV 5521&quot;</span><span class="p">,</span>
+<span class="n">next_train_destination</span> <span class="o">=</span> <span class="s2">&quot;Montpellier Saint-Roch&quot;</span><span class="p">,</span>
+<span class="n">next_train_arrival_time</span> <span class="o">=</span> <span class="s2">&quot;10:56&quot;</span><span class="p">,</span>
+<span class="n">next_train_platform</span> <span class="o">=</span> <span class="s2">&quot;H&quot;</span><span class="p">,</span>
+<span class="n">next_train_delay</span> <span class="o">=</span> <span class="mi">15</span>
+
+<span class="c1"># On import le module json</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="c1"># On crée un dictionnaire avec les informations du train</span>
+<span class="n">train_info</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;train_number&quot;</span><span class="p">:</span> <span class="s2">&quot;TGV 5521&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;destination&quot;</span><span class="p">:</span> <span class="s2">&quot;Montpellier Saint-Roch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;arrival_time&quot;</span><span class="p">:</span> <span class="s2">&quot;10:56&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;platform&quot;</span><span class="p">:</span>  <span class="s2">&quot;H&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;delay&quot;</span><span class="p">:</span> <span class="mi">15</span>
+<span class="p">}</span>
+
+<span class="c1"># On convertit le dictionnaire en chaîne de caractères JSON</span>
+<span class="n">train_info_json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">train_info</span><span class="p">)</span>
+
+<span class="c1"># On affiche la chaîne de caractères JSON</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">train_info_json</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="aller-plus-loin">Aller plus loin<a class="headerlink" href="#aller-plus-loin" title="Permanent link">&para;</a></h2>
+<p>Dans l'exemple ci-dessus, nous utilisons le module <code class="language-python highlight"><span class="n">json</span></code> qui est décrit en détails <a href="https://docs.python.org/fr/3/library/json.html">ici</a>.</p>
 
               
             </article>
@@ -1368,6 +1618,44 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+      
+    
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+      
+        
+        <a href="../connecter_wifi_station/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Se connecter au wifi" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Se connecter au wifi
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../requete_http_get/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Récupérer une donnée" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Récupérer une donnée
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

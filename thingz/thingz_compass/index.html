@@ -1054,6 +1054,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../reseau/json/" class="md-nav__link">
+        Échanger des données JSON
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../reseau/requete_http_get/" class="md-nav__link">
         Récupérer une donnée
       </a>
@@ -1068,7 +1082,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reseau/requete_http_post.md" class="md-nav__link">
+      <a href="../../reseau/requete_http_post/" class="md-nav__link">
         Envoyer une donnée
       </a>
     </li>
@@ -1480,14 +1494,11 @@
 L’index 0 correspond à l’axe X,1 pour Y et 2 pour Z</p>
 <h3 id="heading">heading()<a class="headerlink" href="#heading" title="Permanent link">&para;</a></h3>
 <p>Renvoie un <strong>float</strong>  représentant le cap courant  de 0° a 360° </p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">compass</span><span class="o">.</span><span class="n">heading</span><span class="p">()));</span>
-</code></pre></div></td></tr></table></div>
+<div class="language-python highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">compass</span><span class="o">.</span><span class="n">heading</span><span class="p">()));</span>
+</code></pre></div>
 <h3 id="calibratehard_time-int-soft_time-int">calibrate(<em>hard_time: <a href="https://galaxia-circuitpy-doc.thingz.co/docs/library/builtins.html#int" title="int">int</a></em>, <em>soft_time: <a href="https://galaxia-circuitpy-doc.thingz.co/docs/library/builtins.html#int" title="int">int</a></em>)<a class="headerlink" href="#calibratehard_time-int-soft_time-int" title="Permanent link">&para;</a></h3>
 <p>Calibrer le magnétomètre.</p>
 <p>Pendant la calibration il est nécessaire de faire pivoter la carte dans toutes les directions.</p>
@@ -1575,6 +1586,8 @@ et ne communique pas</p>
       <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../dist/run_code_main.js"></script>
       
     
   </body>
