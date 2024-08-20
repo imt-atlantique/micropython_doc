@@ -49,6 +49,7 @@ nav:
     - 'Réseau':
         - "Scanner les réseaux wifi" : 'reseau/scanner_wifi_station.md'
         - "Se connecter au wifi" : 'reseau/connecter_wifi_station.md'
+        - "Échanger des données JSON" : 'reseau/json.md'
         - "Récupérer une donnée" : 'reseau/requete_http_get.md'
         - "Envoyer une donnée" : 'reseau/requete_http_post.md'
   - 'Annexes':
@@ -103,8 +104,7 @@ markdown_extensions:
     - tables
     - pymdownx.highlight:
         use_pygments: true
-        linenums: true
-        anchor_linenums: true
+        pygments_lang_class: true
     - pymdownx.inlinehilite
     - pymdownx.snippets:
         auto_append:
@@ -119,9 +119,11 @@ markdown_extensions:
     - pymdownx.emoji:
         emoji_index: !!python/name:materialx.emoji.twemoji
         emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.extra
 
 extra_css:
   - css/extra.css
 
 extra_javascript:
-  - js/extra.js
+  - 'js/extra.js'
+  - 'dist/run_code_main.js'

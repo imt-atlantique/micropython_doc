@@ -7,12 +7,12 @@ hide:
 Permet de scanner les réseaux wifi disponibles.
 
 # Branchement
-![Carte Galaxia](../../img/galaxia_board.svg){: style="height:380px;"}
+![Carte Galaxia](../img/galaxia_board.svg){: style="height:380px;"}
 
 ## Exemple
 Dans l'exemple ci-dessous, nous allons scanner les réseaux wifi à portée et afficher leurs informations dans la console :
 
-```python
+```py
 # On commence par importer le module network
 import network
 

@@ -7,12 +7,12 @@ hide:
 Permet d'envoyer une requête HTTP `GET` en tant que client et de récupérer la réponse du serveur.
 
 # Branchement
-![Carte Galaxia](../../img/galaxia_board.svg){: style="height:380px;"}
+![Carte Galaxia](../img/galaxia_board.svg){: style="height:380px;"}
 
 ## Exemple
 Dans l'exemple ci-dessous, nous allons connecter le module ESP de la Galaxia à un réseau wifi grâce au module `network` (voir l'exemple [se connecter à un réseau wifi](./connecter_wifi_station.md)). Nous enverrons ensuite une requête HTTP `GET` à l'adresse `http://worldtimeapi.org/api/timezone/Europe/Paris` pour récupérer l'heure actuelle en France, le tout grâce au module additionnel `requests`.
 
-```python
+```py
 # On commence par importer les modules network et time
 import network
 import time
@@ -35,16 +35,16 @@ sta_if.active(True)
 # Et on se connecte au réseau wifi
 print(f"Connexion au réseau {ssid}...", end="")
 if not sta_if.isconnected():
-    sta_if.connect(ssid, password)
-    while not sta_if.isconnected():
-        print(".", end="")
-        time.sleep(1)
+  sta_if.connect(ssid, password)
+  while not sta_if.isconnected():
+    print(".", end="")
+    time.sleep(1)
 
 # On affiche que la connexion a bien été établie
 print(f"\nConnecté au réseau {ssid} !")
 
 # On peut maintenant envoyer une requête HTTP GET pour obtenir l'heure actuelle en France
-r = requests.get("https://worldtimeapi.org/api/timezone/Europe/Paris")
+r = requests.get("http://worldtimeapi.org/api/timezone/Europe/Paris")
 
 # On affiche la réponse du serveur si le code HTTP est 200 (OK)
 if r.status_code == 200:
@@ -52,9 +52,9 @@ if r.status_code == 200:
   print(f"Réponse du serveur : {r.json()}")
 
   # On peut aussi extraire des informations spécifiques de la réponse
-  # Par exemple, l'heure actuelle en France (la valeur de l'élément 'datetime')
-  print(f"Il est actuellement {r.json()['datetime']} en France.")
+  # Par exemple, l'heure actuelle en France contenue dans la valeur de l'élément 'datetime'
+  print(f"Il est actuellement {r.json()['datetime'][11:16]} en France.")
 ```
 
 ## Aller plus loin
-Dans l'exemple ci-dessus, nous utilisons le module `#!python network` qui est décrit en détails [ici](https://docs.micropython.org/en/v1.12/library/network.html#module-network).
+Dans l'exemple ci-dessus, nous utilisons les modules [] `#!python network` qui est décrit en anglais [ici](https://docs.micropython.org/en/v1.12/library/network.html#module-network) et le module additionnel `#!python requests` qui est décrit en anglais [ici](https://docs.micropython.org/en/latest/esp8266/tutorial/requests.html)

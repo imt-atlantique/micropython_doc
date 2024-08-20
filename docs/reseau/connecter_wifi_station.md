@@ -7,12 +7,12 @@ hide:
 Permet de connecter la carte Galaxia à un réseau wifi en mode _station_ (cela signifie que la Galaxia se connecte à un point d'accès wifi existant).
 
 # Branchement
-![Carte Galaxia](../../img/galaxia_board.svg){: style="height:380px;"}
+![Carte Galaxia](../img/galaxia_board.svg){: style="height:380px;"}
 
 ## Exemple
 Dans l'exemple ci-dessous, nous allons connecter la carte à un réseau wifi portant le nom `"mon_reseau"` et dont le mot de passe est `"mon_mot_de_passe"` :
 
-```python
+```py
 # On commence par importer les modules network et time
 import network
 import time
