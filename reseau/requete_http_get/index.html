@@ -1385,7 +1385,7 @@
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Connecté au réseau </span><span class="si">{</span><span class="n">ssid</span><span class="si">}</span><span class="s2"> !&quot;</span><span class="p">)</span>
 
 <span class="c1"># On peut maintenant envoyer une requête HTTP GET pour obtenir l&#39;heure actuelle en France</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://worldtimeapi.org/api/timezone/Europe/Paris&quot;</span><span class="p">)</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://worldtimeapi.org/api/timezone/Europe/Paris&quot;</span><span class="p">)</span>
 
 <span class="c1"># On affiche la réponse du serveur si le code HTTP est 200 (OK)</span>
 <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
