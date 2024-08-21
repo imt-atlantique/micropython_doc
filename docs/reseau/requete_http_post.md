@@ -44,7 +44,7 @@ if not sta_if.isconnected():
 print(f"\nConnecté au réseau {ssid} !")
 
 # URL du serveur où l'on va envoyer les données
-url = "http://emoncms.fr/input/post"
+url = "https://emoncms.fr/input/post"
 
 while True:
   # On vérifie que la connexion est toujours active

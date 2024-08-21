@@ -44,7 +44,7 @@ if not sta_if.isconnected():
 print(f"\nConnecté au réseau {ssid} !")
 
 # On peut maintenant envoyer une requête HTTP GET pour obtenir l'heure actuelle en France
-r = requests.get("http://worldtimeapi.org/api/timezone/Europe/Paris")
+r = requests.get("https://worldtimeapi.org/api/timezone/Europe/Paris")
 
 # On affiche la réponse du serveur si le code HTTP est 200 (OK)
 if r.status_code == 200:
