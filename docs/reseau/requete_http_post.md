@@ -57,7 +57,7 @@ while True:
     data = {
       "node": "galaxia",
       "data": '{"luminosity":' + str(led.read_light_level()) + '}',
-      "apikey": "e0058db6145ae16d24d74b823305bc62"
+      "apikey": "<votre_clé_api>"
     }
 
     # On encode les données en une chaîne de caractères
