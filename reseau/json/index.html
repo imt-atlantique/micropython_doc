@@ -108,6 +108,10 @@
         </div>
       </div>
     </div>
+    <a href="/terminal/" target="_blank" class="md-header__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19v-3h8v3h-8m-4.5-6L2.47 7h4.24l4.96 4.95c.58.59.58 1.55 0 2.12L6.74 19H2.5l6-6Z"/></svg>
+    </a>
     
       <form class="md-header__option" data-md-component="palette">
         
@@ -990,6 +994,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dictionnaires/dictionnaires/" class="md-nav__link">
+        Dictionnaires
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../fonctions/fonction/" class="md-nav__link">
         Fonctions
       </a>
@@ -1009,18 +1027,18 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_12" type="checkbox" id="__nav_3_12" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_13" type="checkbox" id="__nav_3_13" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_3_12">
+        <label class="md-nav__link" for="__nav_3_13">
           Réseau
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Réseau" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_12">
+        <label class="md-nav__title" for="__nav_3_13">
           <span class="md-nav__icon md-icon"></span>
           Réseau
         </label>
@@ -1507,7 +1525,7 @@
 </li>
 </ul>
 <h2 id="exemples">Exemples<a class="headerlink" href="#exemples" title="Permanent link">&para;</a></h2>
-<p>Dans les deux exemples ci-dessous, nous allons utiliser la méthode <code class="language-python highlight"><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">()</span></code> du module <code class="language-python highlight"><span class="n">json</span></code> pour convertir le JSON (qui sera un texte déclaré au début du programme) en un dictionnaire python afin d'extraire et d'afficher des informations qui nous intéressent :</p>
+<p>Dans les deux exemples ci-dessous, nous allons utiliser la méthode <code class="language-python highlight"><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">()</span></code> du module <code class="language-python highlight"><span class="n">json</span></code> pour convertir le JSON (qui sera un texte déclaré au début du programme) en un <a href="../../dictionnaires/dictionnaires/">dictionnaire python</a> afin d'extraire et d'afficher des informations qui nous intéressent :</p>
 <h3 id="extraire-les-conditions-meteorologiques-a-lyon">Extraire les conditions météorologiques à Lyon<a class="headerlink" href="#extraire-les-conditions-meteorologiques-a-lyon" title="Permanent link">&para;</a></h3>
 <div class="language-py highlight"><pre><span></span><code><span class="c1">## On déclare le texte JSON, veuillez noter que le JSON est entouré de triples</span>
 <span class="c1"># guillemets pour le définir comme une chaîne de caractères python sur plusieurs lignes</span>
@@ -1581,7 +1599,7 @@
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Le prochain train est le </span><span class="si">{</span><span class="n">next_train_number</span><span class="si">}</span><span class="s2"> et il arrivera à </span><span class="si">{</span><span class="n">next_train_arrival_time</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="generer-un-json-a-partir-dun-dictionnaire-python">Générer un JSON à partir d'un dictionnaire python<a class="headerlink" href="#generer-un-json-a-partir-dun-dictionnaire-python" title="Permanent link">&para;</a></h3>
-<p>Dans l'exemple ci-dessous, nous utiliserons utiliser la fonction <code class="language-python highlight"><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">()</span></code> du module <code class="language-python highlight"><span class="n">json</span></code> pour générer une chaîne de caractères JSON à partir d'un dictionnaire python :</p>
+<p>Dans l'exemple ci-dessous, nous utiliserons utiliser la fonction <code class="language-python highlight"><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">()</span></code> du module <code class="language-python highlight"><span class="n">json</span></code> pour générer une chaîne de caractères JSON à partir d'un <a href="../../dictionnaires/dictionnaires/">dictionnaire python</a> python :</p>
 <div class="language-py highlight"><pre><span></span><code><span class="n">next_train_number</span> <span class="o">=</span> <span class="s2">&quot;TGV 5521&quot;</span><span class="p">,</span>
 <span class="n">next_train_destination</span> <span class="o">=</span> <span class="s2">&quot;Montpellier Saint-Roch&quot;</span><span class="p">,</span>
 <span class="n">next_train_arrival_time</span> <span class="o">=</span> <span class="s2">&quot;10:56&quot;</span><span class="p">,</span>

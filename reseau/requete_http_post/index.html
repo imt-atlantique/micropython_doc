@@ -108,6 +108,10 @@
         </div>
       </div>
     </div>
+    <a href="/terminal/" target="_blank" class="md-header__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19v-3h8v3h-8m-4.5-6L2.47 7h4.24l4.96 4.95c.58.59.58 1.55 0 2.12L6.74 19H2.5l6-6Z"/></svg>
+    </a>
     
       <form class="md-header__option" data-md-component="palette">
         
@@ -990,6 +994,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dictionnaires/dictionnaires/" class="md-nav__link">
+        Dictionnaires
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../fonctions/fonction/" class="md-nav__link">
         Fonctions
       </a>
@@ -1009,18 +1027,18 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_12" type="checkbox" id="__nav_3_12" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_13" type="checkbox" id="__nav_3_13" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_3_12">
+        <label class="md-nav__link" for="__nav_3_13">
           Réseau
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Réseau" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_12">
+        <label class="md-nav__title" for="__nav_3_13">
           <span class="md-nav__icon md-icon"></span>
           Réseau
         </label>
@@ -1353,7 +1371,7 @@
 <h1 id="branchement">Branchement<a class="headerlink" href="#branchement" title="Permanent link">&para;</a></h1>
 <p><img alt="Carte Galaxia" src="../../img/galaxia_board.svg" style="height:380px;" /></p>
 <h2 id="exemple">Exemple<a class="headerlink" href="#exemple" title="Permanent link">&para;</a></h2>
-<p>Dans l'exemple ci-dessous, nous allons connecter le module ESP de la Galaxia à un réseau wifi grâce au module <code>network</code> (voir l'exemple <a href="../connecter_wifi_station/">se connecter à un réseau wifi</a>) puis nous enverrons une requête HTTP <code>POST</code> à l'adresse <code>http://emoncms.fr/input/post</code> grâce au module additionnel <code>requests</code>. Le contenu de cette requête sera un JSON contenant la luminosité ambiante perçue par la carte <a href="../../galaxia/">Galaxia</a> :</p>
+<p>Dans l'exemple ci-dessous, nous allons connecter le module ESP de la Galaxia à un réseau wifi grâce au module <code>network</code> (voir l'exemple <a href="../connecter_wifi_station/">se connecter à un réseau wifi</a>) puis nous enverrons une requête HTTP <code>POST</code> à l'adresse <code>http://emoncms.fr/input/post</code> grâce au module additionnel <code>requests</code>. Le contenu de cette requête sera un <a href="../../dictionnaires/dictionnaires/">dictionnaire</a> contenant la luminosité ambiante perçue par la carte <a href="../../galaxia/">Galaxia</a>.</p>
 <div class="language-py highlight"><pre><span></span><code><span class="c1"># On commence par importer les modules network, time et thingz</span>
 <span class="kn">import</span> <span class="nn">network</span>
 <span class="kn">import</span> <span class="nn">time</span>
@@ -1390,6 +1408,10 @@
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
   <span class="c1"># On vérifie que la connexion est toujours active</span>
   <span class="k">if</span> <span class="n">sta_if</span><span class="o">.</span><span class="n">isconnected</span><span class="p">():</span>
+    <span class="c1"># On lit la luminosité ambiante de la carte Galaxia</span>
+    <span class="c1"># et on la convertit en chaîne de caractères</span>
+    <span class="n">light_level</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">led</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">())</span>
+
     <span class="c1"># On crée un dictionnaire contenant les données à envoyer</span>
     <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
       <span class="s2">&quot;node&quot;</span><span class="p">:</span> <span class="s2">&quot;galaxia&quot;</span><span class="p">,</span>
@@ -1418,7 +1440,7 @@
     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="aller-plus-loin">Aller plus loin<a class="headerlink" href="#aller-plus-loin" title="Permanent link">&para;</a></h2>
-<p>Dans l'exemple ci-dessus, nous utilisons les modules [] <code class="language-python highlight"><span class="n">network</span></code> qui est décrit en anglais <a href="https://docs.micropython.org/en/v1.12/library/network.html#module-network">ici</a> et le module additionnel <code class="language-python highlight"><span class="n">requests</span></code> qui est décrit en anglais <a href="https://docs.micropython.org/en/latest/esp8266/tutorial/requests.html">ici</a></p>
+<p>Dans l'exemple ci-dessus, nous utilisons <a href="../../dictionnaires/dictionnaires/">les dictionnaires</a> et la fonction <a href="https://www.micropython.fr/reference/#/03.modules_standards/str/"><code class="language-python highlight"><span class="nb">str</span><span class="p">()</span></code></a>, le module <code class="language-python highlight"><span class="n">network</span></code> qui est décrit en anglais <a href="https://docs.micropython.org/en/v1.12/library/network.html#module-network">ici</a> et le module additionnel <code class="language-python highlight"><span class="n">requests</span></code> qui est décrit en anglais <a href="https://docs.micropython.org/en/latest/esp8266/tutorial/requests.html">là</a>.</p>
 
               
             </article>
