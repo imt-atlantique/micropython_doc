@@ -49,7 +49,7 @@ La structure du langage JSON est basée sur deux structures de données :
   
 ## Exemples
 
-Dans les deux exemples ci-dessous, nous allons utiliser la méthode `#!python json.loads()` du module `#!python json` pour convertir le JSON (qui sera un texte déclaré au début du programme) en un dictionnaire python afin d'extraire et d'afficher des informations qui nous intéressent :
+Dans les deux exemples ci-dessous, nous allons utiliser la méthode `#!python json.loads()` du module `#!python json` pour convertir le JSON (qui sera un texte déclaré au début du programme) en un [dictionnaire python](../dictionnaires/dictionnaires.md) afin d'extraire et d'afficher des informations qui nous intéressent :
 
 ### Extraire les conditions météorologiques à Lyon
 
@@ -131,7 +131,7 @@ print(f"Le prochain train est le {next_train_number} et il arrivera à {next_tra
 
 ### Générer un JSON à partir d'un dictionnaire python
 
-Dans l'exemple ci-dessous, nous utiliserons utiliser la fonction `#!python json.dumps()` du module `#!python json` pour générer une chaîne de caractères JSON à partir d'un dictionnaire python :
+Dans l'exemple ci-dessous, nous utiliserons utiliser la fonction `#!python json.dumps()` du module `#!python json` pour générer une chaîne de caractères JSON à partir d'un [dictionnaire python](../dictionnaires/dictionnaires.md) python :
 
 ```py
 next_train_number = "TGV 5521",

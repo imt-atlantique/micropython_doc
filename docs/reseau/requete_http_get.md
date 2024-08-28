@@ -57,4 +57,4 @@ if r.status_code == 200:
 ```
 
 ## Aller plus loin
-Dans l'exemple ci-dessus, nous utilisons les modules [] `#!python network` qui est décrit en anglais [ici](https://docs.micropython.org/en/v1.12/library/network.html#module-network) et le module additionnel `#!python requests` qui est décrit en anglais [ici](https://docs.micropython.org/en/latest/esp8266/tutorial/requests.html)
+Dans l'exemple ci-dessus, nous utilisons [les dictionnaires](../dictionnaires/dictionnaires.md), le module `#!python network` qui est décrit en anglais [ici](https://docs.micropython.org/en/v1.12/library/network.html#module-network) et le module additionnel `#!python requests` qui est décrit en anglais [là](https://docs.micropython.org/en/latest/esp8266/tutorial/requests.html).

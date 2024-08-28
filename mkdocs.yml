@@ -45,6 +45,7 @@ nav:
         - "Créer une liste" : 'listes/liste.md'
         - "Obtenir l'élément d'une liste" : 'listes/obtenir_element_liste.md'
         - "Supprimer l'élément d'une liste" : 'listes/supprimer_element_liste.md'
+    - 'Dictionnaires': 'dictionnaires/dictionnaires.md'
     - 'Fonctions': 'fonctions/fonction.md'
     - 'Réseau':
         - "Scanner les réseaux wifi" : 'reseau/scanner_wifi_station.md'

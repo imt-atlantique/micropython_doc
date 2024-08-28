@@ -10,7 +10,7 @@ Permet d'envoyer des données avec une requête HTTP `POST` en tant que client e
 ![Carte Galaxia](../img/galaxia_board.svg){: style="height:380px;"}
 
 ## Exemple
-Dans l'exemple ci-dessous, nous allons connecter le module ESP de la Galaxia à un réseau wifi grâce au module `network` (voir l'exemple [se connecter à un réseau wifi](./connecter_wifi_station.md)) puis nous enverrons une requête HTTP `POST` à l'adresse `http://emoncms.fr/input/post` grâce au module additionnel `requests`. Le contenu de cette requête sera un JSON contenant la luminosité ambiante perçue par la carte [Galaxia](../galaxia.md) :
+Dans l'exemple ci-dessous, nous allons connecter le module ESP de la Galaxia à un réseau wifi grâce au module `network` (voir l'exemple [se connecter à un réseau wifi](./connecter_wifi_station.md)) puis nous enverrons une requête HTTP `POST` à l'adresse `http://emoncms.fr/input/post` grâce au module additionnel `requests`. Le contenu de cette requête sera un [dictionnaire](../dictionnaires/dictionnaires.md) contenant la luminosité ambiante perçue par la carte [Galaxia](../galaxia.md).
 
 ```py
 # On commence par importer les modules network, time et thingz
@@ -49,6 +49,10 @@ url = "https://emoncms.fr/input/post"
 while True:
   # On vérifie que la connexion est toujours active
   if sta_if.isconnected():
+    # On lit la luminosité ambiante de la carte Galaxia
+    # et on la convertit en chaîne de caractères
+    light_level = str(led.read_light_level())
+
     # On crée un dictionnaire contenant les données à envoyer
     data = {
       "node": "galaxia",
@@ -78,4 +82,4 @@ while True:
 ```
 
 ## Aller plus loin
-Dans l'exemple ci-dessus, nous utilisons les modules [] `#!python network` qui est décrit en anglais [ici](https://docs.micropython.org/en/v1.12/library/network.html#module-network) et le module additionnel `#!python requests` qui est décrit en anglais [ici](https://docs.micropython.org/en/latest/esp8266/tutorial/requests.html)
+Dans l'exemple ci-dessus, nous utilisons [les dictionnaires](../dictionnaires/dictionnaires.md) et la fonction [`#!python str()`](https://www.micropython.fr/reference/#/03.modules_standards/str/), le module `#!python network` qui est décrit en anglais [ici](https://docs.micropython.org/en/v1.12/library/network.html#module-network) et le module additionnel `#!python requests` qui est décrit en anglais [là](https://docs.micropython.org/en/latest/esp8266/tutorial/requests.html).
