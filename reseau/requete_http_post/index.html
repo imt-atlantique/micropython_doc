@@ -1415,8 +1415,8 @@
     <span class="c1"># On crée un dictionnaire contenant les données à envoyer</span>
     <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
       <span class="s2">&quot;node&quot;</span><span class="p">:</span> <span class="s2">&quot;galaxia&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="s1">&#39;{&quot;luminosity&quot;:&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">led</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">())</span> <span class="o">+</span> <span class="s1">&#39;}&#39;</span><span class="p">,</span>
-      <span class="s2">&quot;apikey&quot;</span><span class="p">:</span> <span class="s2">&quot;e0058db6145ae16d24d74b823305bc62&quot;</span>
+      <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="s1">&#39;{&quot;luminosity&quot;:&#39;</span> <span class="o">+</span> <span class="n">light_level</span> <span class="o">+</span> <span class="s1">&#39;}&#39;</span><span class="p">,</span>
+      <span class="s2">&quot;apikey&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;votre_clé_api&gt;&quot;</span>
     <span class="p">}</span>
 
     <span class="c1"># On encode les données en une chaîne de caractères</span>
