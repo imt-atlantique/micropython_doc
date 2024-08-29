@@ -56,7 +56,7 @@ while True:
     # On crée un dictionnaire contenant les données à envoyer
     data = {
       "node": "galaxia",
-      "data": '{"luminosity":' + str(led.read_light_level()) + '}',
+      "data": '{"luminosity":' + light_level + '}',
       "apikey": "<votre_clé_api>"
     }
 
