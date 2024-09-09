@@ -1,6 +1,6 @@
 # thingz.accelerometer
 
-### get_gestures() :
+### current_gesture() :
 
 Cette fonction retourne une chaîne de caractères qui indique le type de geste ou de mouvement détecté
 
