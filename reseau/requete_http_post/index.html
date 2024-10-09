@@ -108,7 +108,7 @@
         </div>
       </div>
     </div>
-    <a href="/terminal/" target="_blank" class="md-header__button md-icon">
+    <a href="../../terminal/" target="_blank" class="md-header__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19v-3h8v3h-8m-4.5-6L2.47 7h4.24l4.96 4.95c.58.59.58 1.55 0 2.12L6.74 19H2.5l6-6Z"/></svg>
     </a>
@@ -1372,21 +1372,25 @@
 <p><img alt="Carte Galaxia" src="../../img/galaxia_board.svg" style="height:380px;" /></p>
 <h2 id="exemple">Exemple<a class="headerlink" href="#exemple" title="Permanent link">&para;</a></h2>
 <p>Dans l'exemple ci-dessous, nous allons connecter le module ESP de la Galaxia à un réseau wifi grâce au module <code>network</code> (voir l'exemple <a href="../connecter_wifi_station/">se connecter à un réseau wifi</a>) puis nous enverrons une requête HTTP <code>POST</code> à l'adresse <code>http://emoncms.fr/input/post</code> grâce au module additionnel <code>requests</code>. Le contenu de cette requête sera un <a href="../../dictionnaires/dictionnaires/">dictionnaire</a> contenant la luminosité ambiante perçue par la carte <a href="../../galaxia/">Galaxia</a>.</p>
-<div class="language-py highlight"><pre><span></span><code><span class="c1"># On commence par importer les modules network, time et thingz</span>
-<span class="kn">import</span> <span class="nn">network</span>
-<span class="kn">import</span> <span class="nn">time</span>
+<div class="language-py highlight"><pre><span></span><code><span class="c1"># On importe les modules dont on a besoin</span>
 <span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">network</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">requests</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">json</span> <span class="kn">import</span> <span class="o">*</span>
 
-<span class="c1"># On importe le module additionnel requests</span>
-<span class="kn">import</span> <span class="nn">requests</span>
 <span class="c1"># On spécifie les informations du réseau wifi</span>
 <span class="c1"># (remplacez &quot;mon_reseau&quot; et &quot;mon_mot_de_passe&quot; </span>
 <span class="c1"># par les informations de votre réseau)</span>
 <span class="n">ssid</span> <span class="o">=</span> <span class="s2">&quot;mon_reseau&quot;</span>
 <span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;mon_mot_de_passe&quot;</span>
 
+<span class="c1"># On spécifie la clé d&#39;API Écriture de emoncms:</span>
+<span class="n">apikey</span> <span class="o">=</span> <span class="s2">&quot;votre_clé_d_api&quot;</span>
+
 <span class="c1"># On vient créer une instance de l&#39;interface wifi en mode station</span>
-<span class="n">sta_if</span> <span class="o">=</span> <span class="n">network</span><span class="o">.</span><span class="n">WLAN</span><span class="p">(</span><span class="n">network</span><span class="o">.</span><span class="n">STA_IF</span><span class="p">)</span>
+<span class="n">sta_if</span> <span class="o">=</span> <span class="n">WLAN</span><span class="p">(</span><span class="n">STA_IF</span><span class="p">)</span>
 
 <span class="c1"># On active l&#39;interface wifi</span>
 <span class="n">sta_if</span><span class="o">.</span><span class="n">active</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
@@ -1397,50 +1401,41 @@
   <span class="n">sta_if</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">ssid</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
   <span class="k">while</span> <span class="ow">not</span> <span class="n">sta_if</span><span class="o">.</span><span class="n">isconnected</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="c1"># On affiche que la connexion a bien été établie</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Connecté au réseau </span><span class="si">{</span><span class="n">ssid</span><span class="si">}</span><span class="s2"> !&quot;</span><span class="p">)</span>
 
 <span class="c1"># URL du serveur où l&#39;on va envoyer les données</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://emoncms.fr/input/post&quot;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;http://emoncms.fr/input/post&quot;</span>
 
-<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-  <span class="c1"># On vérifie que la connexion est toujours active</span>
-  <span class="k">if</span> <span class="n">sta_if</span><span class="o">.</span><span class="n">isconnected</span><span class="p">():</span>
-    <span class="c1"># On lit la luminosité ambiante de la carte Galaxia</span>
+<span class="c1"># On vérifie que la connexion est toujours active</span>
+<span class="k">if</span> <span class="n">sta_if</span><span class="o">.</span><span class="n">isconnected</span><span class="p">():</span>
+    <span class="c1"># On lit la luminosité ambiante perçue par la Galaxia</span>
     <span class="c1"># et on la convertit en chaîne de caractères</span>
     <span class="n">light_level</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">led</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">())</span>
 
     <span class="c1"># On crée un dictionnaire contenant les données à envoyer</span>
     <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
       <span class="s2">&quot;node&quot;</span><span class="p">:</span> <span class="s2">&quot;galaxia&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="s1">&#39;{&quot;luminosity&quot;:&#39;</span> <span class="o">+</span> <span class="n">light_level</span> <span class="o">+</span> <span class="s1">&#39;}&#39;</span><span class="p">,</span>
-      <span class="s2">&quot;apikey&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;votre_clé_api&gt;&quot;</span>
+      <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="s1">&#39;{&quot;light_level&quot;:&#39;</span> <span class="o">+</span> <span class="n">light_level</span> <span class="o">+</span> <span class="s1">&#39;}&#39;</span><span class="p">,</span>
+      <span class="s2">&quot;apikey&quot;</span><span class="p">:</span> <span class="n">apikey</span>
     <span class="p">}</span>
 
-    <span class="c1"># On encode les données en une chaîne de caractères</span>
-    <span class="n">data_encoded</span> <span class="o">=</span> <span class="s1">&#39;&amp;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">k</span><span class="o">+</span><span class="s2">&quot;=&quot;</span><span class="o">+</span><span class="n">data</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">data</span><span class="p">)</span>
-
     <span class="c1"># On envoie la requête HTTP POST au serveur emoncms.fr</span>
-    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/x-www-form-urlencoded&quot;</span><span class="p">},</span> <span class="n">data</span><span class="o">=</span><span class="n">data_encoded</span><span class="p">)</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
 
     <span class="c1"># Si la réponse du serveur est &quot;ok&quot;, on allume la LED en vert</span>
     <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span> <span class="o">==</span> <span class="s1">&#39;ok&#39;</span><span class="p">:</span>
-      <span class="n">led</span><span class="o">.</span><span class="n">set_colors</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-      <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
-      <span class="n">led</span><span class="o">.</span><span class="n">set_colors</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+      <span class="n">led</span><span class="o">.</span><span class="n">set_colors</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
       <span class="c1"># Sinon, on allume la LED en rouge</span>
-      <span class="n">led</span><span class="o">.</span><span class="n">set_colors</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-      <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
-      <span class="n">led</span><span class="o">.</span><span class="n">set_colors</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-
-    <span class="c1"># On attend 10 secondes avant d&#39;envoyer une nouvelle requête</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+      <span class="n">led</span><span class="o">.</span><span class="n">set_colors</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+      <span class="c1"># Et on affiche l&#39;erreur renvoyée par le serveur</span>
+      <span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="aller-plus-loin">Aller plus loin<a class="headerlink" href="#aller-plus-loin" title="Permanent link">&para;</a></h2>
-<p>Dans l'exemple ci-dessus, nous utilisons <a href="../../dictionnaires/dictionnaires/">les dictionnaires</a> et la fonction <a href="https://www.micropython.fr/reference/#/03.modules_standards/str/"><code class="language-python highlight"><span class="nb">str</span><span class="p">()</span></code></a>, le module <code class="language-python highlight"><span class="n">network</span></code> qui est décrit en anglais <a href="https://docs.micropython.org/en/v1.12/library/network.html#module-network">ici</a> et le module additionnel <code class="language-python highlight"><span class="n">requests</span></code> qui est décrit en anglais <a href="https://docs.micropython.org/en/latest/esp8266/tutorial/requests.html">là</a>.</p>
+<p>Dans l'exemple ci-dessus, nous utilisons <a href="../../dictionnaires/dictionnaires/">les dictionnaires</a> et la fonction <a href="https://docs.python.org/fr/3/library/stdtypes.html#str"><code class="language-python highlight"><span class="nb">str</span><span class="p">()</span></code></a>, le module <code class="language-python highlight"><span class="n">network</span></code> qui est décrit en anglais <a href="https://docs.micropython.org/en/v1.12/library/network.html#module-network">ici</a> et le module additionnel <code class="language-python highlight"><span class="n">requests</span></code> qui est décrit en anglais <a href="https://docs.micropython.org/en/latest/esp8266/tutorial/requests.html">là</a>.</p>
 
               
             </article>

@@ -108,7 +108,7 @@
         </div>
       </div>
     </div>
-    <a href="/terminal/" target="_blank" class="md-header__button md-icon">
+    <a href="../../terminal/" target="_blank" class="md-header__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19v-3h8v3h-8m-4.5-6L2.47 7h4.24l4.96 4.95c.58.59.58 1.55 0 2.12L6.74 19H2.5l6-6Z"/></svg>
     </a>
@@ -1235,8 +1235,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#get_gestures" class="md-nav__link">
-    get_gestures() :
+  <a href="#current_gesture" class="md-nav__link">
+    current_gesture() :
   </a>
   
 </li>
@@ -1284,7 +1284,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#get_gestures_1" class="md-nav__link">
+  <a href="#get_gestures" class="md-nav__link">
     get_gestures()
   </a>
   
@@ -1437,8 +1437,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#get_gestures" class="md-nav__link">
-    get_gestures() :
+  <a href="#current_gesture" class="md-nav__link">
+    current_gesture() :
   </a>
   
 </li>
@@ -1486,7 +1486,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#get_gestures_1" class="md-nav__link">
+  <a href="#get_gestures" class="md-nav__link">
     get_gestures()
   </a>
   
@@ -1507,7 +1507,7 @@
 
 
 <h1 id="thingzaccelerometer">thingz.accelerometer<a class="headerlink" href="#thingzaccelerometer" title="Permanent link">&para;</a></h1>
-<h3 id="get_gestures">get_gestures() :<a class="headerlink" href="#get_gestures" title="Permanent link">&para;</a></h3>
+<h3 id="current_gesture">current_gesture() :<a class="headerlink" href="#current_gesture" title="Permanent link">&para;</a></h3>
 <p>Cette fonction retourne une chaîne de caractères qui indique le type de geste ou de mouvement détecté</p>
 <ul>
 <li>"tap" : Détection d'un tap ou d'un double tap sur la carte Galaxia.</li>
@@ -1524,7 +1524,7 @@
 <li>"8g"</li>
 <li>"none"</li>
 </ul>
-<p>Exemple de code utilisant la fonction <code>get_gestures()</code> pour détecter les mouvements de secousse de la carte Galaxia :
+<p>Exemple de code utilisant la fonction <code>current_gesture()</code> pour détecter les mouvements de secousse de la carte Galaxia :
 <div class="language-python highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">thingz</span> <span class="kn">import</span> <span class="o">*</span>
 
@@ -1573,7 +1573,7 @@ et renvoie un booleen ( True si le geste courant est celui à tester )</p>
 <h3 id="was_gesturegesture-str">was_gesture(gesture: str )<a class="headerlink" href="#was_gesturegesture-str" title="Permanent link">&para;</a></h3>
 <p>Cette fonction prend en parametre  Le geste à tester
 et renvoie un booleen (True si le geste a été actif depuis le dernier appel à cette fonction )</p>
-<h3 id="get_gestures_1">get_gestures()<a class="headerlink" href="#get_gestures_1" title="Permanent link">&para;</a></h3>
+<h3 id="get_gestures">get_gestures()<a class="headerlink" href="#get_gestures" title="Permanent link">&para;</a></h3>
 <p>Renvoie une liste de l’historique des gestes. Le plus récent est à la fin de la liste.</p>
 
               
