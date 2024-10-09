@@ -1,6 +1,6 @@
 # thingz.accelerometer
 
-### get_gestures() :
+### current_gesture() :
 
 Cette fonction retourne une chaîne de caractères qui indique le type de geste ou de mouvement détecté
 
@@ -20,7 +20,7 @@ Cette fonction retourne une chaîne de caractères qui indique le type de geste 
 - "none"
 
 
-Exemple de code utilisant la fonction `get_gestures()` pour détecter les mouvements de secousse de la carte Galaxia :
+Exemple de code utilisant la fonction `current_gesture()` pour détecter les mouvements de secousse de la carte Galaxia :
 ```python
 from machine import *
 from thingz import *
