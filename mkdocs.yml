@@ -5,7 +5,8 @@ site_author: Baptiste Gaultier, Laurent Mattlé
 nav:
   - 'Accueil': index.md
   - 'Premiers pas':
-    - "L'interface Vittascience": interface.md
+    - "L'interface France-IOI": interface_france-ioi.md
+    - "L'interface Vittascience": interface_vittascience.md
     - "La carte Galaxia": galaxia.md
   - 'Guides de référence':
     - 'Contrôle':
