@@ -23,24 +23,24 @@ Dans l'exemple ci-dessous, nous allons jouer la note **La** (440Hz) sur le buzze
 === ":material-code-array: Exemple avec du code"
     ```python
     from machine import *
-    import utime
+    from time import *
 
     # Initialisation du buzzer sur la broche P19
     p19 = Pin(13, Pin.OUT)
 
     def pitch (pin, noteFrequency, noteDuration, silence_ms = 10):
-    if noteFrequency is not 0:
-        microsecondsPerWave = 1e6 / noteFrequency
-        millisecondsPerCycle = 1000 / (microsecondsPerWave * 2)
-        loopTime = noteDuration * millisecondsPerCycle
-        for x in range(loopTime):
-        pin.on()
-        utime.sleep_us(int(microsecondsPerWave))
-        pin.off()
-        utime.sleep_us(int(microsecondsPerWave))
-    else:
-        utime.sleep_ms(noteDuration)
-    utime.sleep_ms(silence_ms)
+        if noteFrequency is not 0:
+            microsecondsPerWave = 1e6 / noteFrequency
+            millisecondsPerCycle = 1000 / (microsecondsPerWave * 2)
+            loopTime = noteDuration * millisecondsPerCycle
+            for x in range(int(loopTime)):
+                pin.on()
+                sleep_us(int(microsecondsPerWave))
+                pin.off()
+                sleep_us(int(microsecondsPerWave))
+        else:
+            sleep_ms(noteDuration)
+            sleep_ms(silence_ms)
 
     # On joue la fréquence 440Hz pendant 500ms
     pitch(p19, 440, 500)
