@@ -211,7 +211,7 @@ Voici les numéros des broches des deux ports _Grove_ de la Galaxia :
 ## Brancher la carte Galaxia à un ordinateur
 
 !!! info
-    La section qui suit est destinée aux heureux·euses propriétaires de notre [kit MOOCs MicroPython](https://fr.vittascience.com/shop/347/kit-micropython-avec-la-galaxia). L'achat de ce kit est optionnel et toutes les activités de ce MOOC peut être simulées avec [l'interface Vittascience](interface.md).
+    La section qui suit est destinée aux heureux·euses propriétaires de notre [kit MOOCs MicroPython](https://fr.vittascience.com/shop/347/kit-micropython-avec-la-galaxia). L'achat de ce kit est optionnel et toutes les activités de ce MOOC peut être simulées avec l'une de nos [interfaces](./interface_france-ioi.md).
 		
 
 L'interface Vittascience permet de simuler une carte électronique, des capteurs et des actionneurs. Et ça c'est chouette ! Mais ce qui est encore mieux, c'est de manipuler tout ça dans la vraie vie :material-cat:
@@ -219,7 +219,7 @@ L'interface Vittascience permet de simuler une carte électronique, des capteurs
 Pour cela, veuillez suivre les étapes ci-dessous :
 
 1. Connectez le [port micro-usb](#le-port-micro-usb) de votre Galaxia à votre ordinateur en utilisant le câble micro-USB vers USB fourni dans le kit.
-2. Depuis le navigateur Chrome (ou Edge ou Opera), ouvrez l'[interface Vittascience](interface.md) et ouvrez la console en bas de l'interface avec le petit bouton :material-chevron-up-box:.
+2. Depuis le navigateur Chrome (ou Edge ou Opera), ouvrez l'[interface Vittascience](./interface_vittascience.md) et ouvrez la console en bas de l'interface avec le petit bouton :material-chevron-up-box:.
 3. Cliquez ensuite sur le bouton [:fontawesome-solid-terminal: REPL](#){ .btn-light style='color:black;' } pour ouvrir la communication entre votre ordinateur et la carte Galaxia.
 4. Choissisez enfin le port USB sur lequel est branché votre Galaxia et cliquez sur [Connexion](#){ .btn-light style='color:black;' }
 5. Dès lors, vous pouvez voir les messages envoyées depuis votre carte Galaxia (pour en savoir plus sur les messages sur le port série, c'est par [ici](communication/ecrire_dans_la_console.md)

@@ -9,7 +9,7 @@ Vous suivez les cours en ligne de l'IMT sur ![MicroPython new logo](img/MicroPyt
 
 ## Vos outils
 
-* [L'interface Vittascience](interface.md) : Débuter avec l'interface de développement développée par notre partenaire Vittascience
+* [Les interfaces](./interface_france-ioi.md) : Débuter avec l'une de nos interfaces de développement développées par nos partenaires France-IOI et Vittascience
 * [Carte Galaxia](galaxia.md) : Tout savoir sur la carte électronique développée par notre partenaire Thingz
 
 ## Guides de référence
