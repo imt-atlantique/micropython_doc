@@ -48,6 +48,7 @@ nav:
         - "Supprimer l'élément d'une liste" : 'listes/supprimer_element_liste.md'
     - 'Dictionnaires': 'dictionnaires/dictionnaires.md'
     - 'Fonctions': 'fonctions/fonction.md'
+    - 'Fichiers': 'fichiers/fichiers.md'
     - 'Réseau':
         - "Scanner les réseaux wifi" : 'reseau/scanner_wifi_station.md'
         - "Se connecter au wifi" : 'reseau/connecter_wifi_station.md'
