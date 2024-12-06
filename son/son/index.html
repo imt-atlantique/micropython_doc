@@ -258,7 +258,21 @@
   
   
     <li class="md-nav__item">
-      <a href="../../interface/" class="md-nav__link">
+      <a href="../../interface_france-ioi/" class="md-nav__link">
+        L'interface France-IOI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interface_vittascience/" class="md-nav__link">
         L'interface Vittascience
       </a>
     </li>
@@ -1076,22 +1090,36 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../fichiers/fichiers/" class="md-nav__link">
+        Fichiers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_13" type="checkbox" id="__nav_3_13" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_14" type="checkbox" id="__nav_3_14" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_3_13">
+        <label class="md-nav__link" for="__nav_3_14">
           Réseau
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Réseau" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_13">
+        <label class="md-nav__title" for="__nav_3_14">
           <span class="md-nav__icon md-icon"></span>
           Réseau
         </label>
@@ -1361,7 +1389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exceptions/gerer_les_erreurs/" class="md-nav__link">
+      <a href="../../exceptions/gerer_les_erreurs.md" class="md-nav__link">
         Gérer les erreurs
       </a>
     </li>
@@ -1451,24 +1479,24 @@
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">utime</span>
+<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="c1"># Initialisation du buzzer sur la broche P19</span>
 <span class="n">p19</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">pitch</span> <span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="n">noteFrequency</span><span class="p">,</span> <span class="n">noteDuration</span><span class="p">,</span> <span class="n">silence_ms</span> <span class="o">=</span> <span class="mi">10</span><span class="p">):</span>
-<span class="k">if</span> <span class="n">noteFrequency</span> <span class="ow">is</span> <span class="ow">not</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="n">microsecondsPerWave</span> <span class="o">=</span> <span class="mf">1e6</span> <span class="o">/</span> <span class="n">noteFrequency</span>
-    <span class="n">millisecondsPerCycle</span> <span class="o">=</span> <span class="mi">1000</span> <span class="o">/</span> <span class="p">(</span><span class="n">microsecondsPerWave</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
-    <span class="n">loopTime</span> <span class="o">=</span> <span class="n">noteDuration</span> <span class="o">*</span> <span class="n">millisecondsPerCycle</span>
-    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">loopTime</span><span class="p">):</span>
-    <span class="n">pin</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
-    <span class="n">utime</span><span class="o">.</span><span class="n">sleep_us</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">microsecondsPerWave</span><span class="p">))</span>
-    <span class="n">pin</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
-    <span class="n">utime</span><span class="o">.</span><span class="n">sleep_us</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">microsecondsPerWave</span><span class="p">))</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="n">noteDuration</span><span class="p">)</span>
-<span class="n">utime</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="n">silence_ms</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">noteFrequency</span> <span class="ow">is</span> <span class="ow">not</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">microsecondsPerWave</span> <span class="o">=</span> <span class="mf">1e6</span> <span class="o">/</span> <span class="n">noteFrequency</span>
+        <span class="n">millisecondsPerCycle</span> <span class="o">=</span> <span class="mi">1000</span> <span class="o">/</span> <span class="p">(</span><span class="n">microsecondsPerWave</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">loopTime</span> <span class="o">=</span> <span class="n">noteDuration</span> <span class="o">*</span> <span class="n">millisecondsPerCycle</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">loopTime</span><span class="p">)):</span>
+            <span class="n">pin</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
+            <span class="n">sleep_us</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">microsecondsPerWave</span><span class="p">))</span>
+            <span class="n">pin</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
+            <span class="n">sleep_us</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">microsecondsPerWave</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">sleep_ms</span><span class="p">(</span><span class="n">noteDuration</span><span class="p">)</span>
+        <span class="n">sleep_ms</span><span class="p">(</span><span class="n">silence_ms</span><span class="p">)</span>
 
 <span class="c1"># On joue la fréquence 440Hz pendant 500ms</span>
 <span class="n">pitch</span><span class="p">(</span><span class="n">p19</span><span class="p">,</span> <span class="mi">440</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
